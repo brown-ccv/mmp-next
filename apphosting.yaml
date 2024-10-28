@@ -1,0 +1,5 @@
+env:
+  - variable: CLIENT_ID
+    secret: CLIENT_ID
+  - variable: CLIENT_SECRET
+    secret: CLIENT_SECRET
