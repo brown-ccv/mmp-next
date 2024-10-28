@@ -42,7 +42,7 @@ const CMSPage: FC = () => {
 
   return (
     <div>
-      <style jsx global>{`
+      <style>{`
         html,
         body {
           height: 100%;
