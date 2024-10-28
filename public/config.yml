@@ -1,0 +1,32 @@
+backend:
+  name: github
+  repo: brown-ccv/mmp
+  base_url: "http://localhost:3000"
+  auth_endpoint: api/auth
+  auth_scope: repo
+media_folder: public/images
+collections:
+  - name: news
+    label: News
+    identifier_field: pubDate
+    create: true
+    folder: src/content/news
+    fields:
+      - name: pubDate
+        label: Date
+        widget: datetime
+        date_format: MM.dd.yyyy
+        time_format: false
+        format: MM.dd.yyyy
+      - name: heroImage
+        label: Featured Image
+        widget: image
+      - name: title
+        label: Title
+        widget: text
+      - name: description
+        label: Short Description
+        widget: text
+      - name: body
+        label: Post
+        widget: markdown

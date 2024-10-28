@@ -4,9 +4,7 @@ import BasicMeta from "@/components/meta/BasicMeta";
 import OpenGraphMeta from "@/components/meta/OpenGraphMeta";
 import TwitterCardMeta from "@/components/meta/TwitterCardMeta";
 
-import type { FC } from "react";
-
-const Admin: FC = () => {
+const Admin = () => {
   return (
     <>
       <Layout>
