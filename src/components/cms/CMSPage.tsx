@@ -1,48 +1,47 @@
 import CMS from "@staticcms/core";
 import { useEffect } from "react";
 import '@staticcms/core/dist/main.css';
-import {LayoutProps} from "@/components/Layout";
 import config from "@/config";
 
 import type { TemplatePreviewProps } from "@staticcms/core";
 import type { FC } from "react";
 
 interface PostData {
-  title: string;
-  date: string;
-  body: string;
+    title: string;
+    date: string;
+    body: string;
 }
 
 const PostPreview: FC<TemplatePreviewProps<PostData>> = ({ entry, widgetFor }) => {
-  return (
-    <div className="content">
-      <h1>{entry.data?.title}</h1>
-      <time>{entry.data?.date}</time>
-      <div>{widgetFor("body")}</div>
-    </div>
-  );
+    return (
+        <div className="content">
+            <h1>{entry.data?.title}</h1>
+            <time>{entry.data?.date}</time>
+            <div>{widgetFor("body")}</div>
+        </div>
+    );
 };
 
-const CMSPage: FC<LayoutProps> = ({children}) => {
-  useEffect(() => {
-    if (process.env.NODE_ENV === "development") {
-      config.local_backend = true;
-    }
+const CMSPage: FC = () => {
+    useEffect(() => {
+        if (process.env.NODE_ENV === "development") {
+            config.local_backend = true;
+        }
 
-    CMS.registerPreviewTemplate("posts", PostPreview);
+        CMS.registerPreviewTemplate("posts", PostPreview);
 
-    CMS.registerAdditionalLink({
-      id: "external-link",
-      title: "External link",
-      data: "https://example.com/",
-    });
+        CMS.registerAdditionalLink({
+            id: "external-link",
+            title: "External link",
+            data: "https://example.com/",
+        });
 
-    CMS.init({ config });
-  }, []);
+        CMS.init({ config });
+    }, []);
 
-  return (
-    <div>
-      <style>{`
+    return (
+        <div>
+            <style>{`
         html,
         body {
           height: 100%;
@@ -52,9 +51,8 @@ const CMSPage: FC<LayoutProps> = ({children}) => {
           display: none;
         }
       `}</style>
-      {children}
-    </div>
-  );
+        </div>
+    );
 };
 
 CMSPage.displayName = "CMSPage";

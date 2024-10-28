@@ -1,5 +1,5 @@
 {
-  "name": "static-cms-next-vercel-template",
+  "name": "my-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,32 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@next/eslint-plugin-next": "^15.0.1",
     "@staticcms/core": "2.3.3",
-    "autoprefixer": "10.4.14",
-    "date-fns": "2.30.0",
-    "gray-matter": "4.0.3",
-    "js-yaml": "4.1.0",
-    "next": "^15.0.1",
-    "next-mdx-remote": "4.4.1",
-    "postcss": "8.4.23",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-schemaorg": "2.0.0",
-    "schema-dts": "1.1.2",
-    "simple-oauth2": "2.5.2",
-    "tailwindcss": "3.3.2"
+    "next": "15.0.1",
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "simple-oauth2": "2.5.2"
   },
   "devDependencies": {
-    "@svgr/webpack": "8.0.1",
-    "@types/js-yaml": "4.0.5",
-    "@types/node": "20.1.5",
-    "@types/react": "17.0.11",
-    "@types/react-dom": "17.0.11",
-    "eslint": "^9.13.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
     "eslint-config-next": "15.0.1",
-    "eslint-plugin-react": "^7.37.2",
-    "js-yaml-loader": "1.2.2",
-    "typescript": "5.6.3"
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
   }
 }
