@@ -52,6 +52,7 @@ const CMSPage: FC<LayoutProps> = ({children}) => {
           display: none;
         }
       `}</style>
+      {children}
     </div>
   );
 };
