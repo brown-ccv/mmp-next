@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navigation from "./Navigation";
 
-import type { FC } from "react";
+import React, { FC } from "react";
 
 export interface LayoutProps {
   children: React.ReactNode;

@@ -1,7 +1,7 @@
 import CMS from "@staticcms/core";
 import { useEffect } from "react";
 import '@staticcms/core/dist/main.css';
-
+import {LayoutProps} from "@/components/Layout";
 import config from "@/config";
 
 import type { TemplatePreviewProps } from "@staticcms/core";
@@ -23,7 +23,7 @@ const PostPreview: FC<TemplatePreviewProps<PostData>> = ({ entry, widgetFor }) =
   );
 };
 
-const CMSPage: FC = () => {
+const CMSPage: FC<LayoutProps> = ({children}) => {
   useEffect(() => {
     if (process.env.NODE_ENV === "development") {
       config.local_backend = true;
