@@ -2,6 +2,9 @@
   "name": "mmp-next",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "yarn": ">= 4.0.1"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
