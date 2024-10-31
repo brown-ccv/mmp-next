@@ -1,11 +1,12 @@
 import type { Config } from "@staticcms/core";
 
 const config: Config = {
+  local_backend: true,
   backend: {
     name: "github",
     repo: "brown-ccv/mmp-next",
-    branch: "main",
-    base_url: "next-backend-decap--decap-next-test.us-central1.hosted.app/",
+    branch: "docker",
+    base_url: "http://0.0.0.0:3000/",
     auth_endpoint: "api/auth",
   },
   media_folder: "public/images",
