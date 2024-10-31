@@ -5,7 +5,7 @@ const config: Config = {
     name: "github",
     repo: "brown-ccv/mmp-next",
     branch: "main",
-    base_url: "/",
+    base_url: "next-backend-decap--decap-next-test.us-central1.hosted.app/",
     auth_endpoint: "api/auth",
   },
   media_folder: "public/images",
