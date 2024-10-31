@@ -5,10 +5,6 @@ backend:
   auth_endpoint: api/auth
   auth_scope: repo
 media_folder: public/images
-media_library:
-  name: uploadcare
-  config:
-    max_file_size: 734003200
 collections:
   - name: news
     label: News
