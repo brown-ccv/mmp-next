@@ -1,9 +1,4 @@
 steps:
-  - name: 'gcr.io/cloud-builders/kubectl'
-    args: ['set', 'image', 'deployment/mydepl', 'my-image=gcr.io/my-project/myimage']
-    env:
-      - 'CLOUDSDK_COMPUTE_ZONE=us-east4-b'
-      - 'CLOUDSDK_CONTAINER_CLUSTER=my-cluster'
   - name: 'gcr.io/cloud-builders/docker'
     args: [ 'build', '-t', 'us-central1-docker.pkg.dev/decap-next-test/mmp-docker/mmp-docker', '.', '--build-arg CLIENT_ID=$$CLIENT_ID', '--build-arg CLIENT_SECRET=$$CLIENT_SECRET' ]
     secretEnv: [ 'CLIENT_ID', 'CLIENT_SECRET' ]
