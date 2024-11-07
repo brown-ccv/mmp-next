@@ -6,7 +6,7 @@ const config: Config = {
     name: "github",
     repo: "brown-ccv/mmp-next",
     branch: "docker",
-    base_url: "http://0.0.0.0:3000/",
+    base_url: "https://mmp-docker-974587953292.us-central1.run.app/",
     auth_endpoint: "api/auth",
   },
   media_folder: "public/images",
