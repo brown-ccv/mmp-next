@@ -5,7 +5,7 @@ steps:
       - 'CLOUDSDK_COMPUTE_ZONE=us-east4-b'
       - 'CLOUDSDK_CONTAINER_CLUSTER=my-cluster'
   - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'gcr.io/us-central1-docker.pkg.dev/decap-next-test/mmp-docker/mmp-docker', '.', '--build-arg CLIENT_ID=$$CLIENT_ID', '--build-arg CLIENT_SECRET=$$CLIENT_SECRET' ]
+    args: [ 'build', '-t', 'us-central1-docker.pkg.dev/decap-next-test/mmp-docker/mmp-docker', '.', '--build-arg CLIENT_ID=$$CLIENT_ID', '--build-arg CLIENT_SECRET=$$CLIENT_SECRET' ]
     secretEnv: [ 'CLIENT_ID', 'CLIENT_SECRET' ]
 availableSecrets:
     secretManager:
@@ -13,3 +13,5 @@ availableSecrets:
         env: 'CLIENT_ID'
       - versionName: projects/decap-next-test/secrets/CLIENT_SECRET/versions/1
         env: 'CLIENT_SECRET'
+options:
+  logging: CLOUD_LOGGING_ONLY
