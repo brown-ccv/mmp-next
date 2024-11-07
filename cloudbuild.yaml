@@ -10,3 +10,5 @@ availableSecrets:
         env: 'CLIENT_SECRET'
 options:
   logging: CLOUD_LOGGING_ONLY
+images:
+  - 'us-central1-docker.pkg.dev/decap-next-test/mmp-next-test/mmp-next'
