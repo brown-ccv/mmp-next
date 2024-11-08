@@ -3,8 +3,8 @@ const simpleOauthModule = require("simple-oauth2");
 const create = () =>
     simpleOauthModule.create({
         client: {
-            id: process.env.OAUTH_CLIENT_ID,
-            secret: process.env.OAUTH_CLIENT_SECRET,
+            id: process.env.CLIENT_ID,
+            secret: process.env.CLIENT_SECRET,
         },
         auth: {
             tokenHost: `https://github.com`,

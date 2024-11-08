@@ -18,4 +18,4 @@ const handler = (req, res) => {
     res.end();
 };
 
-module.exports = handler;
+export default handler;
