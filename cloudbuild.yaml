@@ -4,9 +4,9 @@ steps:
     secretEnv: [ 'CLIENT_ID', 'CLIENT_SECRET' ]
 availableSecrets:
     secretManager:
-      - versionName: projects/decap-next-test/secrets/CLIENT_ID/versions/1
+      - versionName: projects/decap-next-test/secrets/CLIENT_ID/versions/2
         env: 'CLIENT_ID'
-      - versionName: projects/decap-next-test/secrets/CLIENT_SECRET/versions/1
+      - versionName: projects/decap-next-test/secrets/CLIENT_SECRET/versions/2
         env: 'CLIENT_SECRET'
 options:
   logging: CLOUD_LOGGING_ONLY
