@@ -1,7 +1,7 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
     entrypoint: 'bash'
-    args: [ '-c', 'docker build  --build-arg CLIENT_ID=$$CLIENT_ID --build-arg CLIENT_SECRET=$$CLIENT_SECRET -t us-central1-docker.pkg.dev/decap-next-test/mmp-docker/mmp-docker .' ]
+    args: [ '-c', 'docker build -t us-central1-docker.pkg.dev/decap-next-test/mmp-docker/mmp-docker --build-arg CLIENT_ID=$$CLIENT_ID --build-arg CLIENT_SECRET=$$CLIENT_SECRET .' ]
     secretEnv: [ 'CLIENT_ID', 'CLIENT_SECRET' ]
 availableSecrets:
     secretManager:
