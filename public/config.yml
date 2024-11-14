@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: brown-ccv/mmp
-  base_url: "next-backend-decap--decap-next-test.us-central1.hosted.app/"
+  base_url: "http://localhost:3000"
   auth_endpoint: api/auth
   auth_scope: repo
 media_folder: public/images
