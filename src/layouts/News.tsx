@@ -1,6 +1,6 @@
 import {FormattedDate} from "../components/FormattedDate"
 import {Layout} from "./Layout"
-import {NewsData} from "@/util/markdown";
+import {NewsData} from "../lib/markdown";
 import React from "react";
 import Image from "next/image";
 

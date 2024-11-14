@@ -1,3 +1,5 @@
+"use client"
+
 import { Controller, type SubmitHandler, useForm } from "react-hook-form"
 import * as Form from "@radix-ui/react-form"
 import React from "react"
@@ -13,7 +15,7 @@ export interface Inputs {
   description: string
 }
 
-const DataForm = () => {
+export const DataForm = () => {
   const { handleSubmit, control, register } = useForm<Inputs>()
   const formRef = React.useRef<HTMLFormElement>(null)
   const onSubmit: SubmitHandler<Inputs> = async (data: any) => {

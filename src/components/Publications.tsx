@@ -1,12 +1,15 @@
+"use client"
+
 import React, { useState } from "react"
 import Select, { type SingleValue } from "react-select"
 import { Form } from "@radix-ui/react-form"
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons"
 import Image from "next/image";
-import type { Classification } from "@/util/markdown"
+import type { Classification } from "../lib/markdown";
+import {PublicationData} from "../lib/markdown";
 import PubPlaceholder from "./svg/PubPlaceholder"
 import { Input } from "./Input"
-import {PublicationData} from "@/util/markdown";
+
 
 interface PubProps {
   publications: PublicationData[]
@@ -44,7 +47,8 @@ const PublicationSection: React.FC<PubProps> = ({ publications }) => {
 
   const categoryByYear: Record<string, PublicationData[]> = shownPubs.reduce(
     (pub, i) => {
-      const key = i.pubDate.toISOString().substring(0, 4)
+        const publishDate = new Date(i.pubDate)
+      const key = publishDate.toISOString().substring(0, 4)
       pub[key] = pub[key] ?? []
       pub[key].push(i)
       return pub

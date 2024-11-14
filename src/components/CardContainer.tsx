@@ -1,6 +1,6 @@
 import Card from "./Card"
 import React from "react";
-import {PeopleData} from "@/util/markdown";
+import {PeopleData} from "../lib/markdown";
 
 interface ContainerProps {
   people: PeopleData[]

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react"
 import { type UserInfo } from "firebase/auth"
 import { handleLogin, handleLogout } from "../firebase"

@@ -1,17 +1,8 @@
 import React from "react"
+import {FileData} from "../lib/markdown";
 
 interface DocumentationTableProps {
-  allFiles: {
-    data: {
-      title: string
-      cat: string
-      file?: string
-      archivo?: string
-      description?: string
-      version?: string
-      codebookType?: string
-    }
-  }[]
+  allFiles: FileData[];
   version?: boolean
   showHeader?: boolean
 }
@@ -22,7 +13,7 @@ const DocumentationTable: React.FC<DocumentationTableProps> = ({
   showHeader,
 }) => {
   const files = allFiles.map((file) => {
-    return { ...file.data }
+    return { ...file }
   })
   return (
     <div className="w-full overflow-x-scroll no-scrollbar">
