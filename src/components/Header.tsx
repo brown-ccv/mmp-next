@@ -1,7 +1,8 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import {HamburgerMenuIcon} from "@radix-ui/react-icons";
-import { SITE_TITLE, LINKS } from "../consts"
+import { LINKS } from "../consts"
 import {HeaderLink} from "./HeaderLink"
+import { usePathname } from "next/navigation"
 
 
     export const HamburgerMenu = () => {
@@ -41,10 +42,17 @@ import {HeaderLink} from "./HeaderLink"
     }
 
     export const Header = () => {
-  return (
+        const pathname = usePathname()
+
+        return (
       <>
           <NavigationMenu.Root orientation="horizontal" className="hidden lg:flex lg:justify-end">
               <NavigationMenu.List className="flex justify-end space-x-6 p-4">
+                  <NavigationMenu.Item className={pathname === "/" ? "hidden" : ""}>
+                      <NavigationMenu.Link asChild>
+                          <HeaderLink href="/" title="MMP"/>
+                      </NavigationMenu.Link>
+                  </NavigationMenu.Item>
                   {LINKS.map(link => (
 
                       <NavigationMenu.Item key={link.href}>

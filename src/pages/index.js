@@ -25,16 +25,13 @@ export default class HomePage extends Component {
             <section className="space-y-12">
               <h3 className="title font-semibold">Project Aims</h3>
               <div className="flex flex-wrap gap-20 justify-center">
-                <ProjectAim color="blue">
-                  <TargetIcon slot="icon" height={36} width={36} />
+                <ProjectAim color="blue" icon={<TargetIcon slot="icon" height={36} width={36} />}>
                   Gather and maintain high quality data on Mexican migration to the US.
                 </ProjectAim>
-                <ProjectAim color="primary">
-                  <GlobeIcon slot="icon" height={36} width={36} />
+                <ProjectAim color="primary" icon={<GlobeIcon slot="icon" height={36} width={36} />}>
                   Make data public and confidential.
                 </ProjectAim>
-                <ProjectAim color="brown">
-                  <Pencil1Icon slot="icon" height={36} width={36} />
+                <ProjectAim color="brown" icon={<Pencil1Icon height={36} width={36} />}>
                   Investigate the evolving transnational dynamics of migration.
                 </ProjectAim>
               </div>

@@ -2,9 +2,11 @@ import React from "react";
 
 interface ProjProps {
   color: "blue" | "primary" | "brown"
+    children?: React.ReactNode
+    icon?: React.ReactNode
 }
 
-export const ProjectAim: React.FC<ProjProps> = ({color}) => {
+export const ProjectAim: React.FC<ProjProps> = ({color, children, icon}) => {
   return (
       <div className="flex-1 flex flex-col gap-4">
   <span
@@ -14,7 +16,7 @@ export const ProjectAim: React.FC<ProjProps> = ({color}) => {
               ? "text-primary-500"
               : "text-secondary-brown-500"}
   >
-    <slot name="icon"/>
+    {icon}
   </span>
         <hr
             className={`h-1 w-36 border-none ${
@@ -26,7 +28,7 @@ export const ProjectAim: React.FC<ProjProps> = ({color}) => {
             } `}
         />
         <p>
-          <slot/>
+            {children}
         </p>
       </div>
 
