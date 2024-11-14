@@ -11,7 +11,7 @@ export default class HomePage extends Component {
     let { title } = attributes
     return (
         <Home
-            title={title}
+            title="MMP"
             description="Mesoamerican Migration Project"
             lede="Furthering understanding of Mexican migration to the United States"
         >

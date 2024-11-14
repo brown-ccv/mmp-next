@@ -155,6 +155,8 @@ const PublicationSection: React.FC<PubProps> = ({ publications }) => {
                                         className="flex-none object-cover w-full h-full"
                                         src={pub.image}
                                         alt=""
+                                        width={400}
+                                        height={400}
                                       />
                                     ) : (
                                       <PubPlaceholder />

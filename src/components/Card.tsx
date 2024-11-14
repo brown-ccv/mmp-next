@@ -12,7 +12,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ link, image, title, name, institution, bio }) => {
-  // strip 'public/' from the avatar string since public folder is available without this in the link
   const imageURL = image.replace("/public", "")
   return (
     <div className="md:flex-row md:gap-8 flex flex-col gap-4">
@@ -22,6 +21,8 @@ const Card: React.FC<CardProps> = ({ link, image, title, name, institution, bio 
             className="md:w-64 md:h-64 object-cover w-40 h-40 rounded-full"
             src={imageURL}
             alt={name}
+            width={400}
+            height={400}
           />
         </div>
       )}

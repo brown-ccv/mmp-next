@@ -1,5 +1,3 @@
-import { usePathname } from "next/navigation"
-import Link from "next/link"
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import {HamburgerMenuIcon} from "@radix-ui/react-icons";
 import { SITE_TITLE, LINKS } from "../consts"
@@ -8,17 +6,22 @@ import {HeaderLink} from "./HeaderLink"
 
     export const HamburgerMenu = () => {
         return (
-            <NavigationMenu.Root orientation="vertical">
+            <NavigationMenu.Root orientation="vertical" className="flex justify-end lg:hidden pt-2">
 
-                <NavigationMenu.List>
+                <NavigationMenu.List className="flex justify-end">
 
-                    <NavigationMenu.Item>
-                        <NavigationMenu.Trigger className="NavigationMenuTrigger">
-                            <HamburgerMenuIcon/>
+                    <NavigationMenu.Item className="flex flex-col items-end">
+                        <NavigationMenu.Trigger className="text-neutral-900 font-semibold flex justify-end">
+                            <HamburgerMenuIcon width={24} height={24}/>
                         </NavigationMenu.Trigger>
                         <NavigationMenu.Content>
                             <NavigationMenu.Sub defaultValue="sub1">
-                                <NavigationMenu.List>
+                                <NavigationMenu.List className="flex flex-col items-end space-y-1 p-2">
+                                    <NavigationMenu.Item>
+                                        <NavigationMenu.Link asChild>
+                                            <HeaderLink href="/" title="Home"/>
+                                        </NavigationMenu.Link>
+                                    </NavigationMenu.Item>
                                     {LINKS.map(link => (
 
                                         <NavigationMenu.Item key={link.href}>
@@ -38,24 +41,28 @@ import {HeaderLink} from "./HeaderLink"
     }
 
     export const Header = () => {
-        const pathname = usePathname()
-
   return (
-      <NavigationMenu.Root>
-          <NavigationMenu.List>
-              {LINKS.map(link => (
+      <>
+          <NavigationMenu.Root orientation="horizontal" className="hidden lg:flex lg:justify-end">
+              <NavigationMenu.List className="flex justify-end space-x-6 p-4">
+                  {LINKS.map(link => (
 
-                  <NavigationMenu.Item key={link.href}>
-                      <NavigationMenu.Link asChild>
-                          <HeaderLink href={link.href} title={link.title}/>
-                      </NavigationMenu.Link>
-                  </NavigationMenu.Item>
+                      <NavigationMenu.Item key={link.href}>
+                          <NavigationMenu.Link asChild>
+                              <HeaderLink href={link.href} title={link.title}/>
+                          </NavigationMenu.Link>
+                      </NavigationMenu.Item>
 
-              ))}
-          </NavigationMenu.List>
+                  ))}
+              </NavigationMenu.List>
 
-          <NavigationMenu.Viewport />
-      </NavigationMenu.Root>
+              <NavigationMenu.Viewport />
+          </NavigationMenu.Root>
+
+          <HamburgerMenu />
+      </>
+
+
   )
     }
 
