@@ -11,6 +11,15 @@ const nextConfig = {
                     test: /\.svg$/,
                     use: "@svgr/webpack",
                 },
+                {
+                    test: /\.md$/,
+                    loader: 'frontmatter-markdown-loader',
+                    options: { mode: ['react-component'] }
+                },
+                {
+                    test: /\.svg$/,
+                    use: ["@svgr/webpack"]
+                },
             ]
         );
         return config;
