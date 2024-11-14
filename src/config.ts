@@ -1,6 +1,4 @@
-import type { Config } from "@staticcms/core";
-
-const config: Config = {
+const config = {
   local_backend: true,
   backend: {
     name: "github",
@@ -13,168 +11,276 @@ const config: Config = {
   public_folder: "/images",
   collections: [
     {
-      name: "config",
-      label: "Config",
-      delete: false,
-      editor: { preview: false },
-      files: [
+      "name": "pages",
+      "label": "Pages",
+      "folder": "src/content/pages",
+      "create": false,
+      "fields": [
         {
-          name: "general",
-          label: "Site Config",
-          file: "content/config.json",
-          description: "General site settings",
-          fields: [
-            {
-              label: "URL",
-              name: "base_url",
-              widget: "string",
-              hint: "Do not enter the trailing slash of the URL",
-            },
-            { label: "Site title", name: "site_title", widget: "string" },
-            {
-              label: "Site description",
-              name: "site_description",
-              widget: "string",
-            },
-            {
-              label: "Site keywords",
-              name: "site_keywords",
-              widget: "list",
-              summary: "{{fields.keyword.keyword}}",
-              fields: [{ label: "Keyword", name: "keyword", widget: "string" }],
-            },
-            {
-              label: "Twitter account",
-              name: "twitter_account",
-              widget: "string",
-            },
-            {
-              label: "GitHub account",
-              name: "github_account",
-              widget: "string",
-            },
-          ],
+          "name": "title",
+          "label": "Page",
+          "widget": "text"
         },
-      ],
+        {
+          "name": "body",
+          "label": "Page Content",
+          "widget": "markdown"
+        }
+      ]
     },
     {
-      name: "meta",
-      label: "Meta",
-      delete: false,
-      editor: { preview: false },
-      files: [
+      "name": "map",
+      "label": "Map",
+      "folder": "src/content/map",
+      "create": false,
+      "fields": [
         {
-          name: "authors",
-          label: "Authors",
-          file: "content/meta/authors.yml",
-          description: "Author descriptions",
-          fields: [
-            {
-              name: "authors",
-              label: "Authors",
-              label_singular: "Author",
-              widget: "list",
-              fields: [
-                {
-                  label: "Slug",
-                  name: "slug",
-                  widget: "string",
-                  hint: "The part of a URL identifies the author",
-                },
-                {
-                  label: "Name",
-                  name: "name",
-                  widget: "string",
-                  hint: "First and Last",
-                },
-                { label: "Introduction", name: "introduction", widget: "text" },
-              ],
-            },
-          ],
+          "name": "title",
+          "label": "Map Version",
+          "widget": "text"
         },
         {
-          name: "tags",
-          label: "Tags",
-          file: "content/meta/tags.yml",
-          description: "List of tags",
-          fields: [
-            {
-              name: "tags",
-              label: "Tags",
-              label_singular: "Tag",
-              widget: "list",
-              fields: [
-                {
-                  label: "Slug",
-                  name: "slug",
-                  widget: "string",
-                  hint: "The part of a URL identifies the tag",
-                },
-                {
-                  label: "Display Name",
-                  name: "name",
-                  widget: "string",
-                  hint: "Tag name for displaying on the site",
-                },
-              ],
-            },
-          ],
-        },
-      ],
+          "name": "image",
+          "label": "MMP Community Map",
+          "widget": "image"
+        }
+      ]
     },
     {
-      name: "posts",
-      label: "Posts",
-      folder: "content/posts/",
-      extension: "mdx",
-      format: "frontmatter",
-      create: true,
-      slug: "{{slug}}",
-      identifier_field: "slug",
-      summary: "{{title}}",
-      fields: [
-        { label: "Slug", name: "slug", widget: "string" },
-        { label: "Title", name: "title", widget: "string" },
+      "name": "people",
+      "label": "People",
+      "folder": "src/content/people",
+      "create": true,
+      "fields": [
         {
-          label: "Publish Date",
-          name: "date",
-          widget: "datetime",
-          format: "yyyy-MM-dd",
-          date_format: "yyyy-MM-dd",
-          time_format: false,
+          "name": "type",
+          "label": "Staff Type",
+          "widget": "select",
+          "options": ["Leadership", "Advisors", "Supporting Staff"]
         },
         {
-          label: "Author",
-          name: "author",
-          widget: "relation",
-          collection: "meta",
-          file: "authors",
-          search_fields: ["authors.*.name"],
-          display_fields: ["authors.*.name"],
-          value_field: "authors.*.slug",
+          "name": "name",
+          "label": "Name",
+          "widget": "string"
         },
         {
-          label: "Tags",
-          label_singular: "Tag",
-          name: "tags",
-          widget: "list",
-          summary: "{{fields.tag}}",
-          fields: [
-            {
-              label: "Tag",
-              name: "tag",
-              widget: "relation",
-              collection: "meta",
-              file: "tags",
-              search_fields: ["tags.*.name"],
-              display_fields: ["tags.*.name"],
-              value_field: "tags.*.slug",
-            },
-          ],
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
         },
-        { label: "Body", name: "body", widget: "markdown" },
-      ],
+        {
+          "name": "avatar",
+          "required": false,
+          "i18n": "duplicate",
+          "label": "Photo",
+          "widget": "image"
+        },
+        {
+          "name": "org",
+          "label": "Company/University",
+          "widget": "string"
+        },
+        {
+          "name": "address",
+          "required": false,
+          "i18n": "duplicate",
+          "label": "Mailing Address",
+          "widget": "text"
+        },
+        {
+          "name": "phone",
+          "required": false,
+          "i18n": "duplicate",
+          "label": "Phone Number",
+          "widget": "string"
+        },
+        {
+          "name": "email",
+          "required": false,
+          "i18n": "duplicate",
+          "label": "Email",
+          "widget": "string",
+          "pattern": [".+@.+\\..+", "Email must follow standard guidelines"]
+        },
+        {
+          "name": "startDate",
+          "i18n": "duplicate",
+          "label": "Year Started Contributions",
+          "widget": "datetime",
+          "date_format": "yyyy",
+          "time_format": false,
+          "format": "yyyy"
+        },
+        {
+          "name": "endDate",
+          "i18n": "duplicate",
+          "label": "Year Ended Contributions",
+          "widget": "datetime",
+          "date_format": "yyyy",
+          "time_format": false,
+          "format": "yyyy"
+        }
+      ]
     },
+    {
+      "name": "pubs",
+      "label": "Publications",
+      "folder": "src/content/publications",
+      "media_folder": "public/pubs",
+      "create": true,
+      "identifier_field": "citation",
+      "slug": "{{fields.classification}}-{{fields.pubDate}}_{{fields.author}}",
+      "fields": [
+        {
+          "name": "classification",
+          "label": "Classification",
+          "widget": "select",
+          "options": ["Book", "Chapter", "Article", "Dissertation"]
+        },
+        {
+          "name": "author",
+          "label": "Author(s)",
+          "widget": "text"
+        },
+        {
+          "name": "pubDate",
+          "i18n": "duplicate",
+          "label": "Publish Date",
+          "widget": "datetime",
+          "date_format": "MM.yyyy",
+          "time_format": false
+        },
+        {
+          "name": "citation",
+          "i18n": "duplicate",
+          "label": "Citation",
+          "widget": "text"
+        },
+        {
+          "name": "feature",
+          "label": "Featured Publication",
+          "widget": "boolean"
+        },
+        {
+          "name": "image",
+          "required": false,
+          "i18n": "duplicate",
+          "label": "Image",
+          "widget": "image"
+        },
+        {
+          "name": "url",
+          "required": false,
+          "i18n": "duplicate",
+          "label": "Link to Publication",
+          "widget": "string"
+        },
+        {
+          "name": "pdf",
+          "required": false,
+          "i18n": "duplicate",
+          "label": "PDF",
+          "widget": "file"
+        }
+      ]
+    },
+    {
+      "name": "data",
+      "label": "Documentation Data",
+      "create": true,
+      "folder": "src/content/data",
+      "media_folder": "files",
+      "fields": [
+        {
+          "name": "cat",
+          "label": "Category",
+          "widget": "select",
+          "options": ["Study Design", "Questionnaire", "Changes to Questionnaire", "Codebook", "Appendices"]
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "string"
+        },
+        {
+          "name": "description",
+          "label": "Description",
+          "widget": "text"
+        },
+        {
+          "name": "version",
+          "i18n": "duplicate",
+          "label": "Field Season",
+          "condition": {
+            "field": "cat",
+            "value": "Questionnaire"
+          },
+          "required": false
+        },
+        {
+          "name": "codebookType",
+          "label": "Codebook Category",
+          "condition": {
+            "field": "cat",
+            "value": "Codebook"
+          },
+          "widget": "select",
+          "options": ["MMP Core", "Community Level Supplementary", "State Level Supplementary", "National Level Supplementary", "MSA Level Supplementary"]
+        },
+        {
+          "name": "archivo",
+          "i18n": "duplicate",
+          "required": false,
+          "label": "Spanish File",
+          "widget": "file"
+        },
+        {
+          "name": "file",
+          "i18n": "duplicate",
+          "required": false,
+          "label": "English File",
+          "widget": "file"
+        }
+      ]
+    },
+    {
+      "name": "news",
+      "label": "News",
+      "identifier_field": "pubDate",
+      "create": true,
+      "folder": "src/content/news",
+      "fields": [
+        {
+          "name": "pubDate",
+          "i18n": "duplicate",
+          "label": "Date",
+          "widget": "datetime",
+          "date_format": "MM.dd.yyyy",
+          "time_format": false,
+          "format": "MM.dd.yyyy"
+        },
+        {
+          "name": "heroImage",
+          "label": "Featured Image",
+          "widget": "image"
+        },
+        {
+          "name": "title",
+          "label": "Title",
+          "widget": "text"
+        },
+        {
+          "name": "description",
+          "label": "Short Description",
+          "widget": "text"
+        },
+        {
+          "name": "body",
+          "label": "Post",
+          "widget": "markdown"
+        }
+      ]
+    }
   ],
 };
 
