@@ -1,6 +1,8 @@
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
+import { remark } from 'remark';
+import html from 'remark-html';
 
 export type Classification = "Book" | "Article" | "Dissertation" | "Chapter"
 
@@ -26,6 +28,7 @@ export interface PublicationData {
 }
 
 export interface NewsData {
+    slug: string
     title: string
     description: string
     pubDate: Date
@@ -46,6 +49,7 @@ export interface FileData {
 const peopleDirectory = path.join(process.cwd(), "src/content/people");
 const publicationsDirectory = path.join(process.cwd(), "src/content/publications");
 const filesDirectory = path.join(process.cwd(), "src/content/data");
+const newsDirectory = path.join(process.cwd(), "src/content/news");
 
 export function getAllFileData(): FileData[] {
     const fileNames = fs.readdirSync(filesDirectory);
@@ -103,4 +107,51 @@ export function getPublications(): PublicationData[] {
             ...data,
         } as PublicationData;
     });
+}
+
+export function getNews(): NewsData[] {
+    const fileNames = fs.readdirSync(newsDirectory);
+    return fileNames.map((fileName) => {
+        const fullPath = path.join(newsDirectory, fileName);
+        const slug = fileName.replace(/\.md$/, "");
+        const fileContents = fs.readFileSync(fullPath, "utf8");
+        const {data} = matter(fileContents);
+
+        return {
+            slug,
+            ...data,
+        } as NewsData;
+    });
+}
+
+export function getNewsArticleIds() {
+    const fileNames = fs.readdirSync(newsDirectory);
+    return fileNames.map((fileName) => {
+        return {
+            params: {
+                slug: fileName.replace(/\.md$/, ''),
+            },
+        };
+    });
+}
+
+export async function getNewsArticle(slug: string) {
+    const fullPath = path.join(newsDirectory, `${slug}.md`);
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+    // Use gray-matter to parse the post metadata section
+    const matterResult = matter(fileContents);
+
+    // Use remark to convert markdown into HTML string
+    const processedContent = await remark()
+        .use(html)
+        .process(matterResult.content);
+    const contentHtml = processedContent.toString();
+
+    // Combine the data with the id and contentHtml
+    return {
+        slug,
+        contentHtml,
+        ...matterResult.data,
+    };
 }

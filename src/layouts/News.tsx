@@ -9,22 +9,24 @@ export interface News extends NewsData {
 }
 
 export const News: React.FC<News> = ({title, description, heroImage, pubDate, updatedDate, children}) => {
+    const publishedDate = new Date(pubDate)
+    const updatedOnDate = updatedDate ? new Date(updatedDate) : undefined
   return (
       <Layout title={title} description={description}>
         <article className="space-y-4">
           {
               heroImage && (
                   <div>
-                    <Image className="w-full" src={heroImage} alt={title}/>
+                    <Image className="w-full" src={heroImage} alt={title} width={200} height={200} />
                   </div>
               )
           }
-          <FormattedDate date={pubDate} />
+          <FormattedDate date={publishedDate} />
           {
-              updatedDate && (
+              updatedOnDate && (
                   <div className="last-updated-on">
                     Last updated on
-                    <FormattedDate date={updatedDate} />
+                    <FormattedDate date={updatedOnDate} />
                   </div>
               )
           }
