@@ -1,9 +1,8 @@
-local_backend: true
-
 backend:
   name: github
   repo: brown-ccv/mmp-next
   base_url: https://mmp-docker-974587953292.us-central1.run.app/
+  auth_endpoint: api/auth
 media_folder: public/images
 i18n:
   structure: multiple_folders
