@@ -220,6 +220,7 @@ const config: Config = {
           "name": "codebookType",
           "label": "Codebook Category",
           "widget": "select",
+          "required": false,
           "options": ["MMP Core", "Community Level Supplementary", "State Level Supplementary", "National Level Supplementary", "MSA Level Supplementary"]
         },
         {
