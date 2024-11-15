@@ -1,4 +1,6 @@
-const config = {
+import type { Config } from "@staticcms/core";
+
+const config: Config = {
   local_backend: true,
   backend: {
     name: "github",
@@ -211,19 +213,12 @@ const config = {
           "name": "version",
           "i18n": "duplicate",
           "label": "Field Season",
-          "condition": {
-            "field": "cat",
-            "value": "Questionnaire"
-          },
-          "required": false
+          "required": false,
+          "widget": "text"
         },
         {
           "name": "codebookType",
           "label": "Codebook Category",
-          "condition": {
-            "field": "cat",
-            "value": "Codebook"
-          },
           "widget": "select",
           "options": ["MMP Core", "Community Level Supplementary", "State Level Supplementary", "National Level Supplementary", "MSA Level Supplementary"]
         },
