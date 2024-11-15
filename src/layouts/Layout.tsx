@@ -19,7 +19,7 @@ export const Layout: React.FC<LayoutProps> = ({title, description, lede, childre
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <body>
+      <body className="body">
       <div className="flex flex-col h-full">
         <Header/>
         <main className="grow">

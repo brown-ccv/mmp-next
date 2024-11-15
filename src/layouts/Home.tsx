@@ -19,7 +19,7 @@ export const Home: React.FC<HomeLayoutProps> = ({title, description, lede, child
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
 
-      <body>
+      <body className="body">
       <Header/>
 
       <main>
