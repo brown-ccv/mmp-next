@@ -4,11 +4,6 @@ backend:
   base_url: https://mmp-docker-974587953292.us-central1.run.app/
   auth_endpoint: api/auth
 media_folder: public/images
-i18n:
-  structure: multiple_folders
-  locales: [ en, es, pt ]
-  # The locale to be used for fields validation and as a baseline for the entry.
-  default_locale: en
 collections:
   - name: pages
     label: Pages
@@ -49,7 +44,6 @@ collections:
         widget: string
       - name: avatar
         required: false
-        i18n: duplicate
         label: Photo
         widget: image
       - name: org
@@ -57,29 +51,24 @@ collections:
         widget: string
       - name: address
         required: false
-        i18n: duplicate
         label: Mailing Address
         widget: text
       - name: phone
         required: false
-        i18n: duplicate
         label: Phone Number
         widget: string
       - name: email
         required: false
-        i18n: duplicate
         label: Email
         widget: string
         pattern: [ '.+@.+\..+', 'Email must follow standard guidelines' ]
       - name: startDate
-        i18n: duplicate
         label: Year Started Contributions
         widget: datetime
         date_format: yyyy
         time_format: false
         format: yyyy
       - name: endDate
-        i18n: duplicate
         label: Year Ended Contributions
         widget: datetime
         date_format: yyyy
@@ -101,13 +90,11 @@ collections:
         label: Author(s)
         widget: text
       - name: pubDate
-        i18n: duplicate
         label: Publish Date
         widget: datetime
         date_format: MM.yyyy
         time_format: false
       - name: citation
-        i18n: duplicate
         label: Citation
         widget: text
       - name: feature
@@ -115,17 +102,14 @@ collections:
         widget: boolean
       - name: image
         required: false
-        i18n: duplicate
         label: Image
         widget: image
       - name: url
         required: false
-        i18n: duplicate
         label: Link to Publication
         widget: string
       - name: pdf
         required: false
-        i18n: duplicate
         label: PDF
         widget: file
   - name: data
@@ -145,26 +129,18 @@ collections:
         label: Description
         widget: text
       - name: version
-        i18n: duplicate
         label: Field Season
-        condition:
-          field: cat
-          value: 'Questionnaire'
         required: false
       - name: codebookType
         label: Codebook Category
-        condition:
-          field: cat
-          value: 'Codebook'
+        required: false
         widget: select
         options: [ 'MMP Core', 'Community Level Supplementary', 'State Level Supplementary', 'National Level Supplementary', 'MSA Level Supplementary' ]
       - name: archivo
-        i18n: duplicate
         required: false
         label: Spanish File
         widget: file
       - name: file
-        i18n: duplicate
         required: false
         label: English File
         widget: file
@@ -176,7 +152,6 @@ collections:
     folder: src/content/news
     fields:
       - name: pubDate
-        i18n: duplicate
         label: Date
         widget: datetime
         date_format: MM.dd.yyyy
