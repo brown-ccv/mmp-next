@@ -65,15 +65,13 @@ collections:
       - name: startDate
         label: Year Started Contributions
         widget: datetime
-        date_format: yyyy
+        date_format: YYYY
         time_format: false
-        format: yyyy
       - name: endDate
         label: Year Ended Contributions
         widget: datetime
-        date_format: yyyy
+        date_format: YYYY
         time_format: false
-        format: yyyy
   - name: pubs
     label: Publications
     folder: src/content/publications
@@ -92,7 +90,7 @@ collections:
       - name: pubDate
         label: Publish Date
         widget: datetime
-        date_format: MM.yyyy
+        date_format: MM.YYYY
         time_format: false
       - name: citation
         label: Citation
@@ -154,9 +152,8 @@ collections:
       - name: pubDate
         label: Date
         widget: datetime
-        date_format: MM.dd.yyyy
+        date_format: MM.DD.YYYY
         time_format: false
-        format: MM.dd.yyyy
       - name: heroImage
         label: Featured Image
         widget: image
