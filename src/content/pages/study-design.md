@@ -4,59 +4,44 @@ title: Study Design
 ## Design
 
 
+
+
+
 The data contained in the various MMP databases have been gathered using an approach that borrows from anthropological and sociological research methods. In particular, our study employs the Ethnosurvey approach, which combines the techniques of ethnographic fieldwork and representative survey sampling to gather qualitative as well as quantitative data. The two kinds of empirical data are compared throughout the study to yield results of greater validity than either ethnography or a sample survey could provide alone. This method was
 designed to provide a picture of Mexican-, and more recently, Central American-US migration that is historically grounded, ethnographically interpretable, quantitatively accurate, and rooted in receiving as well as sending areas.
 
+
+
 Each year, the MMP randomly samples households in communities located throughout Mexico, El Salvador, Guatemala and Honduras. After gathering social, demographic, and economic information on the household and its members, interviewers collect basic immigration information on each person's first and last trip to the United States, as well information on migration to other countries and internal migration. From household heads and spouses, we compile detailed year-by-year labor, migration, property, and family formation histories. In addition, we administer a detailed series of questions about their last trip to the U.S., focusing on employment, earnings, and use of U.S. social services. In recent years, questions on health, violence, food insecurity and weather-related crop loses have been added.
+
+
 
 In prior years of the Mexican Migration Project, interviewers traveled to destination areas in the United States to administer identical questionnaires to migrants from the same communities sampled in Mexico who had settled north of the border. With the increasing geographic dispersion of migration to the United States, even among migrants from the same community, the MMP now uses referrals made by respondents in the origin communities to recruit immigrants in the United States for telephone interviews. The interviews are conducted by the same interviewers who conducted interviews in the origin communities.  These telephone interviews are combined with those conducted in Mexico and Central American to generate representative binational samples.
 
 ## Selecting Communities
 
-The process of selecting communities for the Mexican Migration has traditionally relied on anthropological methods.
-Communities are chosen after a personal reconnaissance of the geographic area to be studied by the principal
-investigators. Because the project initially focused on Western Mexico, the traditional heartland for migration to the
-United States, practically all of the earliest communities had significant indices of out-migration, which could easily
-be detected using field interviews and simple observations of the frequency of new homes, foreign license plates,
-currency exchanges, and international courier services.
 
-Until 2000, we lacked access to a valid measure to indicate the intensity of emigration from specific municipalities and
-the only measure indicating migration was the sex ratio. The only demographic fact regularly considered was the
-community's sex ratio, which offer general picture of the intensity of the process of international migration because in
-Mexico emigration is so heavily male. After an initial round of fieldwork, investigators compared their preliminary data
-with census statistics and formation available from bibliographic sources. However, the MMP has never explicitly sought
-to survey only communities with high rates of out-migration. Investigators simply seek to corroborate that there is some
-migration from the community in question before proceeding. Then they select four specific locations to represent each
-of four levels of urbanization:
 
-* Ranchos: fewer than 2,500 inhabitants
-* Pueblos (Towns): 2,500 to 10,000 inhabitants
-* Mid-sized Cities: 10,000 to 100,000 inhabitants
-* Large City: usually a particular neighborhood within in a state's capital city
+The process of selecting communities for the MMP has traditionally relied on anthropological methods. Communities were chosen after a personal reconnaissance of the geographic area to be studied by the principal investigators. Because the project initially focused on Western Mexico, the traditional heartland for migration to the United States, practically all of the earliest communities had significant indices of out-migration, which could easily be detected using field interviews and simple observations of the frequency of new homes, foreign license plates, currency exchanges, and international courier services. With time, the MMP expanded into more regions of Mexico with survey locations including small rural communities, towns, and neighborhoods in regional cities and major metropolitan areas. The locations were selected to represent not only a range of levels of urbanization and regions, but also development levels and prevalences of U.S. migration.
 
-In the pueblos and ranchos, investigators conduct a complete census of dwellings and undertake random selection from the
-resulting list. In mid-sized cities and urban metropolises, investigators generally chose a traditional,
-well-established neighborhood–one not dominated by recent rural-urban migrants. As a result, the urban samples are in
-reality samples of urban neighborhoods or specifically demarcated quarters. In all cases, the neighborhood must have at
-least 1,200 enumerated dwellings, from which a random sample of 200 is taken.
 
-The methodology of the MMP thus yields results with a high degree of representativeness at the community level, and in
-some of the smaller pueblos and ranchos investigators have been able to survey every household in the community. Given
-that the sample is not targeted to migrants per se, but surveys the community as a whole, the project needs a fairly
-large sample size to generate a significant number of migrants. Traditional methods of cluster sampling generally survey
-small numbers of respondents across a large number of areas, but this generally yields small numbers of migrants to
-study an inability to make generalizations at the community level. For example, rather than interviewing 20 households
-in five communities we interview 100 households in one community, thereby enabling us to make generalizations about
-migratory processes at the community level. If the frequency of migration is 30%, on average the surveys would contain
-only six migrants in each of the five communities, rather than 30 migrants in one community.
 
-At present we are able to draw upon an index of migratory developed for municipalities in Mexico’s National Population
-Council (CONAPO) based on the 2000 and 2010 census. This index provides reliable information about the level of U.S.
-migration prevailing at the municipal level and is particularly useful in identifying new communities of origin for
-migrants in new sending states, where heretofore little information has been available. In sum, after 25 years of field
-experience, the MMP continues to use anthropological criteria for selecting communities, which are then corroborated
-with available data from the census and other sources to confirm the existence of migrants before making the final
-selection.
+The Mesoamerican Migration Project has a particular focus on the potential impacts of violence, and weather events and climate change, on U.S. migration. The criteria for selecting locations in Mexico and Central America for inclusion in the study also includes the risk of drought and the level of violence at the municipal level. The overall objective is to build a sample of locations that is generally representative of the respective national populations, and to allow comparisons of migration behavior across communities of different sizes, levels of development, exposure to climate change, and violence.
+
+
+
+Once a location is selected, senior members of the MMP team visit the location and meet with local authorities and community leaders to secure permission and support to conduct field work. Field work in a location begins with the construction of a sampling frame. In rural communities and towns, the sampling frame includes the entire community. In cities, a limited area corresponding to one or more neighborhoods is included (with a least 1,200 dwellings). Construction of the sampling frame is based on a street-by-street enumeration of all residential dwellings. In towns and urban areas random samples of typically 200 dwellings are drawn. In rural municipalities, more than one rural community may be enumerated and sampled in addition to the primary town to provide a sample that is broadly representative of the municipality.
+
+
+
+The methodology of the MMP yields results with a high degree of representativeness at the community level, and in some of the smaller towns and rural communities, investigators have been able to survey every household in the community. Given that the sample is not targeted to migrants per se, but surveys the community as a whole, the project needs a fairly large sample size to generate a significant number of migrants. Traditional methods of cluster sampling generally survey small numbers of respondents across a large number of areas, but this tends to yield small numbers of migrants and does not allow generalizations to be made at the community level. For example, rather than interviewing 20 households in five communities we interview the entire community or 100 or more households in one community, thereby enabling us to generalize about migratory processes at the community level. 
+
+
+
+Over the last twenty years we have been able to draw upon an index of U.S. migration developed for municipalities in Mexico’s National Population Council (CONAPO) based on the population censuses. This index provides reliable information about the level of U.S. migration prevailing at the municipal level and is particularly useful in identifying new communities of origin for migrants in new sending states, where little information has been available. In Central America, we rely on the knowledge of investigators in each country and survey and census data to categorize municipalities by levels of U.S. migration, climatic risk factors, and violence. Because one of our aims is to identify the influence of contextual factors on migration behavior, locations are selected at a range of U.S. migration levels. 
+
+
+
 
 ## Ethnosurvey
 
