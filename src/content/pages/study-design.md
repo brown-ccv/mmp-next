@@ -3,20 +3,14 @@ title: Study Design
 ---
 ## Design
 
+\    The data contained in the various MMP databases have been gathered using an approach that borrows from anthropological and sociological research methods. In particular, our study employs the Ethnosurvey approach, which combines the techniques of ethnographic fieldwork and representative survey sampling to gather qualitative as well as quantitative data. The two kinds of empirical data are compared throughout the study to yield results of greater validity than either ethnography or a sample survey could provide alone. This method was
+designed to provide a picture of Mexican-, and more recently, Central American-US migration that is historically grounded, ethnographically interpretable, quantitatively accurate, and rooted in receiving as well as sending areas.                                                                               
 
+\    Each year, the MMP randomly samples households in communities located throughout Mexico, El Salvador, Guatemala and Honduras. After gathering social, demographic, and economic information on the household and its members, interviewers collect basic immigration information on each person's first and last trip to the United States, as well information on migration to other countries and internal migration. From household heads and spouses, we compile detailed year-by-year labor, migration, property, and family formation histories. In addition, we administer a detailed series of questions about their last trip to the U.S., focusing on employment, earnings, and use of U.S. social services. In recent years, questions on health, violence, food insecurity and weather-related crop loses have been added.
 
+\    In prior years of the Mexican Migration Project, interviewers traveled to destination areas in the United States to administer identical questionnaires to migrants from the same communities sampled in Mexico who had settled north of the border. With the increasing geographic dispersion of migration to the United States, even among migrants from the same community, the MMP now uses referrals made by respondents in the origin communities to recruit immigrants in the United States for telephone interviews. The interviews are conducted by the same interviewers who conducted interviews in the origin communities.  These telephone interviews are combined with those conducted in Mexico and Central American to generate representative binational samples.
 
-
-The data contained in the various MMP databases have been gathered using an approach that borrows from anthropological and sociological research methods. In particular, our study employs the Ethnosurvey approach, which combines the techniques of ethnographic fieldwork and representative survey sampling to gather qualitative as well as quantitative data. The two kinds of empirical data are compared throughout the study to yield results of greater validity than either ethnography or a sample survey could provide alone. This method was
-designed to provide a picture of Mexican-, and more recently, Central American-US migration that is historically grounded, ethnographically interpretable, quantitatively accurate, and rooted in receiving as well as sending areas.
-
-
-
-Each year, the MMP randomly samples households in communities located throughout Mexico, El Salvador, Guatemala and Honduras. After gathering social, demographic, and economic information on the household and its members, interviewers collect basic immigration information on each person's first and last trip to the United States, as well information on migration to other countries and internal migration. From household heads and spouses, we compile detailed year-by-year labor, migration, property, and family formation histories. In addition, we administer a detailed series of questions about their last trip to the U.S., focusing on employment, earnings, and use of U.S. social services. In recent years, questions on health, violence, food insecurity and weather-related crop loses have been added.
-
-
-
-In prior years of the Mexican Migration Project, interviewers traveled to destination areas in the United States to administer identical questionnaires to migrants from the same communities sampled in Mexico who had settled north of the border. With the increasing geographic dispersion of migration to the United States, even among migrants from the same community, the MMP now uses referrals made by respondents in the origin communities to recruit immigrants in the United States for telephone interviews. The interviews are conducted by the same interviewers who conducted interviews in the origin communities.  These telephone interviews are combined with those conducted in Mexico and Central American to generate representative binational samples.
+\    
 
 ## Selecting Communities
 
