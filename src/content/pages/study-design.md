@@ -1,28 +1,15 @@
 ---
 title: Study Design
 ---
-
 ## Design
 
-The data contained in the various MMP databases have been gathered using an approach that borrows from anthropological
-and sociological research methods. In particular, our study employs the Ethnosurvey approach, which combines the
-techniques of ethnographic fieldwork and representative survey sampling to gather qualitative as well as quantitative
-data. The two kinds of empirical data are compared throughout the study to yield results of greater validity than either
-ethnography or a sample survey could provide alone. This method was designed to provide a picture of Mexican-US
-migration that is historically grounded, ethnographically interpretable, quantitatively accurate, and rooted in
-receiving as well as sending areas.
 
-Each year, during the winter months (when seasonal migrants tend to return home), the MMP randomly samples households in
-communities located throughout Mexico. After gathering social, demographic, and economic information on the household
-and its members, interviewers collect basic immigration information on each person's first and last trip to the United
-States. From household heads and spouses, we compile detailed year-by-year labor history and migration information; in
-addition, for household head migrants, we administer a detailed series of questions about their last trip to the U.S.,
-focusing on employment, earnings, and use of U.S. social services.
+The data contained in the various MMP databases have been gathered using an approach that borrows from anthropological and sociological research methods. In particular, our study employs the Ethnosurvey approach, which combines the techniques of ethnographic fieldwork and representative survey sampling to gather qualitative as well as quantitative data. The two kinds of empirical data are compared throughout the study to yield results of greater validity than either ethnography or a sample survey could provide alone. This method was
+designed to provide a picture of Mexican-, and more recently, Central American-US migration that is historically grounded, ethnographically interpretable, quantitatively accurate, and rooted in receiving as well as sending areas.
 
-Following completion of the Mexican surveys, interviewers travel to destination areas in the United States to administer
-identical questionnaires to migrants from the same communities sampled in Mexico who have settled north of the border
-and no longer return home. These surveys are combined with those conducted in Mexico to generate a representative
-binational sample.
+Each year, the MMP randomly samples households in communities located throughout Mexico, El Salvador, Guatemala and Honduras. After gathering social, demographic, and economic information on the household and its members, interviewers collect basic immigration information on each person's first and last trip to the United States, as well information on migration to other countries and internal migration. From household heads and spouses, we compile detailed year-by-year labor, migration, property, and family formation histories. In addition, we administer a detailed series of questions about their last trip to the U.S., focusing on employment, earnings, and use of U.S. social services. In recent years, questions on health, violence, food insecurity and weather-related crop loses have been added.
+
+In prior years of the Mexican Migration Project, interviewers traveled to destination areas in the United States to administer identical questionnaires to migrants from the same communities sampled in Mexico who had settled north of the border. With the increasing geographic dispersion of migration to the United States, even among migrants from the same community, the MMP now uses referrals made by respondents in the origin communities to recruit immigrants in the United States for telephone interviews. The interviews are conducted by the same interviewers who conducted interviews in the origin communities.  These telephone interviews are combined with those conducted in Mexico and Central American to generate representative binational samples.
 
 ## Selecting Communities
 
@@ -42,10 +29,10 @@ to survey only communities with high rates of out-migration. Investigators simpl
 migration from the community in question before proceeding. Then they select four specific locations to represent each
 of four levels of urbanization:
 
-- Ranchos: fewer than 2,500 inhabitants
-- Pueblos (Towns): 2,500 to 10,000 inhabitants
-- Mid-sized Cities: 10,000 to 100,000 inhabitants
-- Large City: usually a particular neighborhood within in a state's capital city
+* Ranchos: fewer than 2,500 inhabitants
+* Pueblos (Towns): 2,500 to 10,000 inhabitants
+* Mid-sized Cities: 10,000 to 100,000 inhabitants
+* Large City: usually a particular neighborhood within in a state's capital city
 
 In the pueblos and ranchos, investigators conduct a complete census of dwellings and undertake random selection from the
 resulting list. In mid-sized cities and urban metropolises, investigators generally chose a traditional,
