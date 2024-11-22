@@ -5,14 +5,12 @@ title: Study Design
 
 
 
-\    The data contained in the various MMP databases have been gathered using an approach that borrows from anthropological and sociological research methods. In particular, our study employs the Ethnosurvey approach, which combines the techniques of ethnographic fieldwork and representative survey sampling to gather qualitative as well as quantitative data. The two kinds of empirical data are compared throughout the study to yield results of greater validity than either ethnography or a sample survey could provide alone. This method was
+The data contained in the various MMP databases have been gathered using an approach that borrows from anthropological and sociological research methods. In particular, our study employs the Ethnosurvey approach, which combines the techniques of ethnographic fieldwork and representative survey sampling to gather qualitative as well as quantitative data. The two kinds of empirical data are compared throughout the study to yield results of greater validity than either ethnography or a sample survey could provide alone. This method was
 designed to provide a picture of Mexican-, and more recently, Central American-US migration that is historically grounded, ethnographically interpretable, quantitatively accurate, and rooted in receiving as well as sending areas.                                                                                  
 
-\    Each year, the MMP randomly samples households in communities located throughout Mexico, El Salvador, Guatemala and Honduras. After gathering social, demographic, and economic information on the household and its members, interviewers collect basic immigration information on each person's first and last trip to the United States, as well information on migration to other countries and internal migration. From household heads and spouses, we compile detailed year-by-year labor, migration, property, and family formation histories. In addition, we administer a detailed series of questions about their last trip to the U.S., focusing on employment, earnings, and use of U.S. social services. In recent years, questions on health, violence, food insecurity and weather-related crop loses have been added.
+Each year, the MMP randomly samples households in communities located throughout Mexico, El Salvador, Guatemala and Honduras. After gathering social, demographic, and economic information on the household and its members, interviewers collect basic immigration information on each person's first and last trip to the United States, as well information on migration to other countries and internal migration. From household heads and spouses, we compile detailed year-by-year labor, migration, property, and family formation histories. In addition, we administer a detailed series of questions about their last trip to the U.S., focusing on employment, earnings, and use of U.S. social services. In recent years, questions on health, violence, food insecurity and weather-related crop loses have been added.
 
-\    In prior years of the Mexican Migration Project, interviewers traveled to destination areas in the United States to administer identical questionnaires to migrants from the same communities sampled in Mexico who had settled north of the border. With the increasing geographic dispersion of migration to the United States, even among migrants from the same community, the MMP now uses referrals made by respondents in the origin communities to recruit immigrants in the United States for telephone interviews. The interviews are conducted by the same interviewers who conducted interviews in the origin communities.  These telephone interviews are combined with those conducted in Mexico and Central American to generate representative binational samples.
-
-\    
+In prior years of the Mexican Migration Project, interviewers traveled to destination areas in the United States to administer identical questionnaires to migrants from the same communities sampled in Mexico who had settled north of the border. With the increasing geographic dispersion of migration to the United States, even among migrants from the same community, the MMP now uses referrals made by respondents in the origin communities to recruit immigrants in the United States for telephone interviews. The interviews are conducted by the same interviewers who conducted interviews in the origin communities.  These telephone interviews are combined with those conducted in Mexico and Central American to generate representative binational samples.                                                                                                                                                                                       
 
 ## Selecting Communities
 
@@ -20,93 +18,51 @@ designed to provide a picture of Mexican-, and more recently, Central American-U
 
 The process of selecting communities for the MMP has traditionally relied on anthropological methods. Communities were chosen after a personal reconnaissance of the geographic area to be studied by the principal investigators. Because the project initially focused on Western Mexico, the traditional heartland for migration to the United States, practically all of the earliest communities had significant indices of out-migration, which could easily be detected using field interviews and simple observations of the frequency of new homes, foreign license plates, currency exchanges, and international courier services. With time, the MMP expanded into more regions of Mexico with survey locations including small rural communities, towns, and neighborhoods in regional cities and major metropolitan areas. The locations were selected to represent not only a range of levels of urbanization and regions, but also development levels and prevalences of U.S. migration.
 
-
-
 The Mesoamerican Migration Project has a particular focus on the potential impacts of violence, and weather events and climate change, on U.S. migration. The criteria for selecting locations in Mexico and Central America for inclusion in the study also includes the risk of drought and the level of violence at the municipal level. The overall objective is to build a sample of locations that is generally representative of the respective national populations, and to allow comparisons of migration behavior across communities of different sizes, levels of development, exposure to climate change, and violence.
-
-
 
 Once a location is selected, senior members of the MMP team visit the location and meet with local authorities and community leaders to secure permission and support to conduct field work. Field work in a location begins with the construction of a sampling frame. In rural communities and towns, the sampling frame includes the entire community. In cities, a limited area corresponding to one or more neighborhoods is included (with a least 1,200 dwellings). Construction of the sampling frame is based on a street-by-street enumeration of all residential dwellings. In towns and urban areas random samples of typically 200 dwellings are drawn. In rural municipalities, more than one rural community may be enumerated and sampled in addition to the primary town to provide a sample that is broadly representative of the municipality.
 
-
-
 The methodology of the MMP yields results with a high degree of representativeness at the community level, and in some of the smaller towns and rural communities, investigators have been able to survey every household in the community. Given that the sample is not targeted to migrants per se, but surveys the community as a whole, the project needs a fairly large sample size to generate a significant number of migrants. Traditional methods of cluster sampling generally survey small numbers of respondents across a large number of areas, but this tends to yield small numbers of migrants and does not allow generalizations to be made at the community level. For example, rather than interviewing 20 households in five communities we interview the entire community or 100 or more households in one community, thereby enabling us to generalize about migratory processes at the community level. 
-
-
 
 Over the last twenty years we have been able to draw upon an index of U.S. migration developed for municipalities in Mexico’s National Population Council (CONAPO) based on the population censuses. This index provides reliable information about the level of U.S. migration prevailing at the municipal level and is particularly useful in identifying new communities of origin for migrants in new sending states, where little information has been available. In Central America, we rely on the knowledge of investigators in each country and survey and census data to categorize municipalities by levels of U.S. migration, climatic risk factors, and violence. Because one of our aims is to identify the influence of contextual factors on migration behavior, locations are selected at a range of U.S. migration levels. 
 
-
-
-
 ## Ethnosurvey
 
-The Ethnosurvey is eclectic and draws on methods and approaches well-known in sociology, anthropology, psychology, and
-education. Its contribution and complexity lies in the way all these methods are combined within a single study. The
-main idea for the Ethnosurvey is “to complement qualitative and quantitative procedures, so one's weakenesses become the
-other's strength, yielding a body of data with greater reliability and more internal validity than is possible to
-achieve using either method alone.” (Massey 1987).
 
-The Ethnosurvey contains a series of tables that are organized around a particular topic, giving coherence to the
-“conversation”. It follows a semi structured format to generate an interview schedule that is flexible, unobtrusive and
-non-threatening. It requires that identical information be obtained for each person, but questions, wording and ordering
-are not fixed. The precise phrasing and timing of each query is left to the judgment of the interviewer, depending on
-circumstances.
+The ethnosurvey is eclectic and draws on methods and approaches well-known in sociology, anthropology, psychology, and education. Its contribution and complexity lies in the way all these methods are combined within a single study. The main idea for the ethnosurvey is “to complement qualitative and quantitative procedures, so one's weakenesses become the other's strength, yielding a body of data with greater reliability and more internal validity than is possible to achieve using either method alone.” (Massey 1987).
 
-In addition, the Ethnosurvey is explicitly designed to provide quantitative data for multi-level analysis by compiling
-data at the individual, household, and community levels. Detailed community-level data are compiled at the time of the
-survey by the fieldwork supervisor; these data are of great help to interpret the socioeconomic context within which
-individuals and households interact (Massey 1987). This small questionnaire is referred to as the Community Data
-Inventory.
+The ethnosurvey contains a series of tables that are organized around a particular topic, giving coherence to the “conversation”. It follows a semi-structured format to generate an interview schedule that is flexible, unobtrusive and non-threatening. It requires that identical information be obtained for each person, but questions, wording and ordering are not fixed. The precise phrasing and timing of each query is left to the judgment of the interviewer, depending on circumstances. Because the information collected by the ethnosurvey relates to events, experiences, background characteristics, and assets and not opinions or attitudes, the exact wording of questions is not important for reliability and validity. The ways and sequences by which respondents recall past experiences and key life course events varies. The ethnosurvey provides the interviewer with the flexibility needed to tailor the interview to each respondent.
+
+In addition, the ethnosurvey is explicitly designed to provide quantitative data for multi-level analysis by compiling data at the individual, household, and community levels. Detailed community-level data are compiled at the time of the survey by the fieldwork supervisor; these data are of great help to interpret the socioeconomic context within which individuals and households interact (Massey 1987). This small questionnaire is referred to as the Community Data Inventory. The community-level data are supplemented with municipal-level data compiled
+from national population and economic censuses and other national statistical data bases.
 
 ## Interview Process
 
-The questionnaires are applied in three phases. In the first phase, basic social and demographic data are collected from
-all members of the household. The interview begins by identifying the household head and systematically enumerating the
-spouse and children, beginning with the oldest. All children of the head are listed on the questionnaire whether or not
-they live at home, but if a son or daughter is a member of another household, this fact is recorded. A child is
-considered to be living in a separate household if he or she is married, maintains a separate house or kitchen, and
-organizes expenses separately. After listing the head, spouse, and children, other household members are identified and
-their relationship to the head clarified.
+
+The ethnosurveys are applied in three phases. In the first phase, basic social and demographic data are collected from all members of the household. The interview begins by identifying the household head and systematically enumerating the spouse and children, beginning with the oldest. All children of the head and the spouse of the head are listed on the questionnaire whether or not they live at home, but if a son or daughter is a member of another household, this fact is recorded. A child is considered to be living in a separate household if he or she is married, maintains a separate house or kitchen, and organizes expenses separately. After listing the head, spouse, and children, other household members are identified and their relationship to the head clarified. Starting in 2022, the same data is collected for the household head and the spouse of the head. In the case of households headed by a male and female couple in a formal or consensual union, the male identified as the household head in the ethnosurvey and the female as the spouse. This designation simplifies the recording of data in the ethnosurvey and has no impact on what data is collected.  
 
 ### Phase 1
 
-A particularly important task in the first phase of the questionnaire is the identification of people with prior migrant
-experience in either the United States or Mexico. For those individuals with migrant experience the interviewer records
-the total number of U.S. trips, as well as information about the first and most recent U.S. trips, including the year,
-duration, destination, U.S. occupation, legal status, and hourly wage. This exercise is then repeated for first and most
-recent migrations within Mexico.
+A particularly important task in the first phase of the questionnaire is the identification of people with prior migrant experience in the United States, other counties, or internally. For those individuals with U.S. migrant
+experience the interviewer records the total number of U.S. trips, as well as information about the first and most recent U.S. trips, including the year, duration, destination, U.S. occupation, legal status, and hourly wage. This
+exercise is then repeated for first and most recent migrations to any other countries, and internal migration.
 
 ### Phase 2
 
-The second phase of the ethnosurvey questionnaire compiles a year-by-year life history for all household heads,
-including a childbearing history, a property history, a housing history, a business history, and a labor history. The
-goal of this phase is to capture occupational mobility, health status, migration history, and family formation.
+The second phase of the ethnosurvey questionnaire compiles a year-by-year life history for all household heads, and staring in 1991 spouses as well, including a childbearing history, a property history, a housing history, a business history, and a labor history. The goal of this phase is to capture occupational mobility, health status, migration history, and family formation. 
 
 ### Phase 3
 
-The third and final phase of the questionnaire gathers information about the household head's experiences on his or her
-most recent trip to the United States, including the mode of border-crossing, the kind and number of accompanying
-relatives, the kind and number of relatives already present in the United States, the number of social ties that had
-been formed with U.S. citizens, English language ability, job characteristics, and use of U.S. social services.
+
 
 ## Data Coding/Weights
 
 ### Data Coding and File Construction
 
-After the ethnosurvey questionnaires are completed and revised, data are entered in Mexico. The entry programs perform
-initial screening, range checks, and simple tests for logical consistency. The preliminary files are then transferred to
-Princeton University, where additional data cleaning is performed, numeric codes are assigned to occupations and places,
-and the final data sets are assembled into six primary data files, each providing a unique perspective of Mexican
-migrants, their families, and their experiences. SIX primary files have been created, each corresponding to a different
-unit of analysis: PERS, MIG, MIGOTHER, HOUSE, LIFE and SPOUSE. Data at the community level have been compiled in the
-file: COMMUN.
+After the ethnosurvey questionnaires are completed and revised, data are entered in Mexico. The entry programs perform initial screening, range checks, and simple tests for logical consistency. The preliminary files are then transferred to Brown University, where additional data cleaning is performed, numeric codes are assigned to occupations and places, and the final data sets are assembled into six primary data files, each providing a unique perspective of Mexican and Central American migrants and non-migrants, their families, and their experiences. SIX primary files have been created, each corresponding to a different unit of analysis: PERS, MIG, MIGOTHER, HOUSE, LIFE and SPOUSE. Data at the community level have been compiled in the file: COMMUN.
 
 ### Weights
 
-The MMP database provides community- and sample-specific weights. For each community, you will see a single weight for
-all the households in the home country sample and another weight for all the households in the US sample.
+The MMP database provides community- and sample-specific weights. For each community, there is a single weight for all households in the home country sample and another weight for all households in the US sample.
 
-When working with pooled data from multiple communities, these weights give you the option to adjust your estimates in
-order to take into account the relative sizes of all the sampling frames. Whether you will need to weight your estimates
-or not will depend on what your goal is.
+When working with pooled data from multiple communities, these weights provide the option to adjust estimates to account for the relative sizes of the sampling frames. The decision to use the weights should be based on the goal of the analysis.
