@@ -53,7 +53,7 @@ The second phase of the ethnosurvey questionnaire compiles a year-by-year life h
 
 ### Phase 3
 
-
+The third and final phase of the questionnaire gathers information about the household head's experiences on his or her most recent trip to the United States, including the mode of border-crossing, the kind and number of accompanying relatives, the kind and number of relatives already present in the United States, the number of social ties that had been formed with U.S. citizens, English language ability, job characteristics, and use of U.S. social services. Starting 2017 information was also gathered on crime and violence, and in 2022 on food insecurity.
 
 ## Data Coding/Weights
 
