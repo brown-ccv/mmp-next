@@ -161,6 +161,7 @@
 
 .body {
   @apply grid;
+  @apply min-h-screen;
   @apply bg-neutral-50;
   grid-template-columns:
       1fr
