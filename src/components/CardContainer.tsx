@@ -19,7 +19,7 @@ export const CardContainer: React.FC<ContainerProps> = ({color, title, people
           {
             people.map((person: PeopleData, i: number) => {
               return (
-                  <>
+                  <div key={person.link}>
                     <Card
                         position={i}
                         title={person.title}
@@ -29,7 +29,7 @@ export const CardContainer: React.FC<ContainerProps> = ({color, title, people
                         institution={person.institution}
                         bio={person.bio}
                     />
-                  </>
+                  </div>
               )
             })
           }
