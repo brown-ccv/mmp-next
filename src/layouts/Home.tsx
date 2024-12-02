@@ -12,14 +12,7 @@ interface HomeLayoutProps {
 
 export const Home: React.FC<HomeLayoutProps> = ({title, description, lede, children}) => {
   return (
-
-      <html lang="en">
-      <Head>
-          <title>{title}</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-
-      <body className="body">
+      <div className="body">
       <Header/>
 
       <main>
@@ -36,8 +29,7 @@ export const Home: React.FC<HomeLayoutProps> = ({title, description, lede, child
         </article>
       </main>
       <Footer/>
-      </body>
-      </html>
+      </div>
 
   )
 }

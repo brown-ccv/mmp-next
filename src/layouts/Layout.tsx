@@ -13,13 +13,7 @@ interface LayoutProps {
 export const Layout: React.FC<LayoutProps> = ({title, description, lede, children}) => {
   return (
 
-      <html lang="en">
-      <Head>
-          <title>{title}</title>
-          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-
-      <body className="body">
+      <div className="body">
       <div className="flex flex-col h-full">
         <Header/>
         <main className="grow">
@@ -35,8 +29,7 @@ export const Layout: React.FC<LayoutProps> = ({title, description, lede, childre
         </main>
         <Footer/>
       </div>
-      </body>
-      </html>
+      </div>
 
   )
 }
