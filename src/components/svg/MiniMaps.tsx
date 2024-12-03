@@ -20,28 +20,19 @@ const MiniMapSvg = () => {
         mask="url(#path-1-inside-1_65_1451)"
       />
       <HoverCardItem
-        title={"MEXICO"}
-        image={"/images/udg.gif"}
-        alt={"Universidad de Guadalajara logo"}
+        title={"Mexico"}
         content={
           <>
-            <p>Depto. de Estudios Sobre Movimientos Sociales (DESMOS)</p>
-            <p>Universidad de Guadalajara</p>
-            <p>Av. Maestros y Alcalde, Puerta 1</p>
-            <p>Guadalajara, CP 44269</p>
-            <p>Jalisco, México</p>
+            <p>Centro de Estudios Demográficos, Urbanos y Ambientales (CEDUA)</p>
+            <p>El Colegio de México</p>
           </>
         }
         footer={
           <>
             <div className="flex flex-row items-center gap-3.5">
               <div className="flex flex-row items-center gap-2">
-                <h3 className="font-semibold">Tel: </h3>
-                <p>(52.33) 38.19.33.27</p>
-              </div>
-              <div className="flex flex-row items-center gap-2">
-                <h3 className="font-semibold">Fax: </h3>
-                <p>(52.33) 38.19.33.28</p>
+                <h4 className="font-semibold">Email: </h4>
+                <a href={'mailto:mmp-lamp@colmex.mx'}>mmp-lamp@colmex.mx</a>
               </div>
             </div>
           </>
@@ -62,9 +53,18 @@ const MiniMapSvg = () => {
         title={"United States"}
         content={
           <>
-            <p>Office of Population Research</p>
-            <p>Princeton University</p>
-            <p>Princeton, NJ 08544</p>
+            <p>Population Studies and Training Center (PSTC)</p>
+            <p>Brown University</p>
+          </>
+        }
+        footer={
+          <>
+            <div className="flex flex-row items-center gap-3.5">
+              <div className="flex flex-row items-center gap-2">
+                <h4 className="font-semibold">Email: </h4>
+                <a href={'mailto:mmp_lamp@brown.edu'}>mmp_lamp@brown.edu</a>
+              </div>
+            </div>
           </>
         }
         trigger={<circle cx="524" cy="58" r="16" fill="#317A7C" />}
