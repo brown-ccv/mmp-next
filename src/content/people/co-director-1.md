@@ -1,5 +1,8 @@
 ---
-org: Princeton University
+type: Advisors
+name: Douglas S. Massey
+title: Co-Founder
+avatar: /public/images/douglasmassey.jpeg
 bio: "Doug Massey is Henry G. Bryant Professor of Sociology and Public Affairs,
   with a joint appointment in The Princeton School of Public and International
   Affairs. A member of the National Academy of Sciences, the American Academy of
@@ -12,10 +15,7 @@ bio: "Doug Massey is Henry G. Bryant Professor of Sociology and Public Affairs,
   recently, of Brokered Boundaries: Constructing Immigrant Identity in
   Anti-Immigrant Times, coauthored with Magaly Sanchez and Published by the
   Russell Sage Foundation."
-type: Leadership
-name: Douglas S. Massey
-title: Co-Founder
-avatar: /public/images/douglasmassey.jpeg
+org: Princeton University
 startDate: "2024"
 endDate: "2024"
 institution: Princeton University
