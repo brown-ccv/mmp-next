@@ -14,7 +14,7 @@ bio: "Antonio Yúnez-Naude. PhD in Economics, the London School of Economics and
   Jorge Mora-Rivera: Economic Development, Agriculture and Climate Change. World
   Scientific Lecture Notes in Economics and Policy: Volume 15. World Scientific
   Publishers. "
-org: Center for Economic Studies (CEE), El Colegio de México (COLMEX)
+org: El Colegio de México (COLMEX)
 startDate: "2024"
 endDate: "2024"
 ---
