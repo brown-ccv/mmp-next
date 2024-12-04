@@ -3,7 +3,7 @@ import Image from "next/image";
 
 interface CardProps {
   position: number
-  image: string
+  image?: string
   title: string
   name: string
   link: string
@@ -12,7 +12,10 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({ link, image, title, name, institution, bio }) => {
-  const imageURL = image.replace("/public", "")
+  let imageURL = ""
+  if (image) {
+    imageURL = image.replace("/public", "")
+  }
   return (
     <div className="md:flex-row md:gap-8 flex flex-col gap-4">
       {image && (
@@ -38,7 +41,8 @@ const Card: React.FC<CardProps> = ({ link, image, title, name, institution, bio 
           <p className="text-neutral-700 italic">{title}</p>
           <p className="small">{institution}</p>
         </div>
-        <p>{bio}</p>
+        {bio && <p>{bio}</p>}
+
       </div>
     </div>
   )

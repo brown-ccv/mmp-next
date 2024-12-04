@@ -6,7 +6,7 @@ export async function getStaticProps() {
     const people = getPeopleData();
     return {
         props: {
-            people,
+            people: JSON.parse(JSON.stringify(people)),
         },
     };
 }
