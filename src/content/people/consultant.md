@@ -16,8 +16,7 @@ bio: Fernando Riosmena is Professor of Sociology and Demography and Director of
   experiences in sending areas and destinations to assess the likely impacts of
   migration, the immigrant adaptation process, and the processes driving
   race-ethnic disparities.
-org: Department of Sociology and Demography, and Institute for Health
-  Disparities Research, University of Texas – San Antonio
+org: University of Texas – San Antonio
 startDate: "2024"
 endDate: "2024"
 ---
