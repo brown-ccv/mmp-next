@@ -46,6 +46,9 @@ collections:
         required: false
         label: Photo
         widget: image
+      - name: bio
+        label: Biography
+        widget: text
       - name: org
         label: Company/University
         widget: string
