@@ -14,7 +14,7 @@ bio: "Filiz Garip is Professor of Sociology and International Affairs at
   author of On the Move: Changing Mechanisms of Mexico-U.S. Migration (Princeton
   University Press, 2016). For more information, please visit her personal
   website: www.filizgarip.com."
-org: Department of Sociology, Princeton University
+org: Princeton University
 startDate: "2024"
 endDate: "2024"
 ---
