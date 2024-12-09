@@ -131,10 +131,6 @@
 }
 
 @layer components {
-  .readable {
-    width: min(75ch, 100%);
-  }
-
   .switchSlider {
     @apply w-5 h-5;
     @apply bg-neutral-50;
@@ -148,6 +144,14 @@
     transform: translateX(21px);
   }
 
+  .readable {
+    width: min(75ch, 100%);
+  }
+
+  .readable p {
+    @apply py-2;
+  }
+
   .readable ul {
     @apply list-disc;
     @apply pl-14;
@@ -156,6 +160,14 @@
 
   .readable li {
     @apply m-2;
+  }
+
+  .readable h2 {
+    @apply pb-1;
+  }
+
+  .readable h3 {
+    @apply font-semibold;
   }
 }
 
