@@ -11,6 +11,9 @@ export interface News extends NewsData {
 export const News: React.FC<News> = ({title, description, heroImage, pubDate, updatedDate, children}) => {
     const publishedDate = new Date(pubDate)
     const updatedOnDate = updatedDate ? new Date(updatedDate) : undefined
+    if (heroImage) {
+        heroImage = heroImage.replace("/public", "")
+    }
   return (
       <Layout title={title} description={description}>
         <article className="space-y-4">

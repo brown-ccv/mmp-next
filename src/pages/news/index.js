@@ -20,22 +20,27 @@ export default function NewsPage({ news }) {
       <Layout title="News" description="Recent news about MMP">
         <ul className="flex flex-col items-start gap-6">
           {
-            posts.map((post) => (
-                <li key={post.slug} className="flex gap-10">
-                  <p className="flex-none w-24 md:w-40 text-sm text-neutral-500">
-                    <FormattedDate date={new Date(post.pubDate)} />
-                  </p>
-                  <a className="relative hidden w-80 h-72 flex-none md:block" href={`/news/${post.slug}/`}>
-                    <img className="object-cover h-full w-full" src={post.heroImage} alt="" />
-                  </a>
-                  <div className="grow space-y-1">
-                    <a href={`/news/${post.slug}/`}>
-                      <h3 className="font-medium underline">{post.title}</h3>
-                    </a>
-                    <p>{post.description}</p>
-                  </div>
-                </li>
-            ))
+            posts.map((post) => {
+                if (post.heroImage) {
+                    post.heroImage = post.heroImage.replace("/public", "")
+                }
+                return(
+                    <li key={post.slug} className="flex gap-10">
+                        <p className="flex-none w-24 md:w-40 text-sm text-neutral-500">
+                            <FormattedDate date={new Date(post.pubDate)}/>
+                        </p>
+                        <a className="relative hidden w-80 h-72 flex-none md:block" href={`/news/${post.slug}/`}>
+                            <img className="object-cover h-full w-full" src={post.heroImage} alt=""/>
+                        </a>
+                        <div className="grow space-y-1">
+                            <a href={`/news/${post.slug}/`}>
+                                <h3 className="font-medium underline">{post.title}</h3>
+                            </a>
+                            <p>{post.description}</p>
+                        </div>
+                    </li>
+                )
+            })
           }
         </ul>
       </Layout>
