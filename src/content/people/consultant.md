@@ -2,7 +2,7 @@
 type: Advisors
 name: Fernando Riosmena
 title: Consultant
-avatar: /public/images/riosmena-fernando.jpg
+avatar: /public/images/riosmena-fernando-cropped.jpg
 bio: Fernando Riosmena is Professor of Sociology and Demography and Director of
   the Institute for Health Disparities Research at the University of Texas – San
   Antonio. His research interests span two main areas. First, Riosmena’s work
