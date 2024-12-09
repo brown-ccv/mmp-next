@@ -2,7 +2,7 @@
 type: Supporting Staff
 name: Jenny Izbeth Flores Ortega
 title: Project Coordinator
-avatar: /public/images/jenny-flores.jpg
+avatar: /public/images/jenny-flores-cropped.jpg
 bio: Jenny Izbeth Flores Ortega obtained her doctorate in Public Policy from the
   Center for Economic Research and Teaching (CIDE) in 2016, and her master's
   degree in Environmental Administration from El Colegio de la Frontera Norte in
