@@ -2,7 +2,7 @@
 type: Advisors
 name: Antonio Yúnez-Naude
 title: Consultant
-avatar: /public/images/foto-a-yunez-naude.jpg
+avatar: /public/images/foto-a-yunez-naude-cropped.jpg
 bio: "Antonio Yúnez-Naude received his PhD in Economics from the London School
   of Economics and Political Science, University of London. From 1976 to 2024 he
   was professor at the Center for Economic Studies (CEE), El Colegio de México
