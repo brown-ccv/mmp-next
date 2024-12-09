@@ -13,7 +13,7 @@ export default class HomePage extends Component {
         <Home
             title="MMP"
             description="Mesoamerican Migration Project"
-            lede="Furthering understanding of Mexican migration to the United States"
+            lede="Furthering understanding of Mexican and Central American migration to the United States"
         >
           <div className="hidden xl:block absolute top-24 left-12">
             <FootPrint />

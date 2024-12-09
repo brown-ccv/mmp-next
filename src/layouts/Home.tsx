@@ -18,8 +18,9 @@ export const Home: React.FC<HomeLayoutProps> = ({title, description, lede, child
       <main>
         <article>
           <div>
-            <div className="flex flex-col gap-3 pb-48 md:w-1/2">
+            <div className="flex flex-col gap-3 pb-48 md:w-2/3">
               <h1>{title}</h1>
+                <h2>{description}</h2>
               <h3>{lede}</h3>
             </div>
             <hr className="border-none h-0.5 bg-neutral-900 mb-16"/>
