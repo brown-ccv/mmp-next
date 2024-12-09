@@ -35,7 +35,7 @@ export const DataForm = () => {
         name="name"
         control={control}
         render={() => (
-          <Input label="Name" placeholder="Heather Yu" {...register("name")} required />
+          <Input label="Name" placeholder="" {...register("name")} required />
         )}
       />
       <Controller
@@ -44,7 +44,7 @@ export const DataForm = () => {
         render={() => (
           <Input
             label="Institution"
-            placeholder="Brown University"
+            placeholder=""
             {...register("institution")}
             required
           />
@@ -56,7 +56,7 @@ export const DataForm = () => {
         render={() => (
           <Input
             label="Email"
-            placeholder="heather@example.com"
+            placeholder=""
             match="typeMismatch"
             errorMessage="Please provide a valid email"
             {...register("email")}
@@ -70,7 +70,8 @@ export const DataForm = () => {
         render={() => (
           <Textarea
             label="Description"
-            placeholder="Why you need this file..."
+            placeholder=""
+            sublabel="How will the data be used?"
             {...register("description")}
             required
           />

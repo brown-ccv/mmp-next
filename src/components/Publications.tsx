@@ -89,7 +89,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications }) => {
             label="Search for a publication"
             name="pubQuery"
             icon={<MagnifyingGlassIcon className="w-full h-full" />}
-            placeholder="Durand, Jorge..."
+            placeholder=""
             value={searchInput}
             onChange={handleChange}
             className="md:min-w-96"
