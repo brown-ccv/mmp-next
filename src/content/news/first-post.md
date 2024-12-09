@@ -1,8 +1,13 @@
 ---
-title: "First post"
-description: "Lorem ipsum dolor sit amet"
-pubDate: "Jul 02 2022"
-heroImage: "/blog-placeholder-3.jpg"
+pubDate: 12.09.2024
+heroImage: /public/images/alap-dec-2024.png
+title: MMP-LAMP featured at Congress of the Latin American Population
+  Association (ALAP), December 9-10, 2024
+description: 'The MMP-LAMP study design and data bases were featured in the
+  December 9-10, 2024 institute on "The Study of Recent Migration in Latin
+  America: New Sources of Information and the Use of the Ethnoquestionnaire for
+  the Analysis of Migation Histories" at the Congress of the Latin American
+  Population Association (ALAP) held in Bogota, Colombia.'
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
