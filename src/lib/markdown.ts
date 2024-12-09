@@ -12,7 +12,7 @@ export interface PeopleData {
     name: string
     link: string
     avatar: string
-    institution: string
+    org: string
     bio: string
 }
 

@@ -26,7 +26,7 @@ export const CardContainer: React.FC<ContainerProps> = ({color, title, people
                         name={person.name}
                         link={person.link}
                         image={person.avatar}
-                        institution={person.institution}
+                        institution={person.org}
                         bio={person.bio}
                     />
                   </div>
