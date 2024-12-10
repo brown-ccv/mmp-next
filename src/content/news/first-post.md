@@ -1,5 +1,5 @@
 ---
-pubDate: 12.09.2024
+pubDate: 12.10.2024
 heroImage: /public/images/alap-dec-2024.png
 title: MMP-LAMP featured at Congress of the Latin American Population
   Association (ALAP), December 9-10, 2024
