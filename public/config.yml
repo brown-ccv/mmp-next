@@ -93,7 +93,7 @@ collections:
       - name: pubDate
         label: Publish Date
         widget: datetime
-        date_format: MM.YYYY
+        date_format: YYYY
         time_format: false
       - name: citation
         label: Citation

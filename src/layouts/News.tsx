@@ -24,15 +24,6 @@ export const News: React.FC<News> = ({title, description, heroImage, pubDate, up
                   </div>
               )
           }
-          <FormattedDate date={publishedDate} />
-          {
-              updatedOnDate && (
-                  <div className="last-updated-on">
-                    Last updated on
-                    <FormattedDate date={updatedOnDate} />
-                  </div>
-              )
-          }
           <div className="py-3 space-y-4">
             {children}
           </div>
