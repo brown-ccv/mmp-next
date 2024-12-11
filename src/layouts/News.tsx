@@ -24,7 +24,7 @@ export const News: React.FC<News> = ({title, description, heroImage, pubDate, up
                   </div>
               )
           }
-          <div className="py-3 space-y-4">
+          <div className="py-3 readable space-y-4">
             {children}
           </div>
         </article>
