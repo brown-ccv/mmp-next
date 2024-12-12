@@ -9,7 +9,7 @@ description: 'The MMP-LAMP study design and data bases were featured in the
   the Analysis of Migation Histories" at the Congress of the Latin American
   Population Association (ALAP) held in Bogota, Colombia.'
 ---
-MMP at ALAP 2024
+#### MMP at ALAP 2024
 
 Silvia Giorguli and Jéssica Nájera, and data coordinator Adela Angoa led the
 two day workshop that included over 25 participants from across Latin America.
