@@ -101,6 +101,7 @@ collections:
       - name: feature
         label: Featured Publication
         widget: boolean
+        required: false
       - name: image
         required: false
         label: Image
