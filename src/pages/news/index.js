@@ -26,9 +26,6 @@ export default function NewsPage({ news }) {
                 }
                 return(
                     <li key={post.slug} className="flex gap-10">
-                        <p className="flex-none w-24 md:w-40 text-sm text-neutral-500">
-                            <FormattedDate date={new Date(post.pubDate)}/>
-                        </p>
                         <a className="relative hidden w-80 h-72 flex-none md:block" href={`/news/${post.slug}/`}>
                             <img className="object-cover h-full w-full" src={post.heroImage} alt=""/>
                         </a>
