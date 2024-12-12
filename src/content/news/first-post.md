@@ -11,8 +11,6 @@ description: 'The MMP-LAMP study design and data bases were featured in the
 ---
 #### MMP at ALAP 2024
 
-
-
 Silvia Giorguli and Jéssica Nájera, and data coordinator Adela Angoa led the
 two day workshop that included over 25 participants from across Latin America.
 The workshop covered the MMP study design, the Ethnosurvey of Recent
