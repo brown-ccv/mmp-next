@@ -15,7 +15,7 @@ export default class HomePage extends Component {
             description="Mesoamerican Migration Project"
             lede="Furthering understanding of Mexican and Central American migration to the United States"
         >
-          <div className="hidden xl:block absolute top-24 left-12">
+          <div className="hidden xl:block absolute top-24 left-4 2xl:left-12">
             <FootPrint />
           </div>
           <div className="space-y-24">
