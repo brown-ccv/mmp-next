@@ -1,6 +1,7 @@
 ---
-title: Appendix G
-description: Community Data Inventory (English)
-file: src/content/data/files/comquest1999_eng.pdf
 cat: Appendices
+title: Appendix G
+description: Community Questionnaire
+archivo: files/apendice-g-encuesta-de-comunidad-1999.pdf
+file: files/appendix-g-community-questionnaire-1999.pdf
 ---
