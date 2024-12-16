@@ -1,6 +1,7 @@
 ---
+cat: Appendices
 title: Appendix H
 description: MMP Weights
-file: src/content/data/files/mmp-and-lamp-weights-2012.pdf
-cat: Appendices
+archivo: files/apendice-h-ponderadores-mmp-y-lamp-2012-.pdf
+file: files/appendix-h-weights-mmp-and-lamp-weights-2012-.pdf
 ---
