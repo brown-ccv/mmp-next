@@ -2,8 +2,8 @@
 cat: Codebook
 title: COMMUN
 description: Community-level file that provides information at the time of the
-  survey and it is complemented with other information using the Mexican Census
+  survey and it is complemented with other information using the Mexican Census.
 codebookType: Community Level Supplementary
-archivo: ""
+archivo: files/commun-libro-de-códigos-mmp174-.pdf
 file: files/commun-codebook-mmp174-.pdf
 ---
