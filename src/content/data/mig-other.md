@@ -1,8 +1,8 @@
 ---
-title: MIG-OTHER
-description: cross-sectional file for another person within the household that
-  migrated to the U.S.
-file: src/content/data/files/migother-codebook-mmp174-.pdf
 cat: Codebook
+title: MIG-OTHER
+description: Codes for MIG-OTHER file.
 codebookType: MMP Core
+archivo: files/migother-libro-de-códigos-mmp174-.pdf
+file: src/content/data/files/migother-codebook-mmp174-.pdf
 ---
