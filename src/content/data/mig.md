@@ -1,7 +1,8 @@
 ---
-title: MIG
-description: cross-sectional file for each head of household that migrated to the U.S.
-file: src/content/data/files/codebook_mig.pdf
 cat: Codebook
+title: MIG
+description: Codes for MIG file.
 codebookType: MMP Core
+archivo: files/mig-libro-de-códigos-mmp174-.pdf
+file: files/mig-codebook-mmp174-.pdf
 ---
