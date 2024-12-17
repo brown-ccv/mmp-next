@@ -88,3 +88,27 @@ A longitudinal supplemental file containing information on the consumer price in
 After submitting this form, you will be redirected to the Brown Digital Repository to download the data.
 
 The data is currently available for SPSS and STATA file formats.
+
+## How to Cite the MMP and its Data
+
+#### THE MMP
+
+You may introduce the MMP using a quote such as the following: "The Mesoamerican Migration Project (MMP) is a collaborative research project based at the Brown University and El Colegio de Mexico".
+
+#### Please, cite the MMP website: mmp.research.brown.edu 
+
+Other references to the MMP or its survey methodology can be taken from our website at your discretion. For example, consider reporting that the survey questionnaire is available on this website. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the MMP website.
+
+#### THE MMP DATA BASE: MMP174
+
+We ask you to cite the current MMP database as "MMP174." For your reference, the number 174 stands for the number of communities included in the database. It does not represent the number of communities included in a user's own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as "MMP174."
+
+#### IF YOU ARE USING A PREVIOUS VERSION OF THE DATA BASE...
+
+MMP170 was released on February 2019. If you are using the previous version of the MMP Data Base, which contained 161 communities, we ask you to refer to it as "MMP161."
+
+#### IF YOU PUBLISH...
+
+Please let us know if you publish any research that uses MMP data by sending a message to mmp_lamp@brown.edu
+
+Thank you!
