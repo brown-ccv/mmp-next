@@ -1,7 +1,8 @@
 ---
-title: PRATIO
-description: contains the variables for annual migration prevalence ratio
-file: src/content/data/files/codebook_pratio.pdf
 cat: Codebook
+title: PRATIO
+description: Codes for annual migration prevalence ratio.
 codebookType: Community Level Supplementary
+archivo: files/pratio-libro-de-códigos-mmp174-.pdf
+file: files/pratio-codebook-mmp174-.pdf
 ---
