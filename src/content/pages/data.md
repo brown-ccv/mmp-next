@@ -41,7 +41,7 @@ An event-history file detailing the labor histories of each spouse of a househol
 
 ## Supplemental Files
 
-In addition to the six primary data files, supplementary data files have been created to provide researchers with additional information that may be useful in analyses of migration. For instance, for all the communities surveyed by the Mexican Migration Project, data at the community and municipio level have been collected and compiled in the file: COMMUN. Also, we have made available the annual prevalence ratios per community from 1940 up to the survey year under the file PRATIO.
+In addition to the six primary data files, supplementary data files have been created to provide researchers with additional information that may be useful in analyses of migration. For instance, for all the communities surveyed by the MMP, data at the community and municipio level have been collected and compiled in the file: COMMUN. Also, we have made available the annual prevalence ratios per community from 1940 up to the survey year under the file PRATIO.
 
 Other two supplementary data files - NATLYEAR & NATLHIST - are available to you as well. These two dataset contain several variables that have been used by MMP researchers in the past to assess various factors contributing to migration between Mexico and the U.S.
 
@@ -77,11 +77,11 @@ A longitudinal supplemental file containing selected indicators of Mexico-U.S. m
 
 ##### MSACROSS
 
-A cross-sectional supplemental file providing the cost of living index (1983) for each U.S. urban geographic code contained in the Mexican Migration Project files (as of June 1997), allowing researchers to adjust for differences in price levels across metropolitan areas at a particular point in time.
+A cross-sectional supplemental file providing the cost of living index (1983) for each U.S. urban geographic code contained in the MMP files (as of June 1997), allowing researchers to adjust for differences in price levels across metropolitan areas at a particular point in time.
 
 ##### MSAYEAR
 
-A longitudinal supplemental file containing information on the consumer price index (base 1982-84), unemployment rate, number of Mexicans who became legal residents as a percent of the total Mexican foreign-born population and total population size for all U.S. urban areas used in the Mexican Migration Project (as of June 1997), over selected years.
+A longitudinal supplemental file containing information on the consumer price index (base 1982-84), unemployment rate, number of Mexicans who became legal residents as a percent of the total Mexican foreign-born population and total population size for all U.S. urban areas used in the MMP (as of June 1997), over selected years.
 
 ## Accessing the Data
 
