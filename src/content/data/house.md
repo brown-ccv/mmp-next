@@ -1,8 +1,8 @@
 ---
 cat: Codebook
 title: HOUSE
-description: cross-sectional file that contains information at the
-  household-level for all households surveyed
+description: Codes for HOUSE file.
 codebookType: MMP Core
-file: src/content/data/files/codebook_house.pdf
+archivo: files/house-libro-de-códigos-mmp174-.pdf
+file: files/house-codebook-mmp174-.pdf
 ---
