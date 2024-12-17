@@ -1,7 +1,8 @@
 ---
-title: LIFE
-description: event-history file for each household head from the year of birth until the survey year
-file: src/content/data/files/codebook_life.pdf
-codebookType: MMP Core
 cat: Codebook
+title: LIFE
+description: Codes for LIFE file.
+codebookType: MMP Core
+archivo: files/life-libro-de-códigos-mmp174-.pdf
+file: files/life-codebook-mmp174-.pdf
 ---
