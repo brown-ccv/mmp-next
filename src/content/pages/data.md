@@ -95,7 +95,7 @@ The data is currently available for SPSS and STATA file formats.
 
 You may introduce the MMP using a quote such as the following: "The Mesoamerican Migration Project (MMP) is a collaborative research project based at the Brown University and El Colegio de Mexico".
 
-#### Please, cite the MMP website: mmp.research.brown.edu 
+#### Please, cite the MMP website: mmp.research.brown.edu
 
 Other references to the MMP or its survey methodology can be taken from our website at your discretion. For example, consider reporting that the survey questionnaire is available on this website. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the MMP website.
 
@@ -111,4 +111,6 @@ MMP170 was released on February 2019. If you are using the previous version of t
 
 Please let us know if you publish any research that uses MMP data by sending a message to mmp_lamp@brown.edu
 
-Thank you!
+## Updates and Changes to the Database
+
+MMP177 will be available in spring 2025!
