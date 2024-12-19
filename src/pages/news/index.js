@@ -12,7 +12,10 @@ export async function getStaticProps() {
 }
 
 export default function NewsPage({ news }) {
-    const posts = news.sort(
+    const posts = news.map((item) => ({
+        ...item,
+        pubDate: new Date(item.pubDate),
+    })).sort(
         (a, b) => b.pubDate.valueOf() - a.pubDate.valueOf()
     )
   return (
