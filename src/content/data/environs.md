@@ -7,6 +7,6 @@ description: >-
 
   Source: INEGI – Anuarios Estadisticos de los Estados, 2004
 codebookType: State Level Supplementary
-archivo: files/environs-códigos-mmp134-.pdf
-file: src/content/data/files/environs-codebook-mmp134-.pdf
+archivo: /public/images/environs-códigos-mmp134-.pdf
+file: /public/images/environs-codebook-mmp134-.pdf
 ---

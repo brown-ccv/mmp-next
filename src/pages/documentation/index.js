@@ -16,7 +16,12 @@ export async function getStaticProps() {
 
 export default function DocPage({allFiles}) {
     let { title } = attributes
-    const codebooks = allFiles.filter((file) => file.cat === "Codebook")
+    const files = allFiles.map(file => ({
+        ...file,
+        archivo: file.archivo?.replace("/public", ""),
+        file: file.file?.replace("/public", "")
+    }))
+    const codebooks = files.filter((file) => file.cat === "Codebook")
     const core = codebooks.filter((file) => file.codebookType === "MMP Core")
     const community = codebooks.filter(
         (file) => file.codebookType === "Community Level Supplementary"
@@ -25,8 +30,8 @@ export default function DocPage({allFiles}) {
     const national = codebooks.filter(
         (file) => file.codebookType === "National Level Supplementary"
     )
-    const appendix = allFiles.filter((file) => file.cat === "Appendices")
-    const questionnaire = allFiles.filter((file) => file.cat === "Questionnaire")
+    const appendix = files.filter((file) => file.cat === "Appendices")
+    const questionnaire = files.filter((file) => file.cat === "Questionnaire")
 
     return (
         <Layout title={title} description="About the Project">

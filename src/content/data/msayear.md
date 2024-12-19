@@ -7,5 +7,5 @@ description: |-
   of the total Mexican foreign-born population and total population size for
   all urban areas used in the Mexican Migration Project for selected years.
 version: "1999"
-file: files/msayearbook.pdf
+file: /public/images/msayearbook.pdf
 ---
