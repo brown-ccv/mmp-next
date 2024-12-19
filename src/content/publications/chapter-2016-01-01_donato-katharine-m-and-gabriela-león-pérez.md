@@ -9,5 +9,5 @@ citation: 'Donato, Katharine M. and Gabriela León-Pérez. (2016). "Educación,
   Capítulo 7, pp. 179-202. Colección: Ciencias Sociales - Sociología. Cali:
   Programa Editorial Universidad del Valle, 2016.'
 feature: false
-image: /pubs/migration-international.jpg
+image: /public/images/migration-international.jpg
 ---

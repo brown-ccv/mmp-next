@@ -36,14 +36,22 @@ const PublicationSection: React.FC<PubProps> = ({ publications }) => {
     setSearchInput(e.target.value)
   }
 
-  const featuredPubs = publications.filter((pub) => pub.feature)
+  const featuredPubs = publications.filter((pub) => pub.feature).map(pub => ({
+      ...pub,
+      image: pub.image?.replace("/public", ""),
+      pdf: pub.pdf?.replace("/public", "")
+  }))
 
   const shownPubs = publications.filter(
     (pub) =>
       classificationFilter &&
       classificationFilter.value.includes(pub.classification) &&
       pub.citation.toLowerCase().includes(searchInput.toLowerCase())
-  )
+  ).map(pub => ({
+      ...pub,
+      image: pub.image?.replace("/public", ""),
+      pdf: pub.pdf?.replace("/public", "")
+  }))
 
   const categoryByYear: Record<string, PublicationData[]> = shownPubs.reduce(
     (pub, i) => {

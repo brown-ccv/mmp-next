@@ -78,7 +78,6 @@ collections:
   - name: pubs
     label: Publications
     folder: src/content/publications
-    media_folder: public/pubs
     create: true
     identifier_field: citation
     slug: '{{fields.classification}}-{{fields.pubDate}}_{{fields.author}}'
@@ -118,7 +117,6 @@ collections:
     label: Documentation Data
     create: true
     folder: src/content/data
-    media_folder: files
     fields:
       - name: cat
         label: Category

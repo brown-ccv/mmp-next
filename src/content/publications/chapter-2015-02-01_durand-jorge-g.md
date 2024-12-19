@@ -8,5 +8,5 @@ citation: >
   y M. J. Sánchez Gómez (coordinadores) 1a ed. Hacia el otro norte. Mexicanos en
   Canadá (pp. 175-205). Ciudad Autónoma de Buenos Aires: CLACSO, 2015.
 feature: false
-pdf: /pubs/haciaelotronorte.pdf
+pdf: /public/images/haciaelotronorte.pdf
 ---

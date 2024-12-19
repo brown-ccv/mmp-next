@@ -8,5 +8,5 @@ citation: >
   States: Undestanding the Constroversies and Tragedies of Undocumented
   Immigration (pp. 53-70). Santa Barbara, California: Praeger, 2014.
 feature: false
-image: /pubs/hidden-lives.jpg
+image: /public/images/hidden-lives.jpg
 ---
