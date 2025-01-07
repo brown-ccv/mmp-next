@@ -1,3 +1,9 @@
+runConfig:
+  minInstances: 1
+  maxInstances: 10
+  concurrency: 100
+  cpu: 2
+  memoryMiB: 1024
 env:
   - variable: CLIENT_ID
     secret: CLIENT_ID
