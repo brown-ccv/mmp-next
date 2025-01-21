@@ -1,5 +1,5 @@
 ---
-cat: Changes to Questionnaire
+cat: Questionnaire
 title: Survey comparisons versions 2 and 3
 description: Comparison of ethnosurveys versions 2 and 3.
 version: "2000"
