@@ -9,7 +9,6 @@ const handler = (req, res) => {
     const oauth2 = create();
 
     const url = oauth2.authorizationCode.authorizeURL({
-        redirect_uri: `https://mmp.research.brown.edu/api/callback`,
         scope: `repo,user`,
         state: randomString(),
     });

@@ -8,8 +8,7 @@ const handler = async (req, res) => {
 
     try {
         const accessToken = await oauth2.authorizationCode.getToken({
-            code,
-            redirect_uri: `https://mmp.research.brown.edu/api/callback`,
+            code
         });
         const { token } = oauth2.accessToken.create(accessToken);
 
