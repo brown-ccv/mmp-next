@@ -1,5 +1,5 @@
 ---
-cat: Study Design
+cat: Questionnaire
 title: Supervisor's Manual
 description: Manual for field work.
 version: "2018"
