@@ -1,5 +1,5 @@
 ---
-cat: Study Design
+cat: Questionnaire
 title: Interviewer Manual
 description: Interviewer manual for field work.
 version: 2018 (2012 English)
