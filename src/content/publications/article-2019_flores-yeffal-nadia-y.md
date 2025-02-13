@@ -1,8 +1,8 @@
 ---
 classification: Article
-author: " Flores-Yeffal, Nadia Y."
+author: " Lindstrom, David P."
 pubDate: "2019"
-citation: ' Flores-Yeffal, Nadia Y.	"English Proficiency and Trust Networks
-  Among Undocumented Mexican Migrants" The ANNALS of the American Academy of
-  Political and Social Science, July 2019 684: 105-119, doi:'
+citation: ' Lindstrom, David P.	"Mexican Migration Integration in the United
+  States, 1965-2015" The ANNALS of the American Academy of Political and Social
+  Science, July 2019 684: 85-104, doi:'
 ---
