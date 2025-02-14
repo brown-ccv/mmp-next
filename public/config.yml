@@ -87,6 +87,13 @@ collections:
         label: Classification
         widget: select
         options: [ 'Book', 'Chapter', 'Article', 'Dissertation' ]
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
       - name: author
         label: Author(s)
         widget: text
@@ -145,7 +152,6 @@ collections:
         required: false
         label: English File
         widget: file
-
   - name: news
     label: News
     identifier_field: pubDate
