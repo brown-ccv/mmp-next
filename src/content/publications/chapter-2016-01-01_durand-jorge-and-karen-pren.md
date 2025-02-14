@@ -1,5 +1,7 @@
 ---
 classification: Chapter
+tags:
+  - MMP
 author: Durand, Jorge and Karen Pren
 pubDate: 2016-01-01
 citation: >
