@@ -2,9 +2,8 @@
 classification: Article
 tags:
   - MMP
-author: Miller, Karyn
+author: "Nawrotzki, Raphael J. and Jack DeWaard\t"
 pubDate: "2016"
-citation: 'Miller, Karyn	"Education across Borders: The Relationship between Age
-  at Migration and Educational Attainment for Mexico-U.S. Child Migrants."
-  Teachers College Record, Vol. 118, Issue 1, pp. 1-48.'
+citation: Nawrotzki, Raphael J. and Jack DeWaard	"Climate shocks and the timing
+  of migration from Mexico." Population and Environment, 2016, pp. 1-29.
 ---
