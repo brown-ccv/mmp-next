@@ -2,9 +2,10 @@
 classification: Article
 tags:
   - MMP
-author: Nawrotzki, Raphael J., Daniel M. Runfola, Lori M. Hunter, and Fernando Riosmena
+author: Riosmena, Fernando
 pubDate: "2016"
-citation: Nawrotzki, Raphael J., Daniel M. Runfola, Lori M. Hunter, and Fernando
-  Riosmena	"Domestic and International Climate Migration from Rural Mexico."
-  Human Ecology, Vol. 44, Issue 6, pp. 687-699.
+citation: >
+  Riosmena, Fernando	"The Potential and Limitations of Cross-Context Comparative
+  Research on Migration" The ANNALS of the American Academy of Political and
+  Social Science, July 2016 666: 28-45, doi: 10.1177/0002716216650629.
 ---
