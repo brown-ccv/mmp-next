@@ -1,5 +1,7 @@
 ---
 classification: Article
+tags:
+  - MMP
 author: Rodilitz, Scott and Edward H. Kaplan
 pubDate: 2021-09-01
 citation: 'Rodilitz, Scott and Edward H. Kaplan.	"Snapshot Models of
