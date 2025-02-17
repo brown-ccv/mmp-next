@@ -5,6 +5,7 @@ import { remark } from 'remark';
 import html from 'remark-html';
 
 export type Classification = "Book" | "Article" | "Dissertation" | "Chapter"
+export type Tag = "MMP" | "LAMP"
 
 export interface PeopleData {
     type: string
@@ -18,6 +19,7 @@ export interface PeopleData {
 
 export interface PublicationData {
     classification: string
+    tags: Array<string>
     pubDate: Date
     author: string
     citation: string
