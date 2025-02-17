@@ -4,7 +4,7 @@ tags:
   - MMP
 author: Durand, Jorge, Douglas S. Massey, Karen A. Pren, Silvia E. Giorguli, and
   David Lindstrom
-pubDate: "2018"
+pubDate: "2016"
 citation: >
   Durand, Jorge, Douglas S. Massey, Karen A. Pren, Silvia E. Giorguli, and David
   Lindstrom	"El Proyecto de Migración Mexicana (Mexican Migration Project).
