@@ -2,11 +2,10 @@
 classification: Article
 tags:
   - MMP
-author: Goldsmith, Pat R., Nadia Y. Flores-Yeffal, Juan Salinas, Bruce Reese,
-  Cristina E. Cruz
+author: Lessem, Rebecca
 pubDate: "2018"
-citation: Goldsmith, Pat R., Nadia Y. Flores-Yeffal, Juan Salinas, Bruce Reese,
-  Cristina E. Cruz	"Mexican parent's undocumented status and the educational
-  attainment of the children left behind." Social Science Research, 5/2018, Vol.
-  72, pp. 194-206.
+citation: >
+  Lessem, Rebecca"Mexico-US immigration: Effects of Wages and Border
+  Enforcemnet," Review of Economic Studies, 10/2018, Volume 85, Issue 4, pp.
+  2353 - 2388
 ---
