@@ -2,10 +2,10 @@
 classification: Article
 tags:
   - MMP
-author: Donato, Katharine M., Brandon Wagner, and Evelyn Patterson
+author: Fairchild, Stephen T. and Nicole B. Simpson
 pubDate: "2008"
 citation: >
-  Donato, Katharine M., Brandon Wagner, and Evelyn Patterson “The Cat and Mouse
-  Game at the Mexico-U.S. Border:  Gendered Patterns and Recent Shifts.”
-  International Migration Review, vol. 42 no. 2 (2008): 330-359.
+  Fairchild, Stephen T. and Nicole B. Simpson "A Comparison of Mexican Migrant
+  Remittances across U.S. Regions." Contemporary Economic Policy, vol. 26 no. 3
+  (2008):360-379.
 ---
