@@ -2,9 +2,9 @@
 classification: Article
 tags:
   - MMP
-author: Massey, Douglas S., Karen A. Pren, and Jorge Durand
+author: Molina, David J. and Jewell R. Todd
 pubDate: "2009"
-citation: 'Massey, Douglas S., Karen A. Pren, and Jorge Durand "Nuevos
-  Escenarios de la Migración México-Estados Unidos: Las Consecuencias de la
-  Guerra Antiimigrante" Papeles de Población, vol. 61 (2009):101-128.'
+citation: 'Molina, David J. and Jewell R. Todd "An Analysis of Mexican
+  Remigration to the U.S." Journal of Business Strategies, vol. 26 no. 1 (2009):
+  55-71.'
 ---
