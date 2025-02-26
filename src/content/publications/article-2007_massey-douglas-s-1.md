@@ -2,10 +2,9 @@
 classification: Article
 tags:
   - MMP
-author: |
-  Massey, Douglas S.
+author: |2
+   McKenzie, David and Hillel Rapoport
 pubDate: "2007"
-citation: >+
-  Massey, Douglas S. "International Migration in a Globalizing Economy." Great
-  Decisions, 4 (2007): 41-52.
+citation: >+2
+   McKenzie, David and Hillel Rapoport "Network Effects and the Dynamics of Migration and Inequality: Theory and Evidence from Mexico." Journal of Development Economics, vol. 84 (2007):1-24.
 ---
