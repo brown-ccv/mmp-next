@@ -1,5 +1,7 @@
 ---
 classification: Book
+tags:
+  - MMP
 author: Arias, Patricia and Jorge Durand
 pubDate: 2013-01-01
 citation: Arias, Patricia and Jorge Durand. 2013. Paul S. Taylor y la migración

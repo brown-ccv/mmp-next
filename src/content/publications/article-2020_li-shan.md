@@ -1,5 +1,7 @@
 ---
 classification: Article
+tags:
+  - MMP
 author: Li, Shan
 pubDate: "2020"
 citation: Li, Shan	"Rainfall and self-selection patterns in Mexico-US
