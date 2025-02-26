@@ -13,4 +13,6 @@ bio: "María Adela Angoa Pérez is a PhD candidate in Population Studies at El
 org: El Colegio de México
 startDate: "2024"
 endDate: "2024"
+tags:
+  - MMP
 ---

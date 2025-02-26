@@ -20,4 +20,6 @@ startDate: "2024"
 endDate: "2024"
 institution: Universidad de Guadalajara
 link: https://en.wikipedia.org/wiki/Jorge_G._Durand
+tags:
+  - MMP
 ---

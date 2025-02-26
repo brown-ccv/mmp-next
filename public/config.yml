@@ -76,6 +76,13 @@ collections:
         widget: datetime
         date_format: YYYY
         time_format: false
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
   - name: pubs
     label: Publications
     folder: src/content/publications
@@ -152,6 +159,13 @@ collections:
         required: false
         label: English File
         widget: file
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
   - name: news
     label: News
     identifier_field: pubDate
