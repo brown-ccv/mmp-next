@@ -6,4 +6,6 @@ description: This file contains information on the cost of living index for 1983
   files.
 version: "1999"
 file: /public/images/msacrossbook.pdf
+tags:
+  - MMP
 ---

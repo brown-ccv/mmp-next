@@ -35,6 +35,7 @@ export interface NewsData {
     title: string
     description: string
     pubDate: Date
+    tags: Array<string>
     updatedDate?: Date
     heroImage?: string
 }
