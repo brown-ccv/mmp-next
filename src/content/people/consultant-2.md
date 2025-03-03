@@ -17,4 +17,6 @@ bio: "Antonio Yúnez-Naude received his PhD in Economics from the London School
 org: El Colegio de México (COLMEX)
 startDate: "2024"
 endDate: "2024"
+tags:
+  - MMP
 ---

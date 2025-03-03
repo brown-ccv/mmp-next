@@ -15,6 +15,7 @@ export interface PeopleData {
     avatar: string
     org: string
     bio: string
+    tags: Array<string>
 }
 
 export interface PublicationData {
@@ -34,6 +35,7 @@ export interface NewsData {
     title: string
     description: string
     pubDate: Date
+    tags: Array<string>
     updatedDate?: Date
     heroImage?: string
 }
@@ -42,6 +44,7 @@ export interface FileData {
     title: string
     description?: string
     version?: string
+    tags: Array<string>
     cat: string
     codebookType?: string
     file?: string

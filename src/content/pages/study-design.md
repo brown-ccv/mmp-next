@@ -1,5 +1,7 @@
 ---
 title: Study Design
+tags:
+  - MMP
 ---
 ## Study Design
 

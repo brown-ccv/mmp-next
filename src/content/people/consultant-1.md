@@ -17,4 +17,6 @@ bio: "Filiz Garip is Professor of Sociology and International Affairs at
 org: Princeton University
 startDate: "2024"
 endDate: "2024"
+tags:
+  - MMP
 ---

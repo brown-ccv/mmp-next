@@ -18,4 +18,6 @@ bio: Jenny Izbeth Flores Ortega obtained her doctorate in Public Policy from the
 org: El Colegio de México
 startDate: "2024"
 endDate: "2024"
+tags:
+  - MMP
 ---

@@ -20,4 +20,6 @@ startDate: "2024"
 endDate: "2024"
 institution: Brown University
 link: https://www.brown.edu/academics/sociology/people/david-lindstrom
+tags:
+  - MMP
 ---

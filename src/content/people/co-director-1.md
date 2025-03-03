@@ -21,4 +21,6 @@ startDate: "2024"
 endDate: "2024"
 institution: Princeton University
 link: https://sociology.princeton.edu/people/doug-massey
+tags:
+  - MMP
 ---
