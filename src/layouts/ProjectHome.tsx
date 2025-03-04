@@ -2,6 +2,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import MmpLogo from "@/assets/mmp-logo";
 import React from "react";
+import Head from "next/head";
 
 interface HomeLayoutProps {
   title: string;
@@ -10,7 +11,7 @@ interface HomeLayoutProps {
   children: React.ReactNode;
 }
 
-export const Home: React.FC<HomeLayoutProps> = ({
+export const ProjectHome: React.FC<HomeLayoutProps> = ({
   title,
   description,
   lede,
@@ -18,6 +19,8 @@ export const Home: React.FC<HomeLayoutProps> = ({
 }) => {
   return (
     <div className="body">
+      <Header />
+
       <main>
         <article>
           <div>
