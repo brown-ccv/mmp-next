@@ -3,6 +3,10 @@ import { FormattedDate } from "../../../components/FormattedDate";
 import { getNews } from "@/lib/markdown";
 import { useState } from "react";
 
+export async function getStaticPaths() {
+  return { paths: [{params: {project: "mmp"}}, {params: {project: "lamp"}}], fallback: false}
+}
+
 export async function getStaticProps() {
   const news = getNews();
   return {

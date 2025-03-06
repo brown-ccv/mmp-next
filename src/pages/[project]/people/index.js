@@ -2,6 +2,11 @@ import { Layout } from "@/layouts/Layout";
 import { CardContainer } from "@/components/CardContainer";
 import { getPeopleData } from "@/lib/markdown";
 
+
+export async function getStaticPaths() {
+  return { paths: [{params: {project: "mmp"}}, {params: {project: "lamp"}}], fallback: false}
+}
+
 export async function getStaticProps() {
   const people = getPeopleData();
   return {

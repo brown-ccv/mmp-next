@@ -9,7 +9,6 @@ import Link from "next/link";
 
 export default class HomePage extends Component {
   render() {
-    let { title } = attributes;
     return (
       <Home
         title="MMP/LAMP"
