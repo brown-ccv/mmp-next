@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+
 import { Layout } from "@/layouts/Layout";
 import { CardContainer } from "@/components/CardContainer";
 import { getPeopleData } from "@/lib/markdown";
@@ -17,9 +19,16 @@ export async function getStaticProps() {
 }
 
 export default function PeoplePage({ people }) {
-  const leadership = people.filter((person) => person.type === "Leadership");
-  const advisors = people.filter((person) => person.type === "Advisors");
-  const support = people.filter((person) => person.type === "Supporting Staff");
+  const router = useRouter();
+
+  const shownPeople = people.filter(
+    (item) =>
+      router.query.project && item.tags.includes(router.query.project.toUpperCase())
+  )
+
+  const leadership = shownPeople.filter((person) => person.type === "Leadership");
+  const advisors = shownPeople.filter((person) => person.type === "Advisors");
+  const support = shownPeople.filter((person) => person.type === "Supporting Staff");
 
   return (
     <Layout title="Staff" description="Our Leadership, Advisors, and Staff">
