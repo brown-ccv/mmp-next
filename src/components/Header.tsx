@@ -1,6 +1,6 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { LINKS } from "../consts";
+import { LINKS } from "@/consts";
 import { HeaderLink } from "./HeaderLink";
 import { usePathname } from "next/navigation";
 
@@ -19,15 +19,11 @@ export const HamburgerMenu = () => {
             <NavigationMenu.Sub defaultValue="sub1">
               <NavigationMenu.List className="flex flex-col items-end space-y-1 p-2">
                 <NavigationMenu.Item>
-                  <NavigationMenu.Link asChild>
-                    <HeaderLink href="/" title="Home" />
-                  </NavigationMenu.Link>
+                  <HeaderLink href="/">Home</HeaderLink>
                 </NavigationMenu.Item>
                 {LINKS.map((link) => (
                   <NavigationMenu.Item key={link.href}>
-                    <NavigationMenu.Link asChild>
-                      <HeaderLink href={link.href} title={link.title} />
-                    </NavigationMenu.Link>
+                    <HeaderLink href={`/mmp${link.href}`}>{link.title}</HeaderLink>
                   </NavigationMenu.Item>
                 ))}
               </NavigationMenu.List>
@@ -50,16 +46,12 @@ export const Header = () => {
       >
         <NavigationMenu.List className="flex justify-end space-x-6 p-4">
           <NavigationMenu.Item className={pathname === "/" ? "hidden" : ""}>
-            <NavigationMenu.Link asChild>
-              <HeaderLink href="/" title="MMP" />
-            </NavigationMenu.Link>
+            <HeaderLink href="/">Home</HeaderLink>
           </NavigationMenu.Item>
           {LINKS.map((link) => (
-            <NavigationMenu.Item key={link.href}>
-              <NavigationMenu.Link asChild>
-                <HeaderLink href={link.href} title={link.title} />
-              </NavigationMenu.Link>
-            </NavigationMenu.Item>
+              <NavigationMenu.Item key={link.href}>
+                <HeaderLink href={`/mmp${link.href}`}>{link.title}</HeaderLink>
+              </NavigationMenu.Item>
           ))}
         </NavigationMenu.List>
 
