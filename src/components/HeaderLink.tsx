@@ -18,7 +18,7 @@ export const HeaderLink = ({ href, ...props }: HeaderLinkProps) => {
       <Link
         href={href}
         className={`hover:underline underline-offset-8 text-lg ${
-          pathname === `/mmp${href}`
+          isActive
             ? "text-neutral-900 font-semibold underline"
             : "no-underline text-neutral-500"
         }`}
