@@ -1,9 +1,13 @@
-import {Layout} from "../../layouts/Layout"
+import {Layout} from "@/layouts/Layout"
 import {ReaderIcon} from "@radix-ui/react-icons"
-import { attributes, react as DocContent } from "../../content/pages/documentation.md"
-import DocumentationTable from "../../components/DocumentationTable"
-import {getAllFileData} from "../../lib/markdown";
+import { attributes, react as DocContent } from "@/content/pages/documentation.md"
+import DocumentationTable from "@/components/DocumentationTable"
+import {getAllFileData} from "@/lib/markdown";
 import Link from "next/link";
+
+export async function getStaticPaths() {
+  return { paths: [{params: {project: "mmp"}}, {params: {project: "lamp"}}], fallback: false}
+}
 
 export async function getStaticProps() {
     const allFiles = getAllFileData();
