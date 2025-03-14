@@ -1,14 +1,14 @@
-import {News} from "../../layouts/News"
-import {getNewsArticleIds, getNewsArticle} from "../../lib/markdown";
+import { News } from "@/layouts/News";
+import { getNewsArticleIds, getNewsArticle } from "@/lib/markdown";
 
 export async function getStaticPaths() {
   const paths = getNewsArticleIds();
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 }
-export async function getStaticProps({params}) {
+export async function getStaticProps({ params }) {
   const news = await getNewsArticle(params.slug);
   return {
     props: {
@@ -17,7 +17,10 @@ export async function getStaticProps({params}) {
   };
 }
 
-export default function Page({news}) {
-  return (<News {...news}><div dangerouslySetInnerHTML={{ __html: news.contentHtml }} /></News>
-    )
-    }
+export default function Page({ news }) {
+  return (
+    <News {...news}>
+      <div dangerouslySetInnerHTML={{ __html: news.contentHtml }} />
+    </News>
+  );
+}
