@@ -59,7 +59,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
         tagFilter &&
         classificationFilter.value.includes(pub.classification) &&
         tagFilter.some((tag) => pub.tags.includes(tag.value)) &&
-        pub.citation.toLowerCase().includes(searchInput.toLowerCase())
+        pub.citation.toLowerCase().includes(searchInput.toLowerCase()),
     )
     .map((pub) => ({
       ...pub,
@@ -75,10 +75,10 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
       pub[key].push(i);
       return pub;
     },
-    {} as Record<string, PublicationData[]>
+    {} as Record<string, PublicationData[]>,
   );
   const pubsByYear = Object.entries(categoryByYear).sort(
-    (a, b) => new Date(b[0]).getTime() - new Date(a[0]).getTime()
+    (a, b) => new Date(b[0]).getTime() - new Date(a[0]).getTime(),
   );
 
   return (

@@ -1,8 +1,10 @@
-import React, { type ReactNode } from "react"
+import React, { type ReactNode } from "react";
 
 interface ButtonProps
-  extends React.PropsWithChildren<React.ButtonHTMLAttributes<HTMLButtonElement>> {
-  icon?: ReactNode
+  extends React.PropsWithChildren<
+    React.ButtonHTMLAttributes<HTMLButtonElement>
+  > {
+  icon?: ReactNode;
 }
 
 export default function Button({ icon, children, ...delegated }: ButtonProps) {
@@ -11,5 +13,5 @@ export default function Button({ icon, children, ...delegated }: ButtonProps) {
       {icon}
       <span>{children}</span>
     </button>
-  )
+  );
 }

@@ -1,10 +1,10 @@
-import React from "react"
-import {FileData} from "../lib/markdown";
+import React from "react";
+import { FileData } from "../lib/markdown";
 
 interface DocumentationTableProps {
   allFiles: FileData[];
-  version?: boolean
-  showHeader?: boolean
+  version?: boolean;
+  showHeader?: boolean;
 }
 
 const DocumentationTable: React.FC<DocumentationTableProps> = ({
@@ -13,8 +13,8 @@ const DocumentationTable: React.FC<DocumentationTableProps> = ({
   showHeader,
 }) => {
   const files = allFiles.map((file) => {
-    return { ...file }
-  })
+    return { ...file };
+  });
   return (
     <div className="w-full overflow-x-scroll no-scrollbar">
       <table className="table-fixed border-spacing-4 w-full">
@@ -59,11 +59,11 @@ const DocumentationTable: React.FC<DocumentationTableProps> = ({
                 <td>{description}</td>
                 {version && <td>{version}</td>}
               </tr>
-            )
+            );
           })}
         </tbody>
       </table>
     </div>
-  )
-}
-export default DocumentationTable
+  );
+};
+export default DocumentationTable;

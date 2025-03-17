@@ -21,6 +21,7 @@ export default class HomePage extends Component {
         <div className="space-y-24">
           <section className="space-y-8 readable">
             <Link href="/mmp">MMP</Link>
+            <HomeContent />
           </section>
           <section className="space-y-12">
             <h3 className="title font-semibold">Project Aims</h3>

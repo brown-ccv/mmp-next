@@ -8,7 +8,6 @@ import { useRouter } from "next/router";
 export const HamburgerMenu = () => {
   const router = useRouter();
   const project = router.query.project;
-
   return (
     <NavigationMenu.Root
       orientation="vertical"
@@ -45,7 +44,6 @@ export const Header = () => {
   const pathname = usePathname();
   const router = useRouter();
   const project = router.query.project;
-
   return (
     <>
       <NavigationMenu.Root

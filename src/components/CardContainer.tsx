@@ -23,7 +23,7 @@ export const CardContainer: React.FC<ContainerProps> = ({
       <div className="flex flex-col gap-20 flex-1">
         {people.map((person: PeopleData, i: number) => {
           return (
-            <div key={i}>
+            <div key={person.link}>
               <Card
                 position={i}
                 title={person.title}
