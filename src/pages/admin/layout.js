@@ -1,4 +1,3 @@
-
 const AdminLayout = ({ children }) => {
   return (
     <html lang="en">

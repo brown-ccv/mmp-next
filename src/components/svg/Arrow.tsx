@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const CircleIcon: React.FC = () => {
   return (
@@ -14,7 +14,11 @@ const CircleIcon: React.FC = () => {
         stroke="#317a7c"
       >
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
         <g id="SVGRepo_iconCarrier">
           {" "}
           <g>
@@ -24,7 +28,7 @@ const CircleIcon: React.FC = () => {
         </g>
       </svg>
     </>
-  )
-}
+  );
+};
 
-export default CircleIcon
+export default CircleIcon;

@@ -9,10 +9,10 @@ const Admin = () => {
       dynamic(() => import("../../components/cms/CMSPage"), {
         ssr: false,
       }),
-    []
+    [],
   );
 
-  return <CMSPage key="admin" />
+  return <CMSPage key="admin" />;
 };
 
 export default Admin;

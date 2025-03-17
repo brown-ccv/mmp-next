@@ -1,17 +1,20 @@
-import * as Form from "@radix-ui/react-form"
-import React, { type ReactNode } from "react"
+import * as Form from "@radix-ui/react-form";
+import React, { type ReactNode } from "react";
 
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  label: string
-  name: string
-  icon?: ReactNode
-  match?: Form.FormMessageProps["match"]
-  errorMessage?: string
+  label: string;
+  name: string;
+  icon?: ReactNode;
+  match?: Form.FormMessageProps["match"];
+  errorMessage?: string;
 }
 
 // eslint-disable-next-line react/display-name
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
-  ({ label, name, icon, match, errorMessage, ...delegated }: InputProps, ref) => {
+  (
+    { label, name, icon, match, errorMessage, ...delegated }: InputProps,
+    ref,
+  ) => {
     return (
       <Form.Field name={name} className="flex flex-col gap-2">
         <Form.Label>{label}</Form.Label>
@@ -31,6 +34,6 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
           </>
         )}
       </Form.Field>
-    )
-  }
-)
+    );
+  },
+);
