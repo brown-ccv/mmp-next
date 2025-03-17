@@ -10,6 +10,7 @@ description: 'The MMP-LAMP study design and data bases were featured in the
   Population Association (ALAP) held in Bogota, Colombia.'
 tags:
   - MMP
+  - LAMP
 ---
 Silvia Giorguli and Jéssica Nájera, and data coordinator Adela Angoa led the
 two day workshop that included over 25 participants from across Latin America.

@@ -23,10 +23,9 @@ export async function getStaticProps() {
 export default function NewsPage({ news }) {
   const router = useRouter();
   const project = router.query.project;
-  const [tagFilter, setTagFilter] = useState([{ value: "MMP", label: "MMP" }]);
   const shownNews = news.filter(
     (item) =>
-      tagFilter && tagFilter.some((tag) => item.tags.includes(tag.value)),
+       item.tags.includes(project.toUpperCase())
   );
 
   const posts = shownNews
