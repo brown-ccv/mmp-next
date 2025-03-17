@@ -1,20 +1,27 @@
-import React from "react"
+import React from "react";
 import Image from "next/image";
 
 interface CardProps {
-  position: number
-  image?: string
-  title: string
-  name: string
-  link: string
-  institution: string
-  bio?: string
+  position: number;
+  image?: string;
+  title: string;
+  name: string;
+  link: string;
+  institution: string;
+  bio?: string;
 }
 
-const Card: React.FC<CardProps> = ({ link, image, title, name, institution, bio }) => {
-  let imageURL = ""
+const Card: React.FC<CardProps> = ({
+  link,
+  image,
+  title,
+  name,
+  institution,
+  bio,
+}) => {
+  let imageURL = "";
   if (image) {
-    imageURL = image.replace("/public", "")
+    imageURL = image.replace("/public", "");
   }
   return (
     <div className="md:flex-row md:gap-8 flex flex-col gap-4">
@@ -42,10 +49,9 @@ const Card: React.FC<CardProps> = ({ link, image, title, name, institution, bio 
           <p className="small">{institution}</p>
         </div>
         {bio && <p>{bio}</p>}
-
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

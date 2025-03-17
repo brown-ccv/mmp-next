@@ -1,14 +1,14 @@
-import React from "react"
-import * as HoverCard from "@radix-ui/react-hover-card"
+import React from "react";
+import * as HoverCard from "@radix-ui/react-hover-card";
 import Image from "next/image";
 
 interface HoverCardItemProps {
-  image?: string
-  alt?: string
-  title: string
-  content: string | React.ReactNode
-  footer?: string | React.ReactNode
-  trigger: React.ReactNode
+  image?: string;
+  alt?: string;
+  title: string;
+  content: string | React.ReactNode;
+  footer?: string | React.ReactNode;
+  trigger: React.ReactNode;
 }
 
 const HoverCardItem: React.FC<HoverCardItemProps> = ({
@@ -29,7 +29,9 @@ const HoverCardItem: React.FC<HoverCardItemProps> = ({
       <HoverCard.Portal>
         <HoverCard.Content sideOffset={5}>
           <div className="bg-white p-5 rounded shadow flex flex-col gap-3.5">
-            {image && alt && <Image className="w-14 h-14 rounded-full" src={image} alt={alt} />}
+            {image && alt && (
+              <Image className="w-14 h-14 rounded-full" src={image} alt={alt} />
+            )}
             <div className="flex flex-col gap-3.5">
               <p className="font-semibold">{title}</p>
               <div>{content}</div>
@@ -44,7 +46,7 @@ const HoverCardItem: React.FC<HoverCardItemProps> = ({
         </HoverCard.Content>
       </HoverCard.Portal>
     </HoverCard.Root>
-  )
-}
+  );
+};
 
-export default HoverCardItem
+export default HoverCardItem;

@@ -1,27 +1,27 @@
-"use client"
+"use client";
 
-import { Controller, type SubmitHandler, useForm } from "react-hook-form"
-import * as Form from "@radix-ui/react-form"
-import React from "react"
-import { addActivityData } from "../firebase"
-import { Input } from "./Input"
-import { Textarea } from "./Textarea"
-import Button from "./Button"
+import { Controller, type SubmitHandler, useForm } from "react-hook-form";
+import * as Form from "@radix-ui/react-form";
+import React from "react";
+import { addActivityData } from "../firebase";
+import { Input } from "./Input";
+import { Textarea } from "./Textarea";
+import Button from "./Button";
 
 export interface Inputs {
-  name: string
-  institution: string
-  email: string
-  description: string
+  name: string;
+  institution: string;
+  email: string;
+  description: string;
 }
 
 export const DataForm = () => {
-  const { handleSubmit, control, register } = useForm<Inputs>()
-  const formRef = React.useRef<HTMLFormElement>(null)
+  const { handleSubmit, control, register } = useForm<Inputs>();
+  const formRef = React.useRef<HTMLFormElement>(null);
   const onSubmit: SubmitHandler<Inputs> = async (data: any) => {
-    await addActivityData(data)
-    if (formRef.current) formRef.current.submit()
-  }
+    await addActivityData(data);
+    if (formRef.current) formRef.current.submit();
+  };
   return (
     <Form.Root
       ref={formRef}
@@ -84,7 +84,7 @@ export const DataForm = () => {
         </Button>
       </Form.Submit>
     </Form.Root>
-  )
-}
+  );
+};
 
-export default DataForm
+export default DataForm;

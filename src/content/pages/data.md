@@ -3,15 +3,16 @@ title: Data
 tags:
   - MMP
 ---
+
 ## Data Overview
 
-The MMP Database is the result of an ongoing multidisciplinary study of Mexican and Central American Migration to the United States. It contains data gathered since 1982 in surveys administered every year in Mexico and more recently in Central America, and in the United States. The MMP Database (MMP174) is currently one of the most concise and vast data set of its kind in existence. 
+The MMP Database is the result of an ongoing multidisciplinary study of Mexican and Central American Migration to the United States. It contains data gathered since 1982 in surveys administered every year in Mexico and more recently in Central America, and in the United States. The MMP Database (MMP174) is currently one of the most concise and vast data set of its kind in existence.
 
 Our datasets are divided into two type of files: Core Files and Supplemental Files. Core files are the result of all the information gathered through the Ethnosurvey of households. Supplemental files, on the other hand, are built using external sources such as the Mexican census and DHS statistical yearbooks.
 
 ## Core Files
 
-The MMP174 Database contains an person level file with general demographic and migratory information for each member of a surveyed household (PERS). More detailed information on each migratory experience of all heads of household (and in more recent years spouses) is presented in a second file (MIG). In communities 120-174, whenever the household head was not a U.S. migrant, the MMP collected information about another person in the household with U.S. migration experience (MIGOTHER). Starting in 2005, the MMP gathers detailed information on migratory experience of all household heads and spouses who have migrated to  Canada (CNMIG). More general characteristics of the household, its members, and other holdings is reserved for a fourth file (HOUSE). Lastly, detailed labor histories for each head of household and each spouse complete the set of data files (LIFE and SPOUSE, respectively).
+The MMP174 Database contains an person level file with general demographic and migratory information for each member of a surveyed household (PERS). More detailed information on each migratory experience of all heads of household (and in more recent years spouses) is presented in a second file (MIG). In communities 120-174, whenever the household head was not a U.S. migrant, the MMP collected information about another person in the household with U.S. migration experience (MIGOTHER). Starting in 2005, the MMP gathers detailed information on migratory experience of all household heads and spouses who have migrated to Canada (CNMIG). More general characteristics of the household, its members, and other holdings is reserved for a fourth file (HOUSE). Lastly, detailed labor histories for each head of household and each spouse complete the set of data files (LIFE and SPOUSE, respectively).
 
 #### PERS
 
