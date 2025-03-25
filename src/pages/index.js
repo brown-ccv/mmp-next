@@ -11,7 +11,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <Home
-        title="MMP/LAMP"
+        title="MMP"
         description="Mesoamerican Migration Project and Latin American Migration Project"
         lede="Furthering understanding of Latin American migration to the United States"
       >

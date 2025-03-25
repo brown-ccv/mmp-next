@@ -25,6 +25,7 @@ const nextConfig = {
     return config;
   },
   async redirects() {
+    // TODO remove when new landing page is created
     return [{ source: "/", destination: "/mmp", permanent: false }];
   },
 };

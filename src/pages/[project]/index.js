@@ -3,19 +3,18 @@ import { ProjectHome } from "@/layouts/ProjectHome";
 import MiniMapSvg from "@/components/svg/MiniMaps";
 import FootPrint from "@/components/svg/FootPrint";
 import { ProjectAim } from "@/components/ProjectAim";
-import { attributes, react as HomeContent } from "@/content/pages/home.md";
+import { react as HomeContent } from "@/content/pages/home.md";
 import { Component } from "react";
 import { withRouter } from "next/router";
-import { usePathname } from "next/navigation";
 
 class HomePage extends Component {
   render() {
     if (this.props.router.isReady) {
-      const project = this.props.router.query.project;
+      // const project = this.props.router.query.project;
       return (
         <ProjectHome
           title={project.toUpperCase()}
-          description={project === "mmp" ? "Mesoamerican Migration Project" : project === "lamp" ? "Latin American Migration Project" : null}
+          description="Mesoamerican Migration Project"
           lede="Furthering understanding of Mexican and Central American migration to the United States"
         >
           <div className="hidden xl:block absolute top-24 left-4 2xl:left-12">
