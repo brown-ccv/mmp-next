@@ -13,7 +13,7 @@ class HomePage extends Component {
       // const project = this.props.router.query.project;
       return (
         <ProjectHome
-          title={project.toUpperCase()}
+          title="MMP"
           description="Mesoamerican Migration Project"
           lede="Furthering understanding of Mexican and Central American migration to the United States"
         >
