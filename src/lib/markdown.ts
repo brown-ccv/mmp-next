@@ -137,6 +137,7 @@ export function getNewsArticleIds() {
   return fileNames.map((fileName) => {
     return {
       params: {
+        project: "",
         slug: fileName.replace(/\.md$/, ""),
       },
     };

@@ -1,9 +1,9 @@
 import { Component } from "react";
-import { Layout } from "../../layouts/Layout";
+import { Layout } from "@/layouts/Layout";
 import {
   attributes,
   react as StudyContent,
-} from "../../content/pages/study-design.md";
+} from "@/content/pages/study-design.md";
 import Image from "next/image";
 
 export default class StudyDesignPage extends Component {

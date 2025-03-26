@@ -1,10 +1,13 @@
 import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { LINKS } from "../consts";
+import { LINKS } from "@/consts";
 import { HeaderLink } from "./HeaderLink";
 import { usePathname } from "next/navigation";
+import { useRouter } from "next/router";
 
 export const HamburgerMenu = () => {
+  const router = useRouter();
+  const project = router.query.project;
   return (
     <NavigationMenu.Root
       orientation="vertical"
@@ -19,15 +22,13 @@ export const HamburgerMenu = () => {
             <NavigationMenu.Sub defaultValue="sub1">
               <NavigationMenu.List className="flex flex-col items-end space-y-1 p-2">
                 <NavigationMenu.Item>
-                  <NavigationMenu.Link asChild>
-                    <HeaderLink href="/" title="Home" />
-                  </NavigationMenu.Link>
+                  <HeaderLink href={`/${project}`}>Home</HeaderLink>
                 </NavigationMenu.Item>
                 {LINKS.map((link) => (
                   <NavigationMenu.Item key={link.href}>
-                    <NavigationMenu.Link asChild>
-                      <HeaderLink href={link.href} title={link.title} />
-                    </NavigationMenu.Link>
+                    <HeaderLink href={`/${project}${link.href}`}>
+                      {link.title}
+                    </HeaderLink>
                   </NavigationMenu.Item>
                 ))}
               </NavigationMenu.List>
@@ -41,7 +42,8 @@ export const HamburgerMenu = () => {
 
 export const Header = () => {
   const pathname = usePathname();
-
+  const router = useRouter();
+  const project = router.query.project;
   return (
     <>
       <NavigationMenu.Root
@@ -49,16 +51,16 @@ export const Header = () => {
         className="hidden lg:flex lg:justify-end"
       >
         <NavigationMenu.List className="flex justify-end space-x-6 p-4">
-          <NavigationMenu.Item className={pathname === "/" ? "hidden" : ""}>
-            <NavigationMenu.Link asChild>
-              <HeaderLink href="/" title="MMP" />
-            </NavigationMenu.Link>
+          <NavigationMenu.Item
+            className={pathname === `/${project}` ? "hidden" : ""}
+          >
+            <HeaderLink href={`/${project}`}>Home</HeaderLink>
           </NavigationMenu.Item>
           {LINKS.map((link) => (
             <NavigationMenu.Item key={link.href}>
-              <NavigationMenu.Link asChild>
-                <HeaderLink href={link.href} title={link.title} />
-              </NavigationMenu.Link>
+              <HeaderLink href={`/${project}${link.href}`}>
+                {link.title}
+              </HeaderLink>
             </NavigationMenu.Item>
           ))}
         </NavigationMenu.List>

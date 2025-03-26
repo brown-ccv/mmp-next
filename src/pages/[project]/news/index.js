@@ -1,6 +1,15 @@
-import { Layout } from "../../layouts/Layout";
-import { FormattedDate } from "../../components/FormattedDate";
-import { getNews } from "../../lib/markdown";
+import { Layout } from "@/layouts/Layout";
+import { FormattedDate } from "../../../components/FormattedDate";
+import { getNews } from "@/lib/markdown";
+import { useState } from "react";
+import { useRouter } from "next/router";
+
+export async function getStaticPaths() {
+  return {
+    paths: [{ params: { project: "mmp" } }, { params: { project: "lamp" } }],
+    fallback: false,
+  };
+}
 
 export async function getStaticProps() {
   const news = getNews();
@@ -12,7 +21,14 @@ export async function getStaticProps() {
 }
 
 export default function NewsPage({ news }) {
-  const posts = news
+  const router = useRouter();
+  const project = router.query.project;
+  const shownNews = news.filter(
+    (item) =>
+       item.tags.includes(project.toUpperCase())
+  );
+
+  const posts = shownNews
     .map((item) => ({
       ...item,
       pubDate: new Date(item.pubDate),
@@ -29,7 +45,7 @@ export default function NewsPage({ news }) {
             <li key={post.slug} className="flex gap-10">
               <a
                 className="relative hidden w-80 h-72 flex-none md:block"
-                href={`/news/${post.slug}/`}
+                href={`/${project}/news/${post.slug}/`}
               >
                 <img
                   className="object-cover h-full w-full"
@@ -38,7 +54,7 @@ export default function NewsPage({ news }) {
                 />
               </a>
               <div className="grow space-y-1">
-                <a href={`/news/${post.slug}/`}>
+                <a href={`/${project}/news/${post.slug}/`}>
                   <h3 className="font-medium underline">{post.title}</h3>
                 </a>
                 <p>{post.description}</p>

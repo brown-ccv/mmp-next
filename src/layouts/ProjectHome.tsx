@@ -10,7 +10,7 @@ interface HomeLayoutProps {
   children: React.ReactNode;
 }
 
-export const Home: React.FC<HomeLayoutProps> = ({
+export const ProjectHome: React.FC<HomeLayoutProps> = ({
   title,
   description,
   lede,
@@ -18,6 +18,8 @@ export const Home: React.FC<HomeLayoutProps> = ({
 }) => {
   return (
     <div className="body">
+      <Header />
+
       <main>
         <article>
           <div>

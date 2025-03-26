@@ -1,7 +1,7 @@
 import { Component } from "react";
-import { Layout } from "../../layouts/Layout";
-import DataForm from "../../components/DataForm";
-import { attributes, react as DataContent } from "../../content/pages/data.md";
+import { Layout } from "@/layouts/Layout";
+import DataForm from "@/components/DataForm";
+import { attributes, react as DataContent } from "@/content/pages/data.md"
 
 export default class DataPage extends Component {
   render() {

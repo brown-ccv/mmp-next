@@ -12,9 +12,10 @@ import { Input } from "./Input";
 
 interface PubProps {
   publications: PublicationData[];
+  project: Tag;
 }
 
-const PublicationSection: React.FC<PubProps> = ({ publications }) => {
+const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
   const classificationOptions = [
     { value: "Book", label: "Books" },
     {
@@ -36,7 +37,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications }) => {
   >({ value: "Book", label: "Books" });
   const [tagFilter, setTagFilter] = useState<
     MultiValue<Readonly<{ value: Tag; label: string }>>
-  >([{ value: "MMP", label: "MMP" }]);
+  >([{ value: project, label: project }]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();

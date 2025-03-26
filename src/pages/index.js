@@ -5,21 +5,22 @@ import FootPrint from "../components/svg/FootPrint";
 import { ProjectAim } from "../components/ProjectAim";
 import { attributes, react as HomeContent } from "../content/pages/home.md";
 import { Component } from "react";
+import Link from "next/link";
 
 export default class HomePage extends Component {
   render() {
-    let { title } = attributes;
     return (
       <Home
         title="MMP"
-        description="Mesoamerican Migration Project"
-        lede="Furthering understanding of Mexican and Central American migration to the United States"
+        description="Mesoamerican Migration Project and Latin American Migration Project"
+        lede="Furthering understanding of Latin American migration to the United States"
       >
         <div className="hidden xl:block absolute top-24 left-4 2xl:left-12">
           <FootPrint />
         </div>
         <div className="space-y-24">
           <section className="space-y-8 readable">
+            <Link href="/mmp">MMP</Link>
             <HomeContent />
           </section>
           <section className="space-y-12">

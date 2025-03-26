@@ -1,11 +1,11 @@
-import { News } from "../../layouts/News";
-import { getNewsArticleIds, getNewsArticle } from "../../lib/markdown";
+import { News } from "@/layouts/News";
+import { getNewsArticleIds, getNewsArticle } from "@/lib/markdown";
 
 export async function getStaticPaths() {
   const paths = getNewsArticleIds();
   return {
     paths,
-    fallback: false,
+    fallback: "blocking",
   };
 }
 export async function getStaticProps({ params }) {
