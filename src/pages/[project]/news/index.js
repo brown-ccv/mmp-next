@@ -1,7 +1,5 @@
 import { Layout } from "@/layouts/Layout";
-import { FormattedDate } from "../../../components/FormattedDate";
 import { getNews } from "@/lib/markdown";
-import { useState } from "react";
 import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
