@@ -1,4 +1,3 @@
-import { FormattedDate } from "../components/FormattedDate";
 import { Layout } from "./Layout";
 import { NewsData } from "../lib/markdown";
 import React from "react";
