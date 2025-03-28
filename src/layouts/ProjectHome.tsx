@@ -1,10 +1,13 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import MmpLogo from "@/assets/mmp-logo";
+import LampLogo from "@/assets/lamp-logo";
 import React from "react";
+import type { Tag } from "../lib/markdown";
 
 interface HomeLayoutProps {
   title: string;
+  project: string;
   description: string;
   lede: string;
   children: React.ReactNode;
@@ -12,6 +15,7 @@ interface HomeLayoutProps {
 
 export const ProjectHome: React.FC<HomeLayoutProps> = ({
   title,
+  project,
   description,
   lede,
   children,
@@ -19,13 +23,12 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
   return (
     <div className="body">
       <Header />
-
       <main>
         <article>
           <div>
             <div className="flex flex-col gap-6 pb-40 md:w-2/3">
               <div className="flex gap-6">
-                <MmpLogo />
+                {project === "mmp" ? <MmpLogo /> : <LampLogo />}
                 <div className="flex flex-col">
                   <h1>{title}</h1>
                   <h2>{description}</h2>
