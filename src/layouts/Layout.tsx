@@ -8,6 +8,7 @@ interface LayoutProps {
   description: string;
   lede?: string;
   children: React.ReactNode;
+  bgColor: string;
 }
 
 export const Layout: React.FC<LayoutProps> = ({
@@ -15,6 +16,7 @@ export const Layout: React.FC<LayoutProps> = ({
   description,
   lede,
   children,
+  bgColor = "",
 }) => {
   return (
     <div className="body">

@@ -1,8 +1,33 @@
 ---
-title: LAMP Study Design
+title: Study Design
 tags:
   - LAMP
 ---
 
 ## Study Design
-TODO: LAMP study design page
+
+TODO
+
+## Selecting Communities
+
+TODO
+
+## Sample Design
+
+TODO
+
+## Ethnosurvey Questionnaire
+
+TODO
+
+## Interviewing Process
+
+TODO
+
+## Data Coding and File Construction
+
+TODO
+
+## Weights
+
+TODO

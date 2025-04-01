@@ -19,6 +19,7 @@ class HomePage extends Component {
             project={project}
             description="Mesoamerican Migration Project"
             lede="Furthering understanding of Mexican and Central American migration to the United States"
+            bgColor="bg-neutral-50"
           >
             <div className="hidden xl:block absolute top-24 left-4 2xl:left-12">
               <FootPrint />

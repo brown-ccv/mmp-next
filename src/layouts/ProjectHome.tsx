@@ -11,6 +11,7 @@ interface HomeLayoutProps {
   description: string;
   lede: string;
   children: React.ReactNode;
+  bgColor: string;
 }
 
 export const ProjectHome: React.FC<HomeLayoutProps> = ({
@@ -19,9 +20,10 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
   description,
   lede,
   children,
+  bgColor = "",
 }) => {
   return (
-    <div className="body">
+    <div className={`body ${bgColor}`}>
       <Header />
       <main>
         <article>
