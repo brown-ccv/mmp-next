@@ -3,11 +3,11 @@ import { Layout } from "@/layouts/Layout";
 import {
   attributes,
   react as StudyContent,
-} from "@/content/pages/study-design.md";
+} from "@/content/pages/mmp-study-design.md";
 import {
   attributes as lampAttributes,
   react as StudyContentLamp,
-} from "@/content/pages/study-design-lamp.md";
+} from "@/content/pages/lamp-study-design.md";
 import Image from "next/image";
 import { withRouter } from "next/router";
 
@@ -37,8 +37,8 @@ class StudyDesignPage extends Component {
         );
       } else {
         // console.log(lampAttributes)
-        console.log(StudyContentLamp)
-        console.log()
+        console.log(StudyContentLamp);
+        console.log();
         let { title } = lampAttributes;
 
         return (

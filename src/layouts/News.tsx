@@ -21,7 +21,7 @@ export const News: React.FC<News> = ({
     heroImage = heroImage.replace("/public", "");
   }
   return (
-    <Layout title={title} description={description}>
+    <Layout title={title} description={description} bgColor="bg-neutral-50">
       <article className="space-y-4">
         {heroImage && (
           <div>

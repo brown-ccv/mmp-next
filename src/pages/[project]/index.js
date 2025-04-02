@@ -3,7 +3,7 @@ import { ProjectHome } from "@/layouts/ProjectHome";
 import MiniMapSvg from "@/components/svg/MiniMaps";
 import FootPrint from "@/components/svg/FootPrint";
 import { ProjectAim } from "@/components/ProjectAim";
-import { react as HomeContent } from "@/content/pages/home.md";
+import { react as HomeContent } from "@/content/pages/mmp-home.md";
 import { attributes, react as LampContent } from "@/content/pages/lamp-home.md";
 import { Component } from "react";
 import { withRouter } from "next/router";
@@ -101,19 +101,29 @@ class HomePage extends Component {
                     color="blue"
                     icon={<TargetIcon slot="icon" height={36} width={36} />}
                   >
-                    Collect survey data from households in migrant places of origin and in U.S. places of destination to describe and analyze the determinants and consequences of U.S. migration, including the prevalence and dynamics of new forms of migration that include women, children and families.
+                    Collect survey data from households in migrant places of
+                    origin and in U.S. places of destination to describe and
+                    analyze the determinants and consequences of U.S. migration,
+                    including the prevalence and dynamics of new forms of
+                    migration that include women, children and families.
                   </ProjectAim>
                   <ProjectAim
                     color="primary"
                     icon={<GlobeIcon slot="icon" height={36} width={36} />}
                   >
-                    Broaden migration research to embrace both threat-based and opportunity-based movements, and develop and test new theoretical approaches to migration that consider threats to well-being that stem from crime, violence, and climate and weather-related events.
+                    Broaden migration research to embrace both threat-based and
+                    opportunity-based movements, and develop and test new
+                    theoretical approaches to migration that consider threats to
+                    well-being that stem from crime, violence, and climate and
+                    weather-related events.
                   </ProjectAim>
                   <ProjectAim
                     color="brown"
                     icon={<Pencil1Icon height={36} width={36} />}
                   >
-                    Make the data widely accessible to researchers in the U.S. and abroad for the study of Latin American migration to the United States.
+                    Make the data widely accessible to researchers in the U.S.
+                    and abroad for the study of Latin American migration to the
+                    United States.
                   </ProjectAim>
                 </div>
               </section>
