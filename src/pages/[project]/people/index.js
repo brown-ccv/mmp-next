@@ -25,7 +25,6 @@ export default function PeoplePage({ people }) {
     (item) =>
       router.query.project && item.tags.includes(router.query.project.toUpperCase())
   )
-  console.log(shownPeople)
 
   const leadership = shownPeople.filter((person) => person.type === "Leadership");
   const advisors = shownPeople.filter((person) => person.type === "Advisors");

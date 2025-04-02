@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: brown-ccv/mmp-next
-  branch: lamp-routes # TODO: change back to CMS
+  branch: cms
   base_url: https://mmp-lamp.research.brown.edu/
   auth_endpoint: api/auth
 media_folder: public/images

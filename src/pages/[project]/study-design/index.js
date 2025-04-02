@@ -36,9 +36,6 @@ class StudyDesignPage extends Component {
           </Layout>
         );
       } else {
-        // console.log(lampAttributes)
-        console.log(StudyContentLamp);
-        console.log();
         let { title } = lampAttributes;
 
         return (
