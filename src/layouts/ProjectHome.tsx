@@ -1,17 +1,16 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import React from "react";
 import MmpLogo from "@/assets/mmp-logo";
 import LampLogo from "@/assets/lamp-logo";
-import React from "react";
-import type { Tag } from "../lib/markdown";
 
 interface HomeLayoutProps {
   title: string;
   project: string;
   description: string;
   lede: string;
-  children: React.ReactNode;
   bgColor: string;
+  children: React.ReactNode;
 }
 
 export const ProjectHome: React.FC<HomeLayoutProps> = ({
@@ -19,12 +18,13 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
   project,
   description,
   lede,
+  bgColor,
   children,
-  bgColor = "",
 }) => {
   return (
     <div className={`body ${bgColor}`}>
       <Header />
+
       <main>
         <article>
           <div>
