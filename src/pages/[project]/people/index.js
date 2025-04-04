@@ -31,7 +31,7 @@ export default function PeoplePage({ people }) {
   const support = shownPeople.filter((person) => person.type === "Supporting Staff");
 
   return (
-    <Layout title="Staff" description="Our Leadership, Advisors, and Staff">
+    <Layout title="Staff" description="Our Leadership, Advisors, and Staff" bgColor={router.query.project==="mmp" && "bg-neutral-50"}>
       <div className="flex flex-col space-y-28">
         <CardContainer
           title="Leadership"

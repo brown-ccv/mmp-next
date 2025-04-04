@@ -3,7 +3,11 @@ import { Home } from "../layouts/Home";
 import MiniMapSvg from "../components/svg/MiniMaps";
 import FootPrint from "../components/svg/FootPrint";
 import { ProjectAim } from "../components/ProjectAim";
-import { attributes, react as HomeContent } from "../content/pages/home.md";
+import { attributes, react as HomeContent } from "../content/pages/mmp-home.md";
+import {
+  attributes as lampAttributes,
+  react as LampHomeContent,
+} from "../content/pages/lamp-home.md";
 import { Component } from "react";
 import Link from "next/link";
 

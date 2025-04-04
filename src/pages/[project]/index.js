@@ -3,19 +3,43 @@ import { ProjectHome } from "@/layouts/ProjectHome";
 import MiniMapSvg from "@/components/svg/MiniMaps";
 import FootPrint from "@/components/svg/FootPrint";
 import { ProjectAim } from "@/components/ProjectAim";
-import { react as HomeContent } from "@/content/pages/home.md";
+import { react as MmpContent } from "@/content/pages/mmp-home.md";
+import { react as LampContent } from "@/content/pages/lamp-home.md";
 import { Component } from "react";
 import { withRouter } from "next/router";
+import MmpLogo from "@/assets/mmp-logo";
+import LampLogo from "@/assets/lamp-logo";
 
 class HomePage extends Component {
+  projectConfigs = {
+    mmp: {
+      title: "MMP",
+      description: "Mesoamerican Migration Project",
+      lede: "Furthering understanding of Mexican and Central American migration to the United States",
+      bgColor: "bg-neutral-50",
+      HomeContent: MmpContent,
+    },
+    lamp: {
+      title: "LAMP",
+      description: "Latin American Migration Project",
+      lede: "Furthering understanding of Latin American migration to the United States",
+      HomeContent: LampContent,
+    },
+  };
+
   render() {
     if (this.props.router.isReady) {
-      // const project = this.props.router.query.project;
+      const project = this.props.router.query.project;
+      const { title, description, lede, bgColor, HomeContent } =
+        this.projectConfigs[project];
+
       return (
         <ProjectHome
-          title="MMP"
-          description="Mesoamerican Migration Project"
-          lede="Furthering understanding of Mexican and Central American migration to the United States"
+          title={title}
+          project={project}
+          description={description}
+          lede={lede}
+          bgColor={bgColor}
         >
           <div className="hidden xl:block absolute top-24 left-4 2xl:left-12">
             <FootPrint />
@@ -27,6 +51,7 @@ class HomePage extends Component {
             <section className="space-y-12">
               <h3 className="title font-semibold">Project Aims</h3>
               <div className="flex flex-wrap gap-20 justify-center">
+                {/* TODO: do we have project aims for LAMP? */}
                 <ProjectAim
                   color="blue"
                   icon={<TargetIcon slot="icon" height={36} width={36} />}
