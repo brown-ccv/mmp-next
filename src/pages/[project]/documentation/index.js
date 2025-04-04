@@ -4,10 +4,6 @@ import {
   attributes,
   react as DocContent,
 } from "@/content/pages/mmp-documentation.md";
-import {
-  attributes as lampAttributes,
-  react as LampDocContent,
-} from "@/content/pages/lamp-documentation.md";
 import DocumentationTable from "@/components/DocumentationTable";
 import { getAllFileData } from "@/lib/markdown";
 import Link from "next/link";
