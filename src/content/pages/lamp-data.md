@@ -1,5 +1,5 @@
 ---
-title: Data
+title: Lamp Data
 label: Lamp Data
 tags:
   - LAMP
