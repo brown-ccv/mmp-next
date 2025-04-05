@@ -1,6 +1,7 @@
 ---
-title: Data
+title: Lamp Data
 tags:
+  - LAMP
   - MMP
 ---
 
