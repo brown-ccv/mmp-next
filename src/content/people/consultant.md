@@ -19,4 +19,6 @@ bio: Fernando Riosmena is Professor of Sociology and Demography and Director of
 org: University of Texas – San Antonio
 startDate: "2024"
 endDate: "2024"
+tags:
+  - MMP
 ---

@@ -18,4 +18,6 @@ bio: Jéssica Natalie Nájera Aguirre is Professor-Researcher at the Center for
 org: El Colegio de México (COLMEX)
 startDate: "2024"
 endDate: "2024"
+tags:
+  - MMP
 ---

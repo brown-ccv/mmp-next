@@ -1,23 +1,26 @@
-import React, { useState } from "react"
-import * as Form from "@radix-ui/react-form"
+import React, { useState } from "react";
+import * as Form from "@radix-ui/react-form";
 
-interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
-  label: string
-    sublabel?: string
-  name: string
+interface TextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+  label: string;
+  sublabel?: string;
+  name: string;
 }
 
 // eslint-disable-next-line react/display-name
 export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
   ({ name, label, sublabel, ...delegated }, ref) => {
-    const [characterCount, setCharacterCount] = useState(0)
-    const maxLength = 300
+    const [characterCount, setCharacterCount] = useState(0);
+    const maxLength = 300;
 
     return (
       <Form.Field name={name} className="relative flex flex-col gap-2">
         <Form.Label>
-            <p>{label}</p>
-            {sublabel && (<p className="text-sm text-neutral-500 ml-1">{sublabel}</p>)}
+          <p>{label}</p>
+          {sublabel && (
+            <p className="text-sm text-neutral-500 ml-1">{sublabel}</p>
+          )}
         </Form.Label>
         <span className="text-neutral-300 top-9 right-1 absolute px-2 py-1 text-xs rounded">
           {characterCount}/{maxLength}
@@ -36,6 +39,6 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
           Please enter your {label}
         </Form.Message>
       </Form.Field>
-    )
-  }
-)
+    );
+  },
+);

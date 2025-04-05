@@ -1,4 +1,4 @@
-"use client"
+"use client";
 const FootPrint = () => {
   const svg = `<svg
       width="92"
@@ -354,12 +354,8 @@ const FootPrint = () => {
         />
         <set attributeName="fill" to="#317A7C" begin="6.5s" />
       </path>
-    </svg>`
-  return (
-      <div
-          dangerouslySetInnerHTML={{__html: svg}}
-      />
-  )
-}
+    </svg>`;
+  return <div dangerouslySetInnerHTML={{ __html: svg }} />;
+};
 
-export default FootPrint
+export default FootPrint;

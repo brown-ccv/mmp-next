@@ -1,12 +1,16 @@
-import React from "react"
+import React from "react";
 
 interface CircleProps {
-  width?: number
-  height?: number
-  styling: string
+  width?: number;
+  height?: number;
+  styling: string;
 }
 
-const CircleIcon: React.FC<CircleProps> = ({ styling, width = 20, height = 20 }) => {
+const CircleIcon: React.FC<CircleProps> = ({
+  styling,
+  width = 20,
+  height = 20,
+}) => {
   return (
     <>
       <svg
@@ -19,7 +23,7 @@ const CircleIcon: React.FC<CircleProps> = ({ styling, width = 20, height = 20 })
         <circle r="12" cx="12" cy="12" />
       </svg>
     </>
-  )
-}
+  );
+};
 
-export default CircleIcon
+export default CircleIcon;

@@ -8,4 +8,6 @@ description: |-
   all urban areas used in the Mexican Migration Project for selected years.
 version: "1999"
 file: /public/images/msayearbook.pdf
+tags:
+  - MMP
 ---

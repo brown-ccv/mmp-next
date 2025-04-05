@@ -1,7 +1,8 @@
 backend:
   name: github
   repo: brown-ccv/mmp-next
-  base_url: https://mmp-docker-974587953292.us-central1.run.app/
+  branch: cms
+  base_url: https://mmp-lamp.research.brown.edu/
   auth_endpoint: api/auth
 media_folder: public/images
 collections:
@@ -16,6 +17,13 @@ collections:
       - name: body
         label: Page Content
         widget: markdown
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
   - name: map
     label: Map
     folder: src/content/map
@@ -27,6 +35,13 @@ collections:
       - name: image
         label: MMP Community Map
         widget: image
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
   - name: people
     label: People
     folder: src/content/people
@@ -75,6 +90,13 @@ collections:
         widget: datetime
         date_format: YYYY
         time_format: false
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
   - name: pubs
     label: Publications
     folder: src/content/publications
@@ -113,6 +135,13 @@ collections:
         required: false
         label: PDF
         widget: file
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
   - name: data
     label: Documentation Data
     create: true
@@ -144,7 +173,13 @@ collections:
         required: false
         label: English File
         widget: file
-
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
   - name: news
     label: News
     identifier_field: pubDate
@@ -168,3 +203,10 @@ collections:
       - name: body
         label: Post
         widget: markdown
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }

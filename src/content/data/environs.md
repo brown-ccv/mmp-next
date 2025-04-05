@@ -9,4 +9,6 @@ description: >-
 codebookType: State Level Supplementary
 archivo: /public/images/environs-códigos-mmp134-.pdf
 file: /public/images/environs-codebook-mmp134-.pdf
+tags:
+  - MMP
 ---

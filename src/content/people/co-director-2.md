@@ -19,4 +19,6 @@ bio: Silvia Giorguli Saucedo is professor-researcher at the Center for
 org: El Colegio de México (Colmex)
 startDate: "2024"
 endDate: "2024"
+tags:
+  - MMP
 ---

@@ -1,8 +1,8 @@
-import React from "react"
-import type { activityType } from "../hooks/activity"
+import React from "react";
+import type { activityType } from "../hooks/activity";
 
 export interface ActivityTableProps {
-  data: activityType[]
+  data: activityType[];
 }
 
 const ActivityTable: React.FC<ActivityTableProps> = ({ data }) => {
@@ -20,7 +20,7 @@ const ActivityTable: React.FC<ActivityTableProps> = ({ data }) => {
         <tbody>
           {data &&
             data.map(({ name, institution, email, description, date }, i) => {
-              const stringDate = date.toDate().toDateString()
+              const stringDate = date.toDate().toDateString();
               return (
                 <tr key={i} className="align-top">
                   <td>
@@ -28,7 +28,9 @@ const ActivityTable: React.FC<ActivityTableProps> = ({ data }) => {
                   </td>
                   <td>
                     <div>
-                      <p className="text-neutral-900 text-lg font-semibold">{name}</p>
+                      <p className="text-neutral-900 text-lg font-semibold">
+                        {name}
+                      </p>
                       <p className="text-neutral-700 overflow-ellipsis  overflow-hidden italic">
                         {email}
                       </p>
@@ -37,11 +39,11 @@ const ActivityTable: React.FC<ActivityTableProps> = ({ data }) => {
                   </td>
                   <td>{stringDate}</td>
                 </tr>
-              )
+              );
             })}
         </tbody>
       </table>
     </div>
-  )
-}
-export default ActivityTable
+  );
+};
+export default ActivityTable;
