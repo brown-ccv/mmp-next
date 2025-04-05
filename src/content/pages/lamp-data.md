@@ -1,7 +1,7 @@
 ---
 title: Data
 tags:
-  - MMP
+  - LAMP
 ---
 
 ## Data Overview
