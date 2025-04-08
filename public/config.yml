@@ -6,10 +6,30 @@ backend:
   auth_endpoint: api/auth
 media_folder: public/images
 collections:
-  - name: pages
+  - name: mmp_pages
     label: Pages
     folder: src/content/pages
     create: false
+    filter: {field: tags, value: MMP}
+    fields:
+      - name: title
+        label: Page
+        widget: text
+      - name: body
+        label: Page Content
+        widget: markdown
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+  - name: lamp_pages
+    label: LAMP Pages
+    folder: src/content/pages
+    create: false
+    filter: {field: tags, value: LAMP}
     fields:
       - name: title
         label: Page
