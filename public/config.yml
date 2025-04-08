@@ -238,24 +238,16 @@ collections:
       - name: title
         label: Aim
         widget: text
-      - name: aim-1
+      - name: aim1
         label: aim 1
         widget: markdown
-      - name: aim-2
+      - name: aim2
         label: aim 2
         widget: markdown
-      - name: aim-3
+      - name: aim3
         label: aim 3
         widget: markdown
       - name: tag
         label: Project Tags
         widget: select
         options: ["MMP", "LAMP"]
-      - name: color
-        label: Icon Color
-        widget: select
-        options: ["blue", "primary", "brown"]
-      - name: icon
-        label: Icon
-        widget: select
-        options: ["globe", "pencil", "target"]
