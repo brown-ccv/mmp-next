@@ -238,10 +238,16 @@ collections:
       - name: title
         label: Aim
         widget: text
-      - name: body
-        label: aim
+      - name: aim-1
+        label: aim 1
         widget: markdown
-      - name: tags
+      - name: aim-2
+        label: aim 2
+        widget: markdown
+      - name: aim-3
+        label: aim 3
+        widget: markdown
+      - name: tag
         label: Project Tags
         widget: select
         options: ["MMP", "LAMP"]
@@ -252,4 +258,4 @@ collections:
       - name: icon
         label: Icon
         widget: select
-        options: ["GlobeIcon", "Pencil1Icon", "TargetIcon"]
+        options: ["globe", "pencil", "target"]

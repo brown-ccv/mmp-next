@@ -1,5 +1,5 @@
 ---
-title: MMP Aim 1
+title: MMP Aims
 tag: MMP
 color: blue
 icon: TargetIcon
