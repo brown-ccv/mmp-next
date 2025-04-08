@@ -6,6 +6,7 @@ import { ProjectAim } from "@/components/ProjectAim";
 import { react as MmpContent } from "@/content/pages/mmp-home.md";
 import { react as LampContent } from "@/content/pages/lamp-home.md";
 import { attributes as mmpAttributes } from "@/content/aims/mmp-aims.md"
+import { attributes as lampAttributes } from "@/content/aims/lamp-aims.md"
 import { Component } from "react";
 import { withRouter } from "next/router";
 
@@ -24,6 +25,7 @@ class HomePage extends Component {
       description: "Latin American Migration Project",
       lede: "Furthering understanding of Latin American migration to the United States",
       HomeContent: LampContent,
+      attributes: lampAttributes
     },
   };
 
