@@ -10,7 +10,7 @@ collections:
     label: MMP Pages
     folder: src/content/pages
     create: false
-    filter: {name: "tags", value: "MMP"}
+    filter: {name: tags, value: MMP}
     fields:
       - name: title
         label: Page
@@ -29,7 +29,7 @@ collections:
     label: LAMP Pages
     folder: src/content/pages
     create: false
-    filter: {name: "tags", value: "LAMP"}
+    filter: {name: tags, value: LAMP}
     fields:
       - name: title
         label: Page
