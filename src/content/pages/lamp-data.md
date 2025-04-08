@@ -2,7 +2,7 @@
 title: Lamp Data
 tags:
   - LAMP
-  - MMP
+  - LAMP
 ---
 
 ## Data Overview
