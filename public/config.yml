@@ -1,15 +1,35 @@
 backend:
   name: github
   repo: brown-ccv/mmp-next
-  branch: cms
+  branch: test-cms
   base_url: https://mmp-lamp.research.brown.edu/
   auth_endpoint: api/auth
 media_folder: public/images
 collections:
-  - name: pages
-    label: Pages
+  - name: mmp_pages
+    label: MMP Pages
     folder: src/content/pages
     create: false
+    filter: {name: "tags", value: "MMP"}
+    fields:
+      - name: title
+        label: Page
+        widget: text
+      - name: body
+        label: Page Content
+        widget: markdown
+      - name: tags
+        label: Project Tags
+        widget: list
+        min: 1
+        max: 2
+        collapsed: false
+        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+  - name: lamp_pages
+    label: LAMP Pages
+    folder: src/content/pages
+    create: false
+    filter: {name: "tags", value: "LAMP"}
     fields:
       - name: title
         label: Page
