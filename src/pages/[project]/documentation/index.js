@@ -1,12 +1,17 @@
 import { Layout } from "@/layouts/Layout";
 import { ReaderIcon } from "@radix-ui/react-icons";
 import {
-  attributes,
-  react as DocContent,
+  attributes as mmpAttributes,
+  react as MmpDocContent,
 } from "@/content/pages/mmp-documentation.md";
+import {
+  attributes as lampAttributes,
+  react as LampDocContent,
+} from "@/content/pages/lamp-documentation.md";
 import DocumentationTable from "@/components/DocumentationTable";
 import { getAllFileData } from "@/lib/markdown";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   return {
@@ -24,8 +29,21 @@ export async function getStaticProps() {
   };
 }
 
+const projectConfigs = {
+  mmp: {
+    attributes: mmpAttributes,
+    DocContent: MmpDocContent,
+    bgColor: "bg-neutral-50",
+  },
+  lamp: { attributes: lampAttributes, DocContent: LampDocContent },
+};
+
 export default function DocPage({ allFiles }) {
+  const router = useRouter();
+  const project = router.query.project;
+  const { attributes, DocContent, bgColor } = projectConfigs[project];
   let { title } = attributes;
+
   const files = allFiles.map((file) => ({
     ...file,
     archivo: file.archivo?.replace("/public", ""),
@@ -46,11 +64,11 @@ export default function DocPage({ allFiles }) {
   const questionnaire = files.filter((file) => file.cat === "Questionnaire");
 
   return (
-    <Layout title={title} description="About the Project">
+    <Layout title={title} description="About the Project" bgColor={bgColor}>
       <section className="space-y-8 readable pb-12">
         <DocContent />
         <Link
-          href="/study-design"
+          href={`/${project}/study-design`}
           className="flex gap-2 items-end text-primary-500 decoration-primary-500 font-bold mt-6 mb-10"
         >
           <ReaderIcon width="24" height="24" />

@@ -21,9 +21,8 @@ export async function getStaticProps() {
 export default function NewsPage({ news }) {
   const router = useRouter();
   const project = router.query.project;
-  const shownNews = news.filter(
-    (item) =>
-       item.tags.includes(project.toUpperCase())
+  const shownNews = news.filter((item) =>
+    item.tags.includes(project.toUpperCase()),
   );
 
   const posts = shownNews
@@ -33,7 +32,11 @@ export default function NewsPage({ news }) {
     }))
     .sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
   return (
-    <Layout title="News" description="Recent news about MMP">
+    <Layout
+      title="News"
+      description="Recent news about MMP"
+      bgColor={project === "mmp" && "bg-neutral-50"}
+    >
       <ul className="flex flex-col items-start gap-6">
         {posts.map((post) => {
           if (post.heroImage) {
