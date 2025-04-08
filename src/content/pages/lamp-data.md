@@ -1,7 +1,6 @@
 ---
-title: Lamp Data
+title: Data
 tags:
-  - LAMP
   - LAMP
 ---
 
