@@ -1,5 +1,5 @@
 ---
-title: Lamp Documentation
+title: Documentation
 tags:
   - LAMP
 ---
