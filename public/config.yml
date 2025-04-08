@@ -230,3 +230,26 @@ collections:
         max: 2
         collapsed: false
         field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+  - name: aims
+    label: Aims
+    folder: src/content/aims
+    create: false
+    fields:
+      - name: title
+        label: Aim
+        widget: text
+      - name: body
+        label: aim
+        widget: markdown
+      - name: tags
+        label: Project Tags
+        widget: select
+        options: ["MMP", "LAMP"]
+      - name: color
+        label: Icon Color
+        widget: select
+        options: ["blue", "primary", "brown"]
+      - name: icon
+        label: Icon
+        widget: select
+        options: ["GlobeIcon", "Pencil1Icon", "TargetIcon"]
