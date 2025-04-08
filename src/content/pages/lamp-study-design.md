@@ -1,5 +1,5 @@
 ---
-title: Lamp Study Design
+title: Study Design
 tags:
   - LAMP
 ---
