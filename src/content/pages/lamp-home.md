@@ -1,5 +1,5 @@
 ---
-title: Lamp Home
+title: Home
 tags:
   - LAMP
 ---
