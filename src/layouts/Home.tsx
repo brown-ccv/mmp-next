@@ -1,41 +1,48 @@
-import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import MmpLogo from "@/assets/mmp-logo";
 import React from "react";
+import Link from "next/link";
 
-interface HomeLayoutProps {
+interface ProjectConfigProps {
   title: string;
+  Logo: React.FC;
   description: string;
   lede: string;
+  href: string;
+  body: string;
+}
+
+interface HomeLayoutProps {
+  config: Array<ProjectConfigProps>;
   children: React.ReactNode;
 }
 
-export const Home: React.FC<HomeLayoutProps> = ({
-  title,
-  description,
-  lede,
-  children,
-}) => {
+export const Home: React.FC<HomeLayoutProps> = ({ config, children }) => {
   return (
     <div className="body">
-      <main>
-        <article>
-          <div>
-            <div className="flex flex-col gap-6 pb-40 md:w-2/3">
-              <div className="flex gap-6">
-                <MmpLogo />
-                <div className="flex flex-col">
-                  <h1>{title}</h1>
-                  <h2>{description}</h2>
-                </div>
-              </div>
-              <h3>{lede}</h3>
-            </div>
-            <hr className="border-none h-0.5 bg-neutral-900 mb-16" />
+      <main className="mt-16">
+        {config.map((i) => {
+          const { title, Logo, href, description, lede, body } = i;
+          return (
+            <article key={i.title}>
+              <div className="flex flex-col gap-6 pb-40">
+                <Link href={href}>
+                  <div className="flex gap-6">
+                    <Logo />
 
-            {children}
-          </div>
-        </article>
+                    <div className="flex flex-col">
+                      <h1>{title}</h1>
+                      <h2>{description}</h2>
+                    </div>
+                  </div>
+                </Link>
+                <h3>{lede}</h3>
+                <p className="max-width-full min-width-fit">{body}</p>
+              </div>
+              <hr className="border-none h-0.5 bg-neutral-900 mb-16" />
+            </article>
+          );
+        })}
+        {children}
       </main>
       <Footer />
     </div>

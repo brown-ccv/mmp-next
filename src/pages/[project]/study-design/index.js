@@ -12,7 +12,6 @@ import Image from "next/image";
 import { withRouter } from "next/router";
 
 class StudyDesignPage extends Component {
-  // TODO: style and lamp vs mmp content
   projectConfigs = {
     mmp: {
       attributes: attributes,
