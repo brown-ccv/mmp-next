@@ -7,8 +7,6 @@ import { react as MmpContent } from "@/content/pages/mmp-home.md";
 import { react as LampContent } from "@/content/pages/lamp-home.md";
 import { Component } from "react";
 import { withRouter } from "next/router";
-import MmpLogo from "@/assets/mmp-logo";
-import LampLogo from "@/assets/lamp-logo";
 
 class HomePage extends Component {
   projectConfigs = {
