@@ -26,7 +26,7 @@ export default function PublicationPage({ pubs }) {
   return (
     <Layout
       title="Publications"
-      description="Publications associated with MMP"
+      description={`Publications associated with ${project.toUpperCase()}`}
       bgColor={project === "mmp" && "bg-neutral-50"}
     >
       <PublicationSection publications={data} project={project.toUpperCase()} />

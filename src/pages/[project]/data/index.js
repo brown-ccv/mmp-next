@@ -48,7 +48,7 @@ class DataPage extends Component {
               </h2>
               <ul className="list-disc pl-4 space-y-2">
                 <li>
-                  I will use the MMP data only for research and/or educational
+                  I will use this data only for research and/or educational
                   purposes
                 </li>
                 <li>
