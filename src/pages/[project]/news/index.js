@@ -34,7 +34,7 @@ export default function NewsPage({ news }) {
   return (
     <Layout
       title="News"
-      description="Recent news about MMP"
+      description={`Recent news about ${project}`}
       bgColor={project === "mmp" && "bg-neutral-50"}
     >
       <ul className="flex flex-col items-start gap-6">
