@@ -12,7 +12,6 @@ import Image from "next/image";
 import { withRouter } from "next/router";
 
 class StudyDesignPage extends Component {
-  // TODO: style and lamp vs mmp content
   projectConfigs = {
     mmp: {
       attributes: attributes,
@@ -33,9 +32,9 @@ class StudyDesignPage extends Component {
       const project = this.props.router.query.project;
       const { attributes, description, map, bgColor, StudyContent } =
         this.projectConfigs[project];
-      const { title } = attributes
+      const { title } = attributes;
       return (
-        <Layout title={title} description={description}>
+        <Layout title={title} description={description} bgColor={bgColor}>
           <div className="flex flex-col gap-6">
             <section className="flex flex-col gap-3.5">
               <Image src={map} alt="" width="600" height="600" />
