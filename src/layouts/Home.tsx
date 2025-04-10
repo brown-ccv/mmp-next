@@ -1,11 +1,11 @@
 import { Footer } from "@/components/Footer";
 import React from "react";
 import Link from "next/link";
-import Button from "@/components/Button";
 
 interface ProjectConfigProps {
   title: string;
   Logo: React.FC;
+  buttonColor: string;
   description: string;
   lede: string;
   href: string;
@@ -22,7 +22,7 @@ export const Home: React.FC<HomeLayoutProps> = ({ config, children }) => {
     <div className="body">
       <main>
         {config.map((i) => {
-          const { title, Logo, href, description, lede, body } = i;
+          const { title, buttonColor, Logo, href, description, lede, body } = i;
           return (
             <article key={i.title}>
               <div className="flex flex-col gap-6 pb-4 pt-12">
@@ -37,7 +37,7 @@ export const Home: React.FC<HomeLayoutProps> = ({ config, children }) => {
                 <h3>{lede}</h3>
                 <p className="max-width-full min-width-fit">{body}</p>
                 <Link href={href} className="no-underline">
-                  <button className="bg-primary-500 no-underline">
+                  <button className={`${buttonColor} no-underline`}>
                     View Project
                   </button>
                 </Link>
