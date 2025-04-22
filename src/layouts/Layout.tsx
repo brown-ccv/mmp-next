@@ -19,7 +19,7 @@ export const Layout: React.FC<LayoutProps> = ({
   children,
 }) => {
   return (
-    <div className="body">
+    <div className={`body ${bgColor}`}>
       <div className="flex flex-col h-full">
         <Header />
         <main className="grow">

@@ -30,6 +30,14 @@ export interface PublicationData {
   image?: string;
 }
 
+export interface AimsData {
+  title: string;
+  tag: string;
+  color: string;
+  icon: React.FC;
+  body: string;
+}
+
 export interface NewsData {
   slug: string;
   title: string;
@@ -56,6 +64,7 @@ const publicationsDirectory = path.join(
   process.cwd(),
   "src/content/publications",
 );
+const aimsDirectory = path.join(process.cwd(), "src/content/aims");
 const filesDirectory = path.join(process.cwd(), "src/content/data");
 const newsDirectory = path.join(process.cwd(), "src/content/news");
 
@@ -115,6 +124,19 @@ export function getPublications(): PublicationData[] {
       ...data,
     } as PublicationData;
   });
+}
+
+export function getAims(){
+  const fileNames = fs. readdirSync(aimsDirectory)
+  return fileNames.map((fileName) => {
+    const fullPath = path.join(aimsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const { data } = matter(fileContents);
+
+    return {
+      ...data,
+    } as AimsData;
+  })
 }
 
 export function getNews(): NewsData[] {

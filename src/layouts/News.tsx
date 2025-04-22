@@ -5,6 +5,7 @@ import Image from "next/image";
 
 export interface News extends NewsData {
   children: React.ReactNode;
+  bgColor: string;
 }
 
 export const News: React.FC<News> = ({
@@ -13,6 +14,7 @@ export const News: React.FC<News> = ({
   heroImage,
   pubDate,
   updatedDate,
+  bgColor,
   children,
 }) => {
   const publishedDate = new Date(pubDate);
@@ -21,7 +23,7 @@ export const News: React.FC<News> = ({
     heroImage = heroImage.replace("/public", "");
   }
   return (
-    <Layout title={title} description={description} bgColor="bg-neutral-50">
+    <Layout title={title} description={description} bgColor={bgColor}>
       <article className="space-y-4">
         {heroImage && (
           <div>
