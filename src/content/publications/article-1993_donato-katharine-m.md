@@ -1,9 +1,10 @@
 ---
 classification: Article
-author: "Donato, Katharine M. "
+author: Donato, Katharine M., and Douglas S. Massey
 pubDate: "1993"
-citation: '"Current Trends and Patterns of Female Migration: Evidence from
-  Mexico". International Migration Review 27:748-71.'
+citation: >
+  "Effect of the Immigration Reform and Control Act on the Wages of Mexican
+  Migrants". Social Science Quarterly 74:523-41.
 tags:
   - MMP
 ---
