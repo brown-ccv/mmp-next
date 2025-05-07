@@ -1,9 +1,11 @@
 ---
 classification: Dissertation
-author: Sánchez, Ernesto
+author: Sorensen, Todd A.
 pubDate: "2007"
-citation: ' "Redes migratorias y mercado de trabajo Sinaloenses en Los Angeles."
-  Tesis de Doctorado en Ciencias Sociales, Universidad de Guadalajara.'
+citation: >
+  "Three Essays in Labor Economics. Chapter 2: The Effects of Border Enforcement
+  on Migrants Border Crossing Choices: Diversion or Deterrence?" PhD.
+  Dissertation, Department of Economics, University of Arizona.
 tags:
   - MMP
 ---
