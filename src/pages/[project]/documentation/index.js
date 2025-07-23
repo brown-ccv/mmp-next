@@ -49,7 +49,7 @@ export default function DocPage({ allFiles }) {
     archivo: file.archivo?.replace("/public", ""),
     file: file.file?.replace("/public", ""),
   }));
-  const codebooks = files.filter((file) => file.cat === "Codebook");
+  const codebooks = files.filter((file) => file.cat === "Codebook" && file.tags.includes(project.toUpperCase()));
   const core = codebooks.filter((file) => file.codebookType === "MMP Core");
   const community = codebooks.filter(
     (file) => file.codebookType === "Community Level Supplementary",
@@ -58,10 +58,10 @@ export default function DocPage({ allFiles }) {
     (file) => file.codebookType === "State Level Supplementary",
   );
   const national = codebooks.filter(
-    (file) => file.codebookType === "National Level Supplementary",
+    (file) => file.codebookType === "National Level Supplementary" && file.tags.includes(project.toUpperCase())
   );
-  const appendix = files.filter((file) => file.cat === "Appendices");
-  const questionnaire = files.filter((file) => file.cat === "Questionnaire");
+  const appendix = files.filter((file) => file.cat === "Appendices" && file.tags.includes(project.toUpperCase()));
+  const questionnaire = files.filter((file) => file.cat === "Questionnaire" && file.tags.includes(project.toUpperCase()));
 
   return (
     <Layout title={title} description="About the Project" bgColor={bgColor}>
