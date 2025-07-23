@@ -58,10 +58,10 @@ export default function DocPage({ allFiles }) {
     (file) => file.codebookType === "State Level Supplementary",
   );
   const national = codebooks.filter(
-    (file) => file.codebookType === "National Level Supplementary",
+    (file) => file.codebookType === "National Level Supplementary" && file.tags.includes(project.toUpperCase())
   );
-  const appendix = files.filter((file) => file.cat === "Appendices");
-  const questionnaire = files.filter((file) => file.cat === "Questionnaire");
+  const appendix = files.filter((file) => file.cat === "Appendices" && file.tags.includes(project.toUpperCase()));
+  const questionnaire = files.filter((file) => file.cat === "Questionnaire" && file.tags.includes(project.toUpperCase()));
 
   return (
     <Layout title={title} description="About the Project" bgColor={bgColor}>
