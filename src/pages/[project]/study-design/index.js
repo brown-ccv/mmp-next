@@ -19,25 +19,27 @@ class StudyDesignPage extends Component {
       map: "/images/MMP_Map.jpg",
       bgColor: "bg-neutral-50",
       StudyContent: StudyContentMmp,
+      mapSize: 600
     },
     lamp: {
       attributes: lampAttributes,
       description: "Latin American Migration Project",
       map: "/images/LAMP_Map.jpg",
       StudyContent: StudyContentLamp,
+      mapSize: 400
     },
   };
   render() {
     if (this.props.router.isReady) {
       const project = this.props.router.query.project;
-      const { attributes, description, map, bgColor, StudyContent } =
+      const { attributes, description, map, bgColor, StudyContent, mapSize } =
         this.projectConfigs[project];
       const { title } = attributes;
       return (
         <Layout title={title} description={description} bgColor={bgColor}>
           <div className="flex flex-col gap-6">
             <section className="flex flex-col gap-3.5">
-              <Image src={map} alt="" width="600" height="600" />
+              <Image src={map} alt="" width={mapSize} height={mapSize} />
             </section>
             <section className="readable space-y-4">
               <StudyContent />
