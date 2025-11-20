@@ -1,0 +1,5 @@
+.next
+src/globals.css
+*node_modules
+src/content
+*.md
