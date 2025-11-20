@@ -19,14 +19,14 @@ class StudyDesignPage extends Component {
       map: "/images/MMP_Map.jpg",
       bgColor: "bg-neutral-50",
       StudyContent: StudyContentMmp,
-      mapSize: 600
+      mapSize: 600,
     },
     lamp: {
       attributes: lampAttributes,
       description: "Latin American Migration Project",
       map: "/images/LAMP_Map.jpg",
       StudyContent: StudyContentLamp,
-      mapSize: 400
+      mapSize: 400,
     },
   };
   render() {

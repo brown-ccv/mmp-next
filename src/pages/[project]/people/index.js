@@ -1,12 +1,14 @@
-import { useRouter } from 'next/router';
+import { useRouter } from "next/router";
 
 import { Layout } from "@/layouts/Layout";
 import { CardContainer } from "@/components/CardContainer";
 import { getPeopleData } from "@/lib/markdown";
 
-
 export async function getStaticPaths() {
-  return { paths: [{params: {project: "mmp"}}, {params: {project: "lamp"}}], fallback: false}
+  return {
+    paths: [{ params: { project: "mmp" } }, { params: { project: "lamp" } }],
+    fallback: false,
+  };
 }
 
 export async function getStaticProps() {
@@ -23,15 +25,24 @@ export default function PeoplePage({ people }) {
 
   const shownPeople = people.filter(
     (item) =>
-      router.query.project && item.tags.includes(router.query.project.toUpperCase())
-  )
+      router.query.project &&
+      item.tags.includes(router.query.project.toUpperCase()),
+  );
 
-  const leadership = shownPeople.filter((person) => person.type === "Leadership");
+  const leadership = shownPeople.filter(
+    (person) => person.type === "Leadership",
+  );
   const advisors = shownPeople.filter((person) => person.type === "Advisors");
-  const support = shownPeople.filter((person) => person.type === "Supporting Staff");
+  const support = shownPeople.filter(
+    (person) => person.type === "Supporting Staff",
+  );
 
   return (
-    <Layout title="Staff" description="Our Leadership, Advisors, and Staff" bgColor={router.query.project==="mmp" && "bg-neutral-50"}>
+    <Layout
+      title="Staff"
+      description="Our Leadership, Advisors, and Staff"
+      bgColor={router.query.project === "mmp" && "bg-neutral-50"}
+    >
       <div className="flex flex-col space-y-28">
         <CardContainer
           title="Leadership"
