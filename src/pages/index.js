@@ -17,7 +17,7 @@ const projectConfig = [
   {
     title: "LAMP",
     href: "/lamp",
-    buttonColor: "bg-secondary-blue-500",
+    buttonColor: "bg-secondary-blue-700",
     Logo: LampLogo,
     description: "Latin American Migration Project",
     lede: "Furthering understanding of Latin American migration to the United States",

@@ -21,6 +21,7 @@ export const Home: React.FC<HomeLayoutProps> = ({ config, children }) => {
   return (
     <div className="body">
       <main>
+        <title>Mesoamerican Migration Project (MMP)</title>
         {config.map((i) => {
           const { title, buttonColor, Logo, href, description, lede, body } = i;
           return (
