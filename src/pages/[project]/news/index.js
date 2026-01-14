@@ -37,6 +37,7 @@ export default function NewsPage({ news }) {
       description={`Recent news about ${project}`}
       bgColor={project === "mmp" && "bg-neutral-50"}
     >
+      <title>{project} - News</title>
       <ul className="flex flex-col items-start gap-6">
         {posts.map((post) => {
           if (post.heroImage) {

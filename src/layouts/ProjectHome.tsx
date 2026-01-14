@@ -23,6 +23,7 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
 }) => {
   return (
     <div className={`body ${bgColor}`}>
+      <title>{project}</title>
       <Header />
 
       <main>

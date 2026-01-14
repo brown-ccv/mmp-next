@@ -37,6 +37,7 @@ class DataPage extends Component {
           description="Data files and information"
           bgColor={bgColor}
         >
+          <title>{project} - Data</title>
           <section className="space-y-8 readable pb-12">
             <DataContent />
           </section>
