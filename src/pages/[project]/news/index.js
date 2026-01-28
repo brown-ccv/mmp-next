@@ -1,3 +1,4 @@
+'use client'
 import { Layout } from "@/layouts/Layout";
 import { getNews } from "@/lib/markdown";
 import { useRouter } from "next/router";
