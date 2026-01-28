@@ -46,6 +46,7 @@ export interface NewsData {
   tags: Array<string>;
   updatedDate?: Date;
   heroImage?: string;
+  imageDescription?: string;
 }
 
 export interface FileData {
@@ -126,8 +127,8 @@ export function getPublications(): PublicationData[] {
   });
 }
 
-export function getAims(){
-  const fileNames = fs. readdirSync(aimsDirectory)
+export function getAims() {
+  const fileNames = fs.readdirSync(aimsDirectory);
   return fileNames.map((fileName) => {
     const fullPath = path.join(aimsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
@@ -136,7 +137,7 @@ export function getAims(){
     return {
       ...data,
     } as AimsData;
-  })
+  });
 }
 
 export function getNews(): NewsData[] {

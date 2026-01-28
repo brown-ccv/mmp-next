@@ -12,6 +12,7 @@ export const News: React.FC<News> = ({
   title,
   description,
   heroImage,
+  imageDescription,
   pubDate,
   updatedDate,
   bgColor,
@@ -30,7 +31,7 @@ export const News: React.FC<News> = ({
             <Image
               className="w-full"
               src={heroImage}
-              alt={title}
+              alt={imageDescription}
               width={200}
               height={200}
             />

@@ -1,6 +1,7 @@
 ---
 pubDate: 12.10.2024
 heroImage: /public/images/alap-dec-2024.png
+imageDescription: Image text reads XI Congreso de la Asociación Latinoamericana de Población, paired with an illustration of a group of people and the Congreso ALAP logo.
 title: MMP-LAMP featured at Congress of the Latin American Population
   Association (ALAP), December 9-10, 2024
 description: 'The MMP-LAMP study design and data bases were featured in the

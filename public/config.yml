@@ -10,7 +10,7 @@ collections:
     label: Pages
     folder: src/content/pages
     create: false
-    filter: {field: tags, value: MMP}
+    filter: { field: tags, value: MMP }
     fields:
       - name: title
         label: Page
@@ -24,12 +24,18 @@ collections:
         min: 1
         max: 2
         collapsed: false
-        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+        field:
+          {
+            label: Project,
+            name: project,
+            widget: select,
+            options: ["MMP", "LAMP"],
+          }
   - name: lamp_pages
     label: LAMP Pages
     folder: src/content/pages
     create: false
-    filter: {field: tags, value: LAMP}
+    filter: { field: tags, value: LAMP }
     fields:
       - name: title
         label: Page
@@ -43,7 +49,13 @@ collections:
         min: 1
         max: 2
         collapsed: false
-        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+        field:
+          {
+            label: Project,
+            name: project,
+            widget: select,
+            options: ["MMP", "LAMP"],
+          }
   - name: map
     label: Map
     folder: src/content/map
@@ -61,7 +73,13 @@ collections:
         min: 1
         max: 2
         collapsed: false
-        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+        field:
+          {
+            label: Project,
+            name: project,
+            widget: select,
+            options: ["MMP", "LAMP"],
+          }
   - name: people
     label: People
     folder: src/content/people
@@ -70,7 +88,7 @@ collections:
       - name: type
         label: Staff Type
         widget: select
-        options: [ 'Leadership', 'Advisors', 'Supporting Staff' ]
+        options: ["Leadership", "Advisors", "Supporting Staff"]
       - name: name
         label: Name
         widget: string
@@ -99,7 +117,7 @@ collections:
         required: false
         label: Email
         widget: string
-        pattern: [ '.+@.+\..+', 'Email must follow standard guidelines' ]
+        pattern: ['.+@.+\..+', "Email must follow standard guidelines"]
       - name: startDate
         label: Year Started Contributions
         widget: datetime
@@ -116,18 +134,24 @@ collections:
         min: 1
         max: 2
         collapsed: false
-        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+        field:
+          {
+            label: Project,
+            name: project,
+            widget: select,
+            options: ["MMP", "LAMP"],
+          }
   - name: pubs
     label: Publications
     folder: src/content/publications
     create: true
     identifier_field: citation
-    slug: '{{fields.classification}}-{{fields.pubDate}}_{{fields.author}}'
+    slug: "{{fields.classification}}-{{fields.pubDate}}_{{fields.author}}"
     fields:
       - name: classification
         label: Classification
         widget: select
-        options: [ 'Book', 'Chapter', 'Article', 'Dissertation' ]
+        options: ["Book", "Chapter", "Article", "Dissertation"]
       - name: author
         label: Author(s)
         widget: text
@@ -161,7 +185,13 @@ collections:
         min: 1
         max: 2
         collapsed: false
-        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+        field:
+          {
+            label: Project,
+            name: project,
+            widget: select,
+            options: ["MMP", "LAMP"],
+          }
   - name: data
     label: Documentation Data
     create: true
@@ -170,7 +200,14 @@ collections:
       - name: cat
         label: Category
         widget: select
-        options: [ 'Study Design', 'Questionnaire', 'Changes to Questionnaire', 'Codebook', 'Appendices' ]
+        options:
+          [
+            "Study Design",
+            "Questionnaire",
+            "Changes to Questionnaire",
+            "Codebook",
+            "Appendices",
+          ]
       - name: title
         label: Title
         widget: string
@@ -184,7 +221,14 @@ collections:
         label: Codebook Category
         required: false
         widget: select
-        options: [ 'MMP Core', 'Community Level Supplementary', 'State Level Supplementary', 'National Level Supplementary', 'MSA Level Supplementary' ]
+        options:
+          [
+            "MMP Core",
+            "Community Level Supplementary",
+            "State Level Supplementary",
+            "National Level Supplementary",
+            "MSA Level Supplementary",
+          ]
       - name: archivo
         required: false
         label: Spanish File
@@ -199,7 +243,13 @@ collections:
         min: 1
         max: 2
         collapsed: false
-        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+        field:
+          {
+            label: Project,
+            name: project,
+            widget: select,
+            options: ["MMP", "LAMP"],
+          }
   - name: news
     label: News
     identifier_field: pubDate
@@ -214,6 +264,9 @@ collections:
       - name: heroImage
         label: Featured Image
         widget: image
+      - name: imageDescription
+        label: Image Description
+        widget: text
       - name: title
         label: Title
         widget: text
@@ -229,7 +282,13 @@ collections:
         min: 1
         max: 2
         collapsed: false
-        field: { label: Project, name: project, widget: select, options: ["MMP", "LAMP"] }
+        field:
+          {
+            label: Project,
+            name: project,
+            widget: select,
+            options: ["MMP", "LAMP"],
+          }
   - name: aims
     label: Aims
     folder: src/content/aims
