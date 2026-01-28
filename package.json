@@ -19,7 +19,6 @@
     "@tailwindcss/postcss": "^4.1.18",
     "autoprefixer": "10.4.23",
     "date-fns": "4.1.0",
-    "decap-cms-app": "^3.10.0",
     "firebase": "^12.8.0",
     "gray-matter": "4.0.3",
     "js-yaml": "4.1.1",
