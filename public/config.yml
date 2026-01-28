@@ -264,6 +264,9 @@ collections:
       - name: heroImage
         label: Featured Image
         widget: image
+      - name: imageDescription
+        label: Image Description
+        widget: text
       - name: title
         label: Title
         widget: text

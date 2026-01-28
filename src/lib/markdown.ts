@@ -46,6 +46,7 @@ export interface NewsData {
   tags: Array<string>;
   updatedDate?: Date;
   heroImage?: string;
+  imageDescription?: string;
 }
 
 export interface FileData {
