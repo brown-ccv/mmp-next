@@ -23,11 +23,10 @@ export async function getStaticProps() {
 export default function PeoplePage({ people }) {
   const router = useRouter();
 
-  const project = router.query.project
+  const project = router.query.project;
   const shownPeople = people.filter(
-    (item) =>
-      project && item.tags.includes(project.toUpperCase())
-  )
+    (item) => project && item.tags.includes(project.toUpperCase()),
+  );
 
   const leadership = shownPeople.filter(
     (person) => person.type === "Leadership",
@@ -37,9 +36,13 @@ export default function PeoplePage({ people }) {
     (person) => person.type === "Supporting Staff",
   );
 
-
   return (
-    <Layout title="Staff" description="Our Leadership, Advisors, and Staff" bgColor={project==="mmp" && "bg-neutral-50"} project={project.toUpperCase()}>
+    <Layout
+      title="Staff"
+      description="Our Leadership, Advisors, and Staff"
+      bgColor={project === "mmp" && "bg-neutral-50"}
+      project={project.toUpperCase()}
+    >
       <div className="flex flex-col space-y-28">
         <CardContainer
           title="Leadership"

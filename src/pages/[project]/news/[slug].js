@@ -22,7 +22,7 @@ export async function getStaticProps({ params }) {
 
 export default function Page({ news }) {
   const router = useRouter();
-  const project = router.query.project
+  const project = router.query.project;
   const bgColor = project === "mmp" ? "bg-neutral-50" : "";
   return (
     <News bgColor={bgColor} {...news} project={project}>
