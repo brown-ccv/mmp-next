@@ -34,10 +34,10 @@ class DataPage extends Component {
       return (
         <Layout
           title={title}
+          project={project.toUpperCase()}
           description="Data files and information"
           bgColor={bgColor}
         >
-          <title>{project} - Data</title>
           <section className="space-y-8 readable pb-12">
             <DataContent />
           </section>

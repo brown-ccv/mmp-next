@@ -1,6 +1,7 @@
 import { Footer } from "@/components/Footer";
 import React from "react";
 import Link from "next/link";
+import Head from "next/head";
 
 interface ProjectConfigProps {
   title: string;
@@ -21,7 +22,11 @@ export const Home: React.FC<HomeLayoutProps> = ({ config, children }) => {
   return (
     <div className="body">
       <main>
-        <title>Mesoamerican Migration Project (MMP)</title>
+        <Head>
+          <title>
+            Mesoamerican Migration Project and Latin American Migration Project
+          </title>
+        </Head>
         {config.map((i) => {
           const { title, buttonColor, Logo, href, description, lede, body } = i;
           return (

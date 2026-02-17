@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import React from "react";
 import MmpLogo from "@/assets/mmp-logo";
 import LampLogo from "@/assets/lamp-logo";
+import Head from "next/head";
 
 interface HomeLayoutProps {
   title: string;
@@ -23,7 +24,15 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
 }) => {
   return (
     <div className={`body ${bgColor}`}>
-      <title>{project}</title>
+      <Head>
+        <title>
+          {project.toUpperCase()} (
+          {project === "mmp"
+            ? "Mesoamerican Migration Project"
+            : "Latin American Migration Project"}
+          )
+        </title>
+      </Head>
       <Header />
 
       <main>

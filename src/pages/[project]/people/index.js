@@ -39,8 +39,7 @@ export default function PeoplePage({ people }) {
 
 
   return (
-    <Layout title="Staff" description="Our Leadership, Advisors, and Staff" bgColor={project==="mmp" && "bg-neutral-50"}>
-      <title>{project}</title>
+    <Layout title="Staff" description="Our Leadership, Advisors, and Staff" bgColor={project==="mmp" && "bg-neutral-50"} project={project.toUpperCase()}>
       <div className="flex flex-col space-y-28">
         <CardContainer
           title="Leadership"

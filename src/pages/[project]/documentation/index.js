@@ -75,8 +75,7 @@ export default function DocPage({ allFiles }) {
   );
 
   return (
-    <Layout title={title} description="About the Project" bgColor={bgColor}>
-      <title>{project} - Documentation</title>
+    <Layout title={title} description="About the Project" bgColor={bgColor} project={project.toUpperCase()}>
       <section className="space-y-8 readable pb-12">
         <DocContent />
         <Link

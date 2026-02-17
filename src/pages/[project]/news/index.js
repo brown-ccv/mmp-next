@@ -34,10 +34,10 @@ export default function NewsPage({ news }) {
   return (
     <Layout
       title="News"
+      project={project.toUpperCase()}
       description={`Recent news about ${project}`}
       bgColor={project === "mmp" && "bg-neutral-50"}
     >
-      <title>{project} - News</title>
       <ul className="flex flex-col items-start gap-6">
         {posts.map((post) => {
           if (post.heroImage) {
@@ -49,11 +49,13 @@ export default function NewsPage({ news }) {
                 className="relative hidden w-80 h-72 flex-none md:block"
                 href={`/${project}/news/${post.slug}/`}
               >
-                {post.altText && post.heroImage && <img
-                  className="object-cover h-full w-full"
-                  src={post.heroImage}
-                  alt={post.altText}
-                />}
+                {post.altText && post.heroImage && (
+                  <img
+                    className="object-cover h-full w-full"
+                    src={post.heroImage}
+                    alt={post.altText}
+                  />
+                )}
               </a>
               <div className="grow space-y-1">
                 <a href={`/${project}/news/${post.slug}/`}>

@@ -5,6 +5,7 @@ import Head from "next/head";
 
 interface LayoutProps {
   title: string;
+  project: string;
   description: string;
   lede?: string;
   bgColor?: string;
@@ -13,28 +14,36 @@ interface LayoutProps {
 
 export const Layout: React.FC<LayoutProps> = ({
   title,
+  project,
   description,
   lede,
   bgColor = "",
   children,
 }) => {
   return (
-    <div className={`body ${bgColor}`}>
-      <div className="flex flex-col h-full">
-        <Header />
-        <main className="grow">
-          <article>
-            <div>
-              <div className="space-y-3 pb-6">
-                <h1>{title}</h1>
+    <>
+      <Head>
+        <title>
+          {project} - {title}
+        </title>
+      </Head>
+      <div className={`body ${bgColor}`}>
+        <div className="flex flex-col h-full">
+          <Header />
+          <main className="grow">
+            <article>
+              <div>
+                <div className="space-y-3 pb-6">
+                  <h1>{title}</h1>
+                </div>
+                <hr className="border-none h-0.5 bg-neutral-900 mb-16" />
+                {children}
               </div>
-              <hr className="border-none h-0.5 bg-neutral-900 mb-16" />
-              {children}
-            </div>
-          </article>
-        </main>
-        <Footer />
+            </article>
+          </main>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </>
   );
 };

@@ -28,8 +28,8 @@ export default function PublicationPage({ pubs }) {
       title="Publications"
       description={`Publications associated with ${project.toUpperCase()}`}
       bgColor={project === "mmp" && "bg-neutral-50"}
+      project={project.toUpperCase()}
     >
-      <title>{project} - Publicatios</title>
       <PublicationSection publications={data} project={project.toUpperCase()} />
     </Layout>
   );
