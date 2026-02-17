@@ -12,6 +12,7 @@ export const News: React.FC<News> = ({
   title,
   description,
   heroImage,
+  altText,
   pubDate,
   updatedDate,
   bgColor,
@@ -25,12 +26,12 @@ export const News: React.FC<News> = ({
   return (
     <Layout title={title} description={description} bgColor={bgColor}>
       <article className="space-y-4">
-        {heroImage && (
+        {heroImage && altText && (
           <div>
             <Image
               className="w-full"
               src={heroImage}
-              alt={title}
+              alt={altText}
               width={200}
               height={200}
             />

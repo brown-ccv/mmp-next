@@ -49,11 +49,11 @@ export default function NewsPage({ news }) {
                 className="relative hidden w-80 h-72 flex-none md:block"
                 href={`/${project}/news/${post.slug}/`}
               >
-                <img
+                {post.altText && post.heroImage && <img
                   className="object-cover h-full w-full"
                   src={post.heroImage}
-                  alt=""
-                />
+                  alt={post.altText}
+                />}
               </a>
               <div className="grow space-y-1">
                 <a href={`/${project}/news/${post.slug}/`}>

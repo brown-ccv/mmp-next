@@ -30,8 +30,7 @@ const Card: React.FC<CardProps> = ({
           <Image
             className="md:w-64 md:h-64 object-cover w-40 h-40 rounded-full"
             src={imageURL}
-            alt=""
-            // alt={name}
+            alt={name}
             width={400}
             height={400}
           />
