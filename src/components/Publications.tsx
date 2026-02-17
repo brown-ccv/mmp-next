@@ -138,6 +138,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
           </label>
           <Select
             id="classification"
+            instanceId={React.useId()}
             options={classificationOptions}
             isSearchable={false}
             defaultValue={classificationFilter}
@@ -171,6 +172,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
           </label>
           <Select
             id="tags"
+            instanceId={React.useId()}
             options={tagOptions}
             isSearchable={false}
             isMulti={true}

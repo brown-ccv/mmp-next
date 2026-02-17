@@ -19,10 +19,10 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
         <Form.Label>
           <p>{label}</p>
           {sublabel && (
-            <p className="text-sm text-neutral-500 ml-1">{sublabel}</p>
+            <p className="text-sm text-neutral-800 ml-1">{sublabel}</p>
           )}
         </Form.Label>
-        <span className="text-neutral-300 top-9 right-1 absolute px-2 py-1 text-xs rounded">
+        <span className="text-neutral-800 top-9 right-1 absolute px-2 py-1 text-xs rounded">
           {characterCount}/{maxLength}
         </span>
         <Form.Control asChild>

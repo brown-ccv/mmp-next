@@ -59,7 +59,7 @@ export default function NewsPage({ news }) {
               </a>
               <div className="grow space-y-1">
                 <a href={`/${project}/news/${post.slug}/`}>
-                  <h3 className="font-medium underline">{post.title}</h3>
+                  <h2 className="font-medium underline">{post.title}</h2>
                 </a>
                 <p>{post.description}</p>
               </div>
