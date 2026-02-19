@@ -2,7 +2,7 @@ import Head from "next/head";
 import Script from "next/script";
 import { Component } from "react";
 
-export default class Activity extends Component {
+export default class Admin extends Component {
   render() {
     return (
       <>
@@ -15,9 +15,7 @@ export default class Activity extends Component {
           <meta name="robots" content="noindex" />
           <title>Content Manager</title>
         </Head>
-        <body>
-          <Script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" />
-        </body>
+        <Script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" />
       </>
     );
   }
