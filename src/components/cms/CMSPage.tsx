@@ -1,6 +1,5 @@
 import CMS from "decap-cms-app";
 import { useEffect } from "react";
-import "@staticcms/core/dist/main.css";
 import type { FC } from "react";
 
 const CMSPage: FC = () => {
