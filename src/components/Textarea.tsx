@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import * as Form from "@radix-ui/react-form";
 
-interface TextareaProps
-  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
+interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
   label: string;
   sublabel?: string;
   name: string;

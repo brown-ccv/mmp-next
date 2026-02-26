@@ -1,9 +1,8 @@
 import React, { type ReactNode } from "react";
 
-interface ButtonProps
-  extends React.PropsWithChildren<
-    React.ButtonHTMLAttributes<HTMLButtonElement>
-  > {
+interface ButtonProps extends React.PropsWithChildren<
+  React.ButtonHTMLAttributes<HTMLButtonElement>
+> {
   icon?: ReactNode;
 }
 
