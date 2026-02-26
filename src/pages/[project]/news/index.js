@@ -45,7 +45,10 @@ export default function NewsPage({ news }) {
           }
           return (
             <li key={post.slug}>
-              <a href={`/${project}/news/${post.slug}/`} className="flex gap-10 no-underline">
+              <a
+                href={`/${project}/news/${post.slug}/`}
+                className="flex gap-10 no-underline"
+              >
                 <div className="relative hidden w-80 h-72 flex-none md:block">
                   {post.heroImage && (
                     <img
