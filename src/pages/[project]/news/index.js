@@ -44,26 +44,25 @@ export default function NewsPage({ news }) {
             post.heroImage = post.heroImage.replace("/public", "");
           }
           return (
-            <li key={post.slug}>
+            <li key={post.slug} className="flex gap-10">
               <a
+                className="relative hidden w-80 h-72 flex-none md:block"
                 href={`/${project}/news/${post.slug}/`}
-                className="flex gap-10 no-underline"
               >
-                <div className="relative hidden w-80 h-72 flex-none md:block">
-                  {post.heroImage && (
-                    <img
-                      className="object-cover h-full w-full"
-                      src={post.heroImage}
-                      alt=""
-                    />
-                  )}
-                </div>
-
-                <div>
-                  <h2 className="font-medium underline">{post.title}</h2>
-                  <p>{post.description}</p>
-                </div>
+                {post.altText && post.heroImage && (
+                  <img
+                    className="object-cover h-full w-full"
+                    src={post.heroImage}
+                    alt={post.altText}
+                  />
+                )}
               </a>
+              <div className="grow space-y-1">
+                <a href={`/${project}/news/${post.slug}/`}>
+                  <h2 className="font-medium underline">{post.title}</h2>
+                </a>
+                <p>{post.description}</p>
+              </div>
             </li>
           );
         })}
