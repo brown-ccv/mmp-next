@@ -45,9 +45,9 @@ export default function NewsPage({ news }) {
           }
           return (
             <li key={post.slug} className="flex gap-10">
-              <a
+              <div
                 className="relative hidden w-80 h-72 flex-none md:block"
-                href={`/${project}/news/${post.slug}/`}
+                alt=""
               >
                 {post.altText && post.heroImage && (
                   <img
@@ -56,7 +56,7 @@ export default function NewsPage({ news }) {
                     alt={post.altText}
                   />
                 )}
-              </a>
+              </div>
               <div className="grow space-y-1">
                 <a href={`/${project}/news/${post.slug}/`}>
                   <h2 className="font-medium underline">{post.title}</h2>
