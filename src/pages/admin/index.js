@@ -1,22 +1,13 @@
-import Head from "next/head";
-import Script from "next/script";
-import { Component } from "react";
+"use client";
 
-export default class Admin extends Component {
-  render() {
-    return (
-      <>
-        <Head>
-          <meta charset="utf-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-          />
-          <meta name="robots" content="noindex" />
-          <title>Content Manager</title>
-        </Head>
-        <Script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js" />
-      </>
-    );
-  }
-}
+import dynamic from "next/dynamic";
+
+const Admin = () => {
+  const CMSPage = dynamic(() => import("../../components/cms/CMSPage"), {
+    ssr: false,
+  });
+
+  return <CMSPage key="admin" />;
+};
+
+export default Admin;
