@@ -27,40 +27,44 @@ const DocumentationTable: React.FC<DocumentationTableProps> = ({
         </thead>
 
         <tbody>
-          {files.map(({ title, file, description, version, archivo }, i) => {
-            return (
-              <tr key={i}>
-                <td className="flex justify-between gap-2">
-                  <p className="font-bold">{title}</p>
-                  <div className="flex gap-1">
-                    (
-                    {file && (
-                      <a
-                        className="text-secondary-blue-700 hover:text-secondary-blue-500"
-                        target="_blank"
-                        href={file}
-                      >
-                        en
-                      </a>
-                    )}
-                    {file && archivo && <p>/</p>}
-                    {archivo && (
-                      <a
-                        className="text-secondary-blue-700 hover:text-secondary-blue-500"
-                        target="_blank"
-                        href={archivo}
-                      >
-                        es
-                      </a>
-                    )}
-                    )
-                  </div>
-                </td>
-                <td>{description}</td>
-                {version && <td>{version}</td>}
-              </tr>
-            );
-          })}
+          {files.length === 0 ? (
+            <p>Coming Soon!</p>
+          ) : (
+            files.map(({ title, file, description, version, archivo }, i) => {
+              return (
+                <tr key={i}>
+                  <td className="flex justify-between gap-2">
+                    <p className="font-bold">{title}</p>
+                    <div className="flex gap-1">
+                      (
+                      {file && (
+                        <a
+                          className="text-secondary-blue-700 hover:text-secondary-blue-500"
+                          target="_blank"
+                          href={file}
+                        >
+                          en
+                        </a>
+                      )}
+                      {file && archivo && <p>/</p>}
+                      {archivo && (
+                        <a
+                          className="text-secondary-blue-700 hover:text-secondary-blue-500"
+                          target="_blank"
+                          href={archivo}
+                        >
+                          es
+                        </a>
+                      )}
+                      )
+                    </div>
+                  </td>
+                  <td>{description}</td>
+                  {version && <td>{version}</td>}
+                </tr>
+              );
+            })
+          )}
         </tbody>
       </table>
     </div>
