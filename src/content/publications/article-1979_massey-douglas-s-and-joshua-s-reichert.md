@@ -5,7 +5,7 @@ pubDate: "1979"
 citation: >
   "Patterns of Migration from a Central Mexican Town to the United States: A
   Comparison of Legal and Illegal Migrants." International Migration Review
-  13:599-623.
+  (1979) 13:599-623.
 tags:
   - MMP
 ---
