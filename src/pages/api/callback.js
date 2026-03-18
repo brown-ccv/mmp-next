@@ -7,7 +7,7 @@ const handler = async (req, res) => {
   const oauth2 = create();
 
   try {
-    const accessToken = await oauth2.authorizationCode.getToken({
+    const accessToken = oauth2.authorizeURL({
       code,
     });
     const { token } = oauth2.accessToken.create(accessToken);
