@@ -23,13 +23,11 @@ export const Layout: React.FC<LayoutProps> = ({
   return (
     <>
       <Head>
-        <title>
-          {project} - {title}
-        </title>
+        <title>{`${project} - ${title}`}</title>
       </Head>
       <div className={`body ${bgColor}`}>
         <div className="flex flex-col h-full">
-          <Header />
+          <Header project={project.toLowerCase()} />
           <main className="grow">
             <article>
               <div>

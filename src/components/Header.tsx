@@ -3,11 +3,12 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { LINKS } from "@/consts";
 import { HeaderLink } from "./HeaderLink";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
 
-export const HamburgerMenu = () => {
-  const router = useRouter();
-  const project = router.query.project;
+type Props = {
+  project: string;
+};
+
+export const HamburgerMenu = ({ project }: Props) => {
   return (
     <NavigationMenu.Root
       orientation="vertical"
@@ -46,10 +47,8 @@ export const HamburgerMenu = () => {
   );
 };
 
-export const Header = () => {
+export const Header = ({ project }: any) => {
   const pathname = usePathname();
-  const router = useRouter();
-  const project = router.query.project;
   return (
     <>
       <NavigationMenu.Root
@@ -74,7 +73,7 @@ export const Header = () => {
         <NavigationMenu.Viewport />
       </NavigationMenu.Root>
 
-      <HamburgerMenu />
+      <HamburgerMenu project={project} />
     </>
   );
 };

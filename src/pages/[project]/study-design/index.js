@@ -42,7 +42,6 @@ class StudyDesignPage extends Component {
           bgColor={bgColor}
           project={project.toUpperCase()}
         >
-          <title>{project} - Study Design</title>
           <div className="flex flex-col gap-6">
             <section className="flex flex-col gap-3.5">
               <Image src={map} alt="" width={mapSize} height={mapSize} />

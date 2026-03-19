@@ -1,7 +1,6 @@
 import { Layout } from "@/layouts/Layout";
 import PublicationSection from "@/components/Publications";
 import { getPublications } from "@/lib/markdown";
-import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   return {
@@ -10,19 +9,20 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(context) {
   const pubs = getPublications();
+  const project = context.params.project.toLowerCase();
   return {
     props: {
       pubs: JSON.parse(JSON.stringify(pubs)),
+      project: project,
     },
   };
 }
 
-export default function PublicationPage({ pubs }) {
+export default function PublicationPage({ pubs, project }) {
   const data = pubs.map((pub) => pub);
-  const router = useRouter();
-  const project = router.query.project;
+
   return (
     <Layout
       title="Publications"

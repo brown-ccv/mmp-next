@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 import { Layout } from "@/layouts/Layout";
 import { CardContainer } from "@/components/CardContainer";
 import { getPeopleData } from "@/lib/markdown";
@@ -11,19 +9,18 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
   const people = getPeopleData();
+  const project = params.project;
   return {
     props: {
       people: JSON.parse(JSON.stringify(people)),
+      project,
     },
   };
 }
 
-export default function PeoplePage({ people }) {
-  const router = useRouter();
-
-  const project = router.query.project;
+export default function PeoplePage({ people, project }) {
   const shownPeople = people.filter(
     (item) => project && item.tags.includes(project.toUpperCase()),
   );

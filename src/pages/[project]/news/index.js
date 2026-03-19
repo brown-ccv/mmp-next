@@ -1,6 +1,5 @@
 import { Layout } from "@/layouts/Layout";
 import { getNews } from "@/lib/markdown";
-import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   return {
@@ -9,18 +8,18 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
   const news = getNews();
+  const project = params.project;
   return {
     props: {
       news: JSON.parse(JSON.stringify(news)),
+      project,
     },
   };
 }
 
-export default function NewsPage({ news }) {
-  const router = useRouter();
-  const project = router.query.project;
+export default function NewsPage({ news, project }) {
   const shownNews = news.filter((item) =>
     item.tags.includes(project.toUpperCase()),
   );

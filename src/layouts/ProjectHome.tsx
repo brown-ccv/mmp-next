@@ -26,14 +26,16 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
     <div className={`body ${bgColor}`}>
       <Head>
         <title>
-          {project.toUpperCase()} (
-          {project === "mmp"
-            ? "Mesoamerican Migration Project"
-            : "Latin American Migration Project"}
-          )
+          {`${project.toUpperCase()} (
+          ${
+            project === "mmp"
+              ? "Mesoamerican Migration Project"
+              : "Latin American Migration Project"
+          }
+          )`}
         </title>
       </Head>
-      <Header />
+      <Header project={project} />
 
       <main>
         <article>

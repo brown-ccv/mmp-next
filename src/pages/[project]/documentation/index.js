@@ -11,7 +11,6 @@ import {
 import DocumentationTable from "@/components/DocumentationTable";
 import { getAllFileData } from "@/lib/markdown";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   return {
@@ -20,11 +19,13 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
   const allFiles = getAllFileData();
+  const project = params.project;
   return {
     props: {
       allFiles,
+      project,
     },
   };
 }
@@ -38,9 +39,7 @@ const projectConfigs = {
   lamp: { attributes: lampAttributes, DocContent: LampDocContent },
 };
 
-export default function DocPage({ allFiles }) {
-  const router = useRouter();
-  const project = router.query.project;
+export default function DocPage({ allFiles, project }) {
   const { attributes, DocContent, bgColor } = projectConfigs[project];
   let { title } = attributes;
 
