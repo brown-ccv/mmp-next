@@ -42,10 +42,11 @@ export const Home: React.FC<HomeLayoutProps> = ({ config, children }) => {
                 </div>
                 <h3>{lede}</h3>
                 <p className="max-width-full min-width-fit">{body}</p>
-                <Link href={href} className="no-underline">
-                  <button className={`${buttonColor} no-underline`}>
-                    View Project
-                  </button>
+                <Link
+                  href={href}
+                  className={`${buttonColor} flex items-center gap-2 px-3 py-2 w-max rounded-full text-neutral-50 transition-all hover:shadow-md no-underline hover:backdrop-brightness-50`}
+                >
+                  View Project
                 </Link>
               </div>
               <hr className="border-none h-0.5 bg-neutral-900 mb-4" />
