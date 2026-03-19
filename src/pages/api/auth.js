@@ -4,11 +4,9 @@ const { create } = require("./_lib/oauth2");
 const randomString = () => crypto.randomBytes(4).toString(`hex`);
 
 const handler = (req, res) => {
-  //const { host } = req.headers;
-
   const oauth2 = create();
 
-  const url = oauth2.authorizationCode.authorizeURL({
+  const url = oauth2.authorizeURL({
     scope: `repo,user`,
     state: randomString(),
   });
