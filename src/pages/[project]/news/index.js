@@ -1,6 +1,5 @@
 import { Layout } from "@/layouts/Layout";
 import { getNews } from "@/lib/markdown";
-import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   return {
@@ -9,18 +8,18 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
   const news = getNews();
+  const project = params.project;
   return {
     props: {
       news: JSON.parse(JSON.stringify(news)),
+      project,
     },
   };
 }
 
-export default function NewsPage({ news }) {
-  const router = useRouter();
-  const project = router.query.project;
+export default function NewsPage({ news, project }) {
   const shownNews = news.filter((item) =>
     item.tags.includes(project.toUpperCase()),
   );
@@ -34,6 +33,7 @@ export default function NewsPage({ news }) {
   return (
     <Layout
       title="News"
+      project={project.toUpperCase()}
       description={`Recent news about ${project}`}
       bgColor={project === "mmp" && "bg-neutral-50"}
     >
@@ -44,19 +44,21 @@ export default function NewsPage({ news }) {
           }
           return (
             <li key={post.slug} className="flex gap-10">
-              <a
+              <div
                 className="relative hidden w-80 h-72 flex-none md:block"
-                href={`/${project}/news/${post.slug}/`}
+                alt=""
               >
-                <img
-                  className="object-cover h-full w-full"
-                  src={post.heroImage}
-                  alt=""
-                />
-              </a>
+                {post.altText && post.heroImage && (
+                  <img
+                    className="object-cover h-full w-full"
+                    src={post.heroImage}
+                    alt={post.altText}
+                  />
+                )}
+              </div>
               <div className="grow space-y-1">
                 <a href={`/${project}/news/${post.slug}/`}>
-                  <h3 className="font-medium underline">{post.title}</h3>
+                  <h2 className="font-medium underline">{post.title}</h2>
                 </a>
                 <p>{post.description}</p>
               </div>

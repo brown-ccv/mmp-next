@@ -8,7 +8,7 @@ const projectConfig = [
   {
     title: "MMP",
     href: "/mmp",
-    buttonColor: "bg-primary-500",
+    buttonColor: "bg-primary-500 hover:bg-primary-700",
     Logo: MmpLogo,
     description: "Mesoamerican Migration Project",
     lede: "Furthering understanding of Mexican and Central American migration to the United States",
@@ -17,7 +17,7 @@ const projectConfig = [
   {
     title: "LAMP",
     href: "/lamp",
-    buttonColor: "bg-secondary-blue-500",
+    buttonColor: "bg-secondary-blue-700 hover:bg-secondary-blue-500",
     Logo: LampLogo,
     description: "Latin American Migration Project",
     lede: "Furthering understanding of Latin American migration to the United States",

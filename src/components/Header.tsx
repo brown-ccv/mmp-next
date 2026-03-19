@@ -3,19 +3,26 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { LINKS } from "@/consts";
 import { HeaderLink } from "./HeaderLink";
 import { usePathname } from "next/navigation";
-import { useRouter } from "next/router";
 
-export const HamburgerMenu = () => {
-  const router = useRouter();
-  const project = router.query.project;
+type Props = {
+  project: string;
+};
+
+export const HamburgerMenu = ({ project }: Props) => {
   return (
     <NavigationMenu.Root
       orientation="vertical"
       className="flex justify-end lg:hidden pt-2"
     >
       <NavigationMenu.List className="flex justify-end">
-        <NavigationMenu.Item className="flex flex-col items-end">
-          <NavigationMenu.Trigger className="text-neutral-900 font-semibold flex justify-end">
+        <NavigationMenu.Item
+          className="flex flex-col items-end"
+          aria-label="Navigation"
+        >
+          <NavigationMenu.Trigger
+            className="text-neutral-900 font-semibold flex justify-end"
+            aria-label="Site nav"
+          >
             <HamburgerMenuIcon width={24} height={24} />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content>
@@ -40,10 +47,8 @@ export const HamburgerMenu = () => {
   );
 };
 
-export const Header = () => {
+export const Header = ({ project }: any) => {
   const pathname = usePathname();
-  const router = useRouter();
-  const project = router.query.project;
   return (
     <>
       <NavigationMenu.Root
@@ -68,7 +73,7 @@ export const Header = () => {
         <NavigationMenu.Viewport />
       </NavigationMenu.Root>
 
-      <HamburgerMenu />
+      <HamburgerMenu project={project} />
     </>
   );
 };

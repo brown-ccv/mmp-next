@@ -1,6 +1,5 @@
 import { News } from "@/layouts/News";
 import { getNewsArticleIds, getNewsArticle } from "@/lib/markdown";
-import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   const paths = getNewsArticleIds();
@@ -13,18 +12,19 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const news = await getNewsArticle(params.slug);
+  const project = params.project.toLowerCase();
   return {
     props: {
       news,
+      project,
     },
   };
 }
 
-export default function Page({ news }) {
-  const router = useRouter();
-  const bgColor = router.query.project === "mmp" ? "bg-neutral-50" : "";
+export default function Page({ news, project }) {
+  const bgColor = project === "mmp" ? "bg-neutral-50" : "";
   return (
-    <News bgColor={bgColor} {...news}>
+    <News bgColor={bgColor} {...news} project={project}>
       <div dangerouslySetInnerHTML={{ __html: news.contentHtml }} />
     </News>
   );

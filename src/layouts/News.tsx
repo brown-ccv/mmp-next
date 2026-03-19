@@ -10,8 +10,10 @@ export interface News extends NewsData {
 
 export const News: React.FC<News> = ({
   title,
+  project,
   description,
   heroImage,
+  altText,
   pubDate,
   updatedDate,
   bgColor,
@@ -23,14 +25,19 @@ export const News: React.FC<News> = ({
     heroImage = heroImage.replace("/public", "");
   }
   return (
-    <Layout title={title} description={description} bgColor={bgColor}>
+    <Layout
+      title={title}
+      description={description}
+      bgColor={bgColor}
+      project={project.toUpperCase()}
+    >
       <article className="space-y-4">
-        {heroImage && (
+        {heroImage && altText && (
           <div>
             <Image
               className="w-full"
               src={heroImage}
-              alt={title}
+              alt={altText}
               width={200}
               height={200}
             />

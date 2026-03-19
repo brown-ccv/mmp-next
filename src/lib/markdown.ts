@@ -41,11 +41,13 @@ export interface AimsData {
 export interface NewsData {
   slug: string;
   title: string;
+  project: string;
   description: string;
   pubDate: Date;
   tags: Array<string>;
   updatedDate?: Date;
   heroImage?: string;
+  altText?: string;
 }
 
 export interface FileData {
