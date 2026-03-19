@@ -44,7 +44,7 @@ export const Home: React.FC<HomeLayoutProps> = ({ config, children }) => {
                 <p className="max-width-full min-width-fit">{body}</p>
                 <Link
                   href={href}
-                  className={`${buttonColor} flex items-center gap-2 px-3 py-2 w-max rounded-full text-neutral-50 transition-all hover:shadow-md no-underline hover:backdrop-brightness-50`}
+                  className={`${buttonColor} flex items-center gap-2 px-3 py-2 w-max rounded-full text-neutral-50 transition-all hover:shadow-md no-underline`}
                 >
                   View Project
                 </Link>

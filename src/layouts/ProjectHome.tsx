@@ -24,6 +24,12 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
 }) => {
   return (
     <div className={`body ${bgColor}`}>
+      <a
+        href="#main-content"
+        className="absolute z-50 -top-[80px] bg-white text-black py-8px px-16px z-1000 focus:top-0"
+      >
+        Skip to main content
+      </a>
       <Head>
         <title>
           {`${project.toUpperCase()} (
@@ -37,7 +43,7 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
       </Head>
       <Header project={project} />
 
-      <main>
+      <main id="main-content">
         <article>
           <div>
             <div className="flex flex-col gap-6 pb-40 md:w-2/3">
