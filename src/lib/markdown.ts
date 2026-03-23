@@ -38,6 +38,11 @@ export interface AimsData {
   body: string;
 }
 
+interface HeroImage {
+  src: string;
+  alt: string;
+}
+
 export interface NewsData {
   slug: string;
   title: string;
@@ -46,7 +51,7 @@ export interface NewsData {
   pubDate: Date;
   tags: Array<string>;
   updatedDate?: Date;
-  heroImage?: string;
+  heroImage?: HeroImage;
   altText?: string;
 }
 

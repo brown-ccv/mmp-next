@@ -40,7 +40,7 @@ export default function NewsPage({ news, project }) {
       <ul className="flex flex-col items-start gap-6">
         {posts.map((post) => {
           if (post.heroImage) {
-            post.heroImage = post.heroImage.replace("/public", "");
+            post.heroImage.src = post.heroImage.src.replace("/public", "");
           }
           return (
             <li key={post.slug} className="flex gap-10">
@@ -48,11 +48,11 @@ export default function NewsPage({ news, project }) {
                 className="relative hidden w-80 h-72 flex-none md:block"
                 alt=""
               >
-                {post.altText && post.heroImage && (
+                {post.heroImage && (
                   <img
                     className="object-cover h-full w-full"
-                    src={post.heroImage}
-                    alt={post.altText}
+                    src={post.heroImage.src}
+                    alt={post.heroImage.alt}
                   />
                 )}
               </div>

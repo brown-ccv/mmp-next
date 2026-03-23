@@ -1,7 +1,10 @@
+
+local_backend: true
 backend:
   name: github
+  # name: git-gateway
   repo: brown-ccv/mmp-next
-  branch: cms
+  branch: accessibility-audit
   base_url: localhost:3000
   # base_url: https://mmp-lamp.research.brown.edu/
   auth_endpoint: api/auth
@@ -67,7 +70,17 @@ collections:
         widget: text
       - name: image
         label: MMP Community Map
-        widget: image
+        widget: object
+        summary: "Image: {{fields.alt}}"
+        fields:
+        - label: Alt text for screen Readers
+          name: alt
+          widget: string
+          default: "Test"
+          hint: Describe why this image matters in context (1-2 sentences), avoid 'image of' unless it's a logo, illustration, or cartoon, and end with a period.
+        - label: Image
+          name: src
+          widget: image
       - name: tags
         label: Project Tags
         widget: list
@@ -264,7 +277,7 @@ collections:
         time_format: false
       - name: heroImage
         label: Featured Image
-        widget: list
+        widget: object
         max: 1
         min: 0
         summary: "Image: {{fields.alt}}"
