@@ -1,18 +1,17 @@
 const crypto = require("crypto");
 const { create } = require("./_lib/oauth2");
+import { AuthorizationCode } from "simple-oauth2";
 
 const randomString = () => crypto.randomBytes(4).toString(`hex`);
 
 const handler = (req, res) => {
-  const oauth2 = create();
-
-  const url = oauth2.authorizeURL({
+  const client = create();
+  const authorizationUri = client.authorizeURL({
     scope: `repo,user`,
     state: randomString(),
   });
 
-  res.writeHead(301, { Location: url });
-  res.end();
+  res.redirect(authorizationUri);
 };
 
 export default handler;

@@ -1,25 +1,27 @@
 const { create, renderBody } = require("./_lib/oauth2");
+const { client } = require("./auth.js");
 
 const handler = async (req, res) => {
-  const code = req.query.code;
-  //const { host } = req.headers;
-
-  const oauth2 = create();
+  const client = create();
+  const { code } = req.query;
+  const options = {
+    code,
+  };
 
   try {
-    const accessToken = oauth2.authorizeURL({
-      code,
-    });
-    const { token } = oauth2.accessToken.create(accessToken);
+    const accessToken = await client.getToken(options);
+
+    console.log("The resulting token: ", accessToken.token);
 
     res.status(200).send(
       renderBody("success", {
-        token: token.access_token,
+        token: accessToken.token.access_token,
         provider: "github",
       }),
     );
-  } catch (e) {
-    res.status(200).send(renderBody("error", e));
+  } catch (error) {
+    console.error("Access Token Error", error.message);
+    return res.status(500).json("Authentication failed");
   }
 };
 
