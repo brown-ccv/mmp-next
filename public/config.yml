@@ -2,7 +2,8 @@ backend:
   name: github
   repo: brown-ccv/mmp-next
   branch: cms
-  base_url: https://mmp-lamp.research.brown.edu/
+  base_url: localhost:3000
+  # base_url: https://mmp-lamp.research.brown.edu/
   auth_endpoint: api/auth
 media_folder: public/images
 collections:
@@ -263,10 +264,18 @@ collections:
         time_format: false
       - name: heroImage
         label: Featured Image
-        widget: image
-      - name: altText
-        label: Alternative text
-        widget: text
+        widget: list
+        max: 1
+        min: 0
+        summary: "Image: {{fields.alt}}"
+        fields:
+          - label: Image
+            name: src
+            widget: image
+          - label: Alt Text for Screen Readers
+            name: alt
+            widget: string
+            hint: Describe why this image matters in context (1-2 sentences), avoid 'image of' unless it's a logo, illustration, or cartoon, and end with a period.
       - name: title
         label: Title
         widget: text
