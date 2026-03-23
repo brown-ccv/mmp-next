@@ -2,8 +2,9 @@ backend:
   name: github
   repo: brown-ccv/mmp-next
   branch: cms
-  # base_url: https://mmp-lamp.research.brown.edu/
-  base_url: http://localhost:3000/
+  #TODO this should really automatically choose the base url depending on dev or not
+  base_url: https://mmp-lamp.research.brown.edu/
+  # base_url: http://localhost:3000/
   auth_endpoint: api/auth
 media_folder: public/images
 collections:
