@@ -15,15 +15,9 @@ export const HamburgerMenu = ({ project }: Props) => {
       className="flex justify-end lg:hidden pt-2"
     >
       <NavigationMenu.List className="flex justify-end">
-        <NavigationMenu.Item
-          className="flex flex-col items-end"
-          aria-label="Navigation"
-        >
-          <NavigationMenu.Trigger
-            className="text-neutral-900 font-semibold flex justify-end"
-            aria-label="Site nav"
-          >
-            <HamburgerMenuIcon width={24} height={24} />
+        <NavigationMenu.Item className="flex flex-col items-end">
+          <NavigationMenu.Trigger className="text-neutral-900 font-semibold flex justify-end">
+            <HamburgerMenuIcon width={24} height={24} aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content>
             <NavigationMenu.Sub defaultValue="sub1">
