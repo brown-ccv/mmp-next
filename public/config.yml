@@ -1,4 +1,3 @@
-
 local_backend: true
 backend:
   name: github
@@ -73,14 +72,14 @@ collections:
         widget: object
         summary: "Image: {{fields.alt}}"
         fields:
-        - label: Alt text for screen Readers
-          name: alt
-          widget: string
-          default: "Test"
-          hint: Describe why this image matters in context (1-2 sentences), avoid 'image of' unless it's a logo, illustration, or cartoon, and end with a period.
-        - label: Image
-          name: src
-          widget: image
+          - label: Alt text for screen Readers
+            name: alt
+            widget: string
+            default: "Test"
+            hint: Describe why this image matters in context (1-2 sentences), avoid 'image of' unless it's a logo, illustration, or cartoon, and end with a period.
+          - label: Image
+            name: src
+            widget: image
       - name: tags
         label: Project Tags
         widget: list
@@ -110,9 +109,17 @@ collections:
         label: Title
         widget: string
       - name: avatar
+        label: avatar
+        widget: object
         required: false
-        label: Photo
-        widget: image
+        fields:
+          - label: Photo
+            name: photo
+            widget: image
+          - label: Alt Text for Screen Readers
+            name: alt
+            widget: string
+            hint: Describe why this image matters in context (1-2 sentences), avoid 'image of' unless it's a logo, illustration, or cartoon, and end with a period.
       - name: bio
         label: Biography
         widget: text

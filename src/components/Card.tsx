@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
+interface CardImage {
+  src: string;
+  alt: string;
+}
 interface CardProps {
   position: number;
-  image?: string;
+  image?: CardImage;
   title: string;
   name: string;
   link: string;
@@ -21,7 +25,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   let imageURL = "";
   if (image) {
-    imageURL = image.replace("/public", "");
+    imageURL = image.src.replace("/public", "");
   }
   return (
     <div className="md:flex-row md:gap-8 flex flex-col gap-4">
@@ -30,7 +34,7 @@ const Card: React.FC<CardProps> = ({
           <Image
             className="md:w-64 md:h-64 object-cover w-40 h-40 rounded-full"
             src={imageURL}
-            alt={name}
+            alt={image.alt}
             width={400}
             height={400}
           />
