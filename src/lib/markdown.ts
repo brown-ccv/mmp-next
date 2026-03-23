@@ -7,12 +7,17 @@ import html from "remark-html";
 export type Classification = "Book" | "Article" | "Dissertation" | "Chapter";
 export type Tag = "MMP" | "LAMP";
 
+export interface ImageType {
+  src: string;
+  alt: string;
+}
+
 export interface PeopleData {
   type: string;
   title: string;
   name: string;
   link: string;
-  avatar: string;
+  avatar: ImageType;
   org: string;
   bio: string;
   tags: Array<string>;

@@ -1,13 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import type { ImageType } from "@/lib/markdown";
 
-interface CardImage {
-  src: string;
-  alt: string;
-}
 interface CardProps {
   position: number;
-  image?: CardImage;
+  image?: ImageType;
   title: string;
   name: string;
   link: string;
