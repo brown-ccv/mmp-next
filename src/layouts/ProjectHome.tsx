@@ -31,14 +31,12 @@ export const ProjectHome: React.FC<HomeLayoutProps> = ({
         Skip to main content
       </a>
       <Head>
-        <title>
-          {`${project.toUpperCase()} (
-          ${
+        <title className="underline">
+          {`${project.toUpperCase()} (${
             project === "mmp"
               ? "Mesoamerican Migration Project"
               : "Latin American Migration Project"
-          }
-          )`}
+          })`}
         </title>
       </Head>
       <Header project={project} />

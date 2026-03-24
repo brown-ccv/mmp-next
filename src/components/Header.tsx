@@ -18,6 +18,7 @@ export const HamburgerMenu = ({ project }: Props) => {
         <NavigationMenu.Item className="flex flex-col items-end">
           <NavigationMenu.Trigger className="text-neutral-900 font-semibold flex justify-end">
             <HamburgerMenuIcon width={24} height={24} aria-hidden />
+            <div className="sr-only">Open Menu</div>
           </NavigationMenu.Trigger>
           <NavigationMenu.Content>
             <NavigationMenu.List className="flex flex-col items-end space-y-1 p-2">
