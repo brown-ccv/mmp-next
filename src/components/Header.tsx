@@ -20,20 +20,18 @@ export const HamburgerMenu = ({ project }: Props) => {
             <HamburgerMenuIcon width={24} height={24} aria-hidden />
           </NavigationMenu.Trigger>
           <NavigationMenu.Content>
-            <NavigationMenu.Sub defaultValue="sub1">
-              <NavigationMenu.List className="flex flex-col items-end space-y-1 p-2">
-                <NavigationMenu.Item>
-                  <HeaderLink href={`/${project}`}>Home</HeaderLink>
+            <NavigationMenu.List className="flex flex-col items-end space-y-1 p-2">
+              <NavigationMenu.Item>
+                <HeaderLink href={`/${project}`}>Home</HeaderLink>
+              </NavigationMenu.Item>
+              {LINKS.map((link) => (
+                <NavigationMenu.Item key={link.href}>
+                  <HeaderLink href={`/${project}${link.href}`}>
+                    {link.title}
+                  </HeaderLink>
                 </NavigationMenu.Item>
-                {LINKS.map((link) => (
-                  <NavigationMenu.Item key={link.href}>
-                    <HeaderLink href={`/${project}${link.href}`}>
-                      {link.title}
-                    </HeaderLink>
-                  </NavigationMenu.Item>
-                ))}
-              </NavigationMenu.List>
-            </NavigationMenu.Sub>
+              ))}
+            </NavigationMenu.List>
           </NavigationMenu.Content>
         </NavigationMenu.Item>
       </NavigationMenu.List>
