@@ -34,7 +34,7 @@ class DataPage extends Component {
       return (
         <Layout
           title={title}
-          project={project.toUpperCase()}
+          project={project}
           description="Data files and information"
           bgColor={bgColor}
         >

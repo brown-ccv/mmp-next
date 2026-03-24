@@ -29,7 +29,7 @@ export const News: React.FC<News> = ({
       title={title}
       description={description}
       bgColor={bgColor}
-      project={project.toUpperCase()}
+      project={project}
     >
       <article className="space-y-4">
         {heroImage && (

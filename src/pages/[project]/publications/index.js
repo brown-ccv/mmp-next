@@ -11,7 +11,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const pubs = getPublications();
-  const project = context.params.project.toLowerCase();
+  const project = context.params.project.toUpperCase();
   return {
     props: {
       pubs: JSON.parse(JSON.stringify(pubs)),
@@ -26,11 +26,11 @@ export default function PublicationPage({ pubs, project }) {
   return (
     <Layout
       title="Publications"
-      description={`Publications associated with ${project.toUpperCase()}`}
-      bgColor={project === "mmp" && "bg-neutral-50"}
-      project={project.toUpperCase()}
+      description={`Publications associated with ${project}`}
+      bgColor={project === "MMP" && "bg-neutral-50"}
+      project={project}
     >
-      <PublicationSection publications={data} project={project.toUpperCase()} />
+      <PublicationSection publications={data} project={project} />
     </Layout>
   );
 }

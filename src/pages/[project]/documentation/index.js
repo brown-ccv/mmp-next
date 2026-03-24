@@ -49,8 +49,7 @@ export default function DocPage({ allFiles, project }) {
     file: file.file?.replace("/public", ""),
   }));
   const codebooks = files.filter(
-    (file) =>
-      file.cat === "Codebook" && file.tags.includes(project.toUpperCase()),
+    (file) => file.cat === "Codebook" && file.tags.includes(project),
   );
   const core = codebooks.filter((file) => file.codebookType === "MMP Core");
   const community = codebooks.filter(
@@ -62,15 +61,13 @@ export default function DocPage({ allFiles, project }) {
   const national = codebooks.filter(
     (file) =>
       file.codebookType === "National Level Supplementary" &&
-      file.tags.includes(project.toUpperCase()),
+      file.tags.includes(project),
   );
   const appendix = files.filter(
-    (file) =>
-      file.cat === "Appendices" && file.tags.includes(project.toUpperCase()),
+    (file) => file.cat === "Appendices" && file.tags.includes(project),
   );
   const questionnaire = files.filter(
-    (file) =>
-      file.cat === "Questionnaire" && file.tags.includes(project.toUpperCase()),
+    (file) => file.cat === "Questionnaire" && file.tags.includes(project),
   );
 
   return (
@@ -78,7 +75,7 @@ export default function DocPage({ allFiles, project }) {
       title={title}
       description="About the Project"
       bgColor={bgColor}
-      project={project.toUpperCase()}
+      project={project}
     >
       <section className="space-y-8 readable pb-12">
         <DocContent />
