@@ -33,7 +33,7 @@ export const Layout: React.FC<LayoutProps> = ({
       </Head>
       <div className={`body ${bgColor}`}>
         <div className="flex flex-col h-full">
-          <Header project={project.toLowerCase()} />
+          <Header project={project} />
           <main className="grow" id="main-content">
             <article>
               <div>

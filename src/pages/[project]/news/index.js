@@ -33,7 +33,7 @@ export default function NewsPage({ news, project }) {
   return (
     <Layout
       title="News"
-      project={project.toUpperCase()}
+      project={project}
       description={`Recent news about ${project}`}
       bgColor={project === "mmp" && "bg-neutral-50"}
     >

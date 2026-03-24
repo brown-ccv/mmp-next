@@ -3,6 +3,7 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { LINKS } from "@/consts";
 import { HeaderLink } from "./HeaderLink";
 import { usePathname } from "next/navigation";
+import { Head } from "next/document";
 
 type Props = {
   project: string;
@@ -40,7 +41,11 @@ export const HamburgerMenu = ({ project }: Props) => {
   );
 };
 
-export const Header = ({ project }: any) => {
+type HeaderProps = {
+  project: string;
+};
+
+export const Header = ({ project }: HeaderProps) => {
   const pathname = usePathname();
   return (
     <>

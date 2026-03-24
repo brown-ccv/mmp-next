@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   const news = await getNewsArticle(params.slug);
-  const project = params.project.toLowerCase();
+  const project = params.project;
   return {
     props: {
       news,
@@ -22,7 +22,8 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Page({ news, project }) {
-  const bgColor = project === "mmp" ? "bg-neutral-50" : "";
+  const bgColor =
+    ["mmp", "MMP"].includes(project) === "mmp" ? "bg-neutral-50" : "";
   return (
     <News bgColor={bgColor} {...news} project={project}>
       <div dangerouslySetInnerHTML={{ __html: news.contentHtml }} />
