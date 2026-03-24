@@ -5,7 +5,7 @@ export const Footer = () => {
   return (
     <footer className="pt-36 pb-16 flex justify-between">
       <div>&copy; {today.getFullYear()} Mesoamerican Migration Project.</div>
-      <Link href="https://cm.maxient.com/reportingform.php?BrownUniv=&layout_id=59">
+      <Link href="https://digital-accessibility.brown.edu/">
         Report an accessibility concern
       </Link>
     </footer>
