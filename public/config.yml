@@ -72,10 +72,10 @@ collections:
         widget: object
         summary: "Image: {{fields.alt}}"
         fields:
-          - label: Alt text for Screen Readers
+          - label: Alt Text
             name: alt
             widget: string
-            hint: Describe why this image matters in context (1-2 sentences), avoid 'image of' unless it's a logo, illustration, or cartoon, and end with a period.
+            hint: Describe why this image matters in context (1-2 sentences). End your description with a period. Do not use 'image of' unless the subject is a logo, illustration, or cartoon.
           - label: Image
             name: src
             widget: image
@@ -115,10 +115,10 @@ collections:
           - label: Photo
             name: photo
             widget: image
-          - label: Alt Text for Screen Readers
+          - label: Alt Text
             name: alt
             widget: string
-            hint: Describe why this image matters in context (1-2 sentences). Avoid 'image of' unless it's a logo, illustration, or cartoon. End with a period.
+            hint: Describe why this image matters in context (1-2 sentences). End your description with a period. Do not use 'image of' unless the subject is a logo, illustration, or cartoon.
       - name: bio
         label: Biography
         widget: text
@@ -291,10 +291,10 @@ collections:
           - label: Image
             name: src
             widget: image
-          - label: Alt Text for Screen Readers
+          - label: Alt Text
             name: alt
             widget: string
-            hint: Describe why this image matters in context (1-2 sentences), avoid 'image of' unless it's a logo, illustration, or cartoon, and end with a period.
+            hint: Describe why this image matters in context (1-2 sentences). End your description with a period. Do not use 'image of' unless the subject is a logo, illustration, or cartoon.
       - name: title
         label: Title
         widget: text
