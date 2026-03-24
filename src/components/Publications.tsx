@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Select, { MultiValue, type SingleValue } from "react-select";
-import { Form } from "@radix-ui/react-form";
+import * as Form from "@radix-ui/react-form";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import type { Classification, Tag } from "../lib/markdown";
@@ -96,7 +96,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
                         key={tag}
                         className={
                           tag === "MMP"
-                            ? "bg-secondary-brown-500 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-2xl"
+                            ? "bg-secondary-brown-700 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-2xl"
                             : "bg-secondary-blue-700 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-2xl"
                         }
                       >
@@ -120,7 +120,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
           })}
         </div>
       </section>
-      <Form className="lg:flex-row flex flex-col justify-center gap-4 my-24">
+      <Form.Root className="lg:flex-row flex flex-col justify-center gap-4 my-24">
         <div>
           <Input
             label="Search for a publication"
@@ -133,79 +133,79 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
           />
         </div>
         <div className="space-y-2">
-          <label className="pl-1" htmlFor="classification">
+          <label className="pl-1">
             Show
+            <Select
+              id="classification"
+              instanceId={React.useId()}
+              options={classificationOptions}
+              isSearchable={false}
+              defaultValue={classificationFilter}
+              unstyled
+              className="cursor-pointer"
+              classNames={{
+                container: (state) =>
+                  `cursor-pointer bg-white rounded-full shadow-inner min-w-60 w-max py-3 px-5 focus-within:shadow-inner-focus`,
+                placeholder: () => "cursor-pointer",
+                indicatorsContainer: () =>
+                  "cursor-pointer text-neutral-300 hover:bg-neutral-200",
+                multiValueRemove: () => "hover:bg-neutral-100",
+                valueContainer: () => "gap-2 cursor-pointer",
+                multiValue: () =>
+                  "cursor-pointer flex items-center gap-2 text-primary-500 bg-neutral-50 px-2 rounded-lg",
+                menu: () => "cursor-pointr rounded-lg bg-white p-2",
+                // See CSS file for other overrides
+                option: ({ isSelected, isFocused }) =>
+                  `rounded-sm p-1  hover:text-primary-500 hover:bg-neutral-50 focus:bg-neutral-50 ${isSelected ? "before:content-['✔_']" : ""} ${isFocused ? `bg-neutral-50` : ""}`,
+              }}
+              styles={{
+                control: (baseStyles) => ({ ...baseStyles, minHeight: 0 }),
+                option: (baseStyles) => ({ ...baseStyles, cursor: "pointer" }),
+                container: (baseStyles, isFocused) => ({
+                  ...baseStyles,
+                  cursor: "pointer",
+                }),
+              }}
+              onChange={(option) => setClassificationFilter(option)}
+            />
           </label>
-          <Select
-            id="classification"
-            instanceId={React.useId()}
-            options={classificationOptions}
-            isSearchable={false}
-            defaultValue={classificationFilter}
-            unstyled
-            className="cursor-pointer"
-            classNames={{
-              container: (state) =>
-                `cursor-pointer bg-white rounded-full shadow-inner min-w-60 w-max py-3 px-5 focus-within:shadow-inner-focus`,
-              placeholder: () => "cursor-pointer",
-              indicatorsContainer: () =>
-                "cursor-pointer text-neutral-300 hover:bg-neutral-200",
-              multiValueRemove: () => "hover:bg-neutral-100",
-              valueContainer: () => "gap-2 cursor-pointer",
-              multiValue: () =>
-                "cursor-pointer flex items-center gap-2 text-primary-500 bg-neutral-50 px-2 rounded-lg",
-              menu: () => "cursor-pointr rounded-lg bg-white p-2",
-              // See CSS file for other overrides
-              option: ({ isSelected, isFocused }) =>
-                `rounded-sm p-1  hover:text-primary-500 hover:bg-neutral-50 focus:bg-neutral-50 ${isSelected ? "before:content-['✔_']" : ""} ${isFocused ? `bg-neutral-50` : ""}`,
-            }}
-            styles={{
-              control: (baseStyles) => ({ ...baseStyles, minHeight: 0 }),
-              option: (baseStyles) => ({ ...baseStyles, cursor: "pointer" }),
-              container: (baseStyles, isFocused) => ({
-                ...baseStyles,
-                cursor: "pointer",
-              }),
-            }}
-            onChange={(option) => setClassificationFilter(option)}
-          />
         </div>
         <div className="space-y-2">
-          <label className="pl-1" htmlFor="tags">
+          <label className="pl-1">
             Project
+            <Select
+              id="tags"
+              instanceId={React.useId()}
+              options={tagOptions}
+              isSearchable={false}
+              isMulti={true}
+              defaultValue={tagFilter}
+              unstyled
+              className="cursor-pointer"
+              classNames={{
+                container: () =>
+                  "cursor-pointer bg-white rounded-full shadow-inner min-w-60 w-max py-3 px-5 focus-within:shadow-inner-focus",
+                placeholder: () => "cursor-pointer text-neutral-300",
+                indicatorsContainer: () =>
+                  "cursor-pointer text-neutral-300 hover:bg-neutral-200",
+                multiValueRemove: () => "hover:bg-neutral-100",
+                valueContainer: () => "gap-2 cursor-pointer",
+                multiValue: () =>
+                  "cursor-pointer flex items-center gap-2 text-primary-500 bg-neutral-50 px-2 rounded-lg",
+                menu: () => "cursor-pointr rounded-lg bg-white p-2",
+                // See CSS file for other overrides
+                option: (isFocused) =>
+                  `rounded-sm p-1 hover:text-primary-500 hover:bg-neutral-50 focus:bg-neutral-50 ${isFocused ? `bg-neutral-50` : ""}`,
+              }}
+              styles={{
+                control: (baseStyles) => ({ ...baseStyles, minHeight: 0 }),
+                option: (baseStyles) => ({ ...baseStyles, cursor: "pointer" }),
+              }}
+              onChange={(option) => setTagFilter(option)}
+            />
           </label>
-          <Select
-            id="tags"
-            instanceId={React.useId()}
-            options={tagOptions}
-            isSearchable={false}
-            isMulti={true}
-            defaultValue={tagFilter}
-            unstyled
-            className="cursor-pointer"
-            classNames={{
-              container: () =>
-                "cursor-pointer bg-white rounded-full shadow-inner min-w-60 w-max py-3 px-5 focus-within:shadow-inner-focus",
-              placeholder: () => "cursor-pointer text-neutral-300",
-              indicatorsContainer: () =>
-                "cursor-pointer text-neutral-300 hover:bg-neutral-200",
-              multiValueRemove: () => "hover:bg-neutral-100",
-              valueContainer: () => "gap-2 cursor-pointer",
-              multiValue: () =>
-                "cursor-pointer flex items-center gap-2 text-primary-500 bg-neutral-50 px-2 rounded-lg",
-              menu: () => "cursor-pointr rounded-lg bg-white p-2",
-              // See CSS file for other overrides
-              option: (isFocused) =>
-                `rounded-sm p-1 hover:text-primary-500 hover:bg-neutral-50 focus:bg-neutral-50 ${isFocused ? `bg-neutral-50` : ""}`,
-            }}
-            styles={{
-              control: (baseStyles) => ({ ...baseStyles, minHeight: 0 }),
-              option: (baseStyles) => ({ ...baseStyles, cursor: "pointer" }),
-            }}
-            onChange={(option) => setTagFilter(option)}
-          />
         </div>
-      </Form>
+      </Form.Root>
 
       {pubsByYear && (
         <section className="flex flex-col gap-6">
@@ -232,7 +232,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
                                         key={tag}
                                         className={
                                           tag === "MMP"
-                                            ? "bg-secondary-brown-500 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-2xl"
+                                            ? "bg-secondary-brown-700 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-2xl"
                                             : "bg-secondary-blue-700 text-white text-xs font-medium me-2 px-2.5 py-0.5 rounded-2xl"
                                         }
                                       >
