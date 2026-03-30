@@ -47,6 +47,8 @@ type HeaderProps = {
 
 export const Header = ({ project }: HeaderProps) => {
   const pathname = usePathname();
+  const projectLower = project.toLowerCase();
+
   return (
     <>
       <NavigationMenu.Root
@@ -57,11 +59,11 @@ export const Header = ({ project }: HeaderProps) => {
           <NavigationMenu.Item
             className={pathname === `/${project}` ? "hidden" : ""}
           >
-            <HeaderLink href={`/${project}`}>Home</HeaderLink>
+            <HeaderLink href={`/${projectLower}`}>Home</HeaderLink>
           </NavigationMenu.Item>
           {LINKS.map((link) => (
             <NavigationMenu.Item key={link.href}>
-              <HeaderLink href={`/${project}${link.href}`}>
+              <HeaderLink href={`/${projectLower}${link.href}`}>
                 {link.title}
               </HeaderLink>
             </NavigationMenu.Item>
@@ -71,7 +73,7 @@ export const Header = ({ project }: HeaderProps) => {
         <NavigationMenu.Viewport />
       </NavigationMenu.Root>
 
-      <HamburgerMenu project={project} />
+      <HamburgerMenu project={projectLower} />
     </>
   );
 };
