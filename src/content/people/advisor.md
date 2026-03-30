@@ -2,7 +2,9 @@
 type: Leadership
 name: David P. Lindstrom
 title: Co-Director
-avatar: /public/images/david-lindstrom-cropped1.jpg
+avatar: 
+  src: /public/images/david-lindstrom-cropped1.jpg
+  alt: Man with short hair wearing blue checked blazer and tortoiseshell glasses.
 bio: David P. Lindstrom is the Paul R. Dupee, Jr. University Professor of Social
   Science in the Department of Sociology and a member of the Population Studies
   and Training Center at Brown University. His research examines the

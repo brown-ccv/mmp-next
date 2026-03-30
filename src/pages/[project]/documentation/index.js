@@ -11,7 +11,6 @@ import {
 import DocumentationTable from "@/components/DocumentationTable";
 import { getAllFileData } from "@/lib/markdown";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   return {
@@ -20,11 +19,13 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
   const allFiles = getAllFileData();
+  const project = params.project;
   return {
     props: {
       allFiles,
+      project,
     },
   };
 }
@@ -38,9 +39,7 @@ const projectConfigs = {
   lamp: { attributes: lampAttributes, DocContent: LampDocContent },
 };
 
-export default function DocPage({ allFiles }) {
-  const router = useRouter();
-  const project = router.query.project;
+export default function DocPage({ allFiles, project }) {
   const { attributes, DocContent, bgColor } = projectConfigs[project];
   let { title } = attributes;
 
@@ -50,8 +49,7 @@ export default function DocPage({ allFiles }) {
     file: file.file?.replace("/public", ""),
   }));
   const codebooks = files.filter(
-    (file) =>
-      file.cat === "Codebook" && file.tags.includes(project.toUpperCase()),
+    (file) => file.cat === "Codebook" && file.tags.includes(project),
   );
   const core = codebooks.filter((file) => file.codebookType === "MMP Core");
   const community = codebooks.filter(
@@ -63,19 +61,22 @@ export default function DocPage({ allFiles }) {
   const national = codebooks.filter(
     (file) =>
       file.codebookType === "National Level Supplementary" &&
-      file.tags.includes(project.toUpperCase()),
+      file.tags.includes(project),
   );
   const appendix = files.filter(
-    (file) =>
-      file.cat === "Appendices" && file.tags.includes(project.toUpperCase()),
+    (file) => file.cat === "Appendices" && file.tags.includes(project),
   );
   const questionnaire = files.filter(
-    (file) =>
-      file.cat === "Questionnaire" && file.tags.includes(project.toUpperCase()),
+    (file) => file.cat === "Questionnaire" && file.tags.includes(project),
   );
 
   return (
-    <Layout title={title} description="About the Project" bgColor={bgColor}>
+    <Layout
+      title={title}
+      description="About the Project"
+      bgColor={bgColor}
+      project={project}
+    >
       <section className="space-y-8 readable pb-12">
         <DocContent />
         <Link

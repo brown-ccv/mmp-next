@@ -2,7 +2,9 @@
 type: Advisors
 name: Karen Pren
 title: Consultant
-avatar: /public/images/karenpren-cropped.png
+avatar:
+  src: /public/images/karenpren-cropped.png
+  alt: Woman with shoulder-length dark hair wearing a patterned blouse.
 bio: "Karen Pren is a Survey Methodologist at the Houston Population Research
   Center, Rice University. She has a master's degree in Demography from the
   University of Pennsylvania. Before joining Rice, she worked for more than 15

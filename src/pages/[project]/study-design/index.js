@@ -36,7 +36,12 @@ class StudyDesignPage extends Component {
         this.projectConfigs[project];
       const { title } = attributes;
       return (
-        <Layout title={title} description={description} bgColor={bgColor}>
+        <Layout
+          title={title}
+          description={description}
+          bgColor={bgColor}
+          project={project}
+        >
           <div className="flex flex-col gap-6">
             <section className="flex flex-col gap-3.5">
               <Image src={map} alt="" width={mapSize} height={mapSize} />

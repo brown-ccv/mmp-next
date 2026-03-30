@@ -28,7 +28,11 @@ const DocumentationTable: React.FC<DocumentationTableProps> = ({
 
         <tbody>
           {files.length === 0 ? (
-            <p>Coming Soon!</p>
+            <tr>
+              <td>
+                <p>Coming Soon!</p>
+              </td>
+            </tr>
           ) : (
             files.map(({ title, file, description, version, archivo }, i) => {
               return (

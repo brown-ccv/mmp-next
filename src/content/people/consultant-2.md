@@ -2,7 +2,9 @@
 type: Advisors
 name: Antonio Yúnez-Naude
 title: Consultant
-avatar: /public/images/foto-a-yunez-naude-cropped.jpg
+avatar:
+  src: /public/images/foto-a-yunez-naude-cropped.jpg
+  alt: Bald man with moustache, wearing a patterned button-down and blue blazer.
 bio: "Antonio Yúnez-Naude received his PhD in Economics from the London School
   of Economics and Political Science, University of London. From 1976 to 2024 he
   was professor at the Center for Economic Studies (CEE), El Colegio de México

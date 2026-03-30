@@ -2,7 +2,9 @@
 type: Advisors
 name: Douglas S. Massey
 title: Co-Founder
-avatar: /public/images/doug-massey.png
+avatar:
+  src: /public/images/doug-massey.png
+  alt: Man with grey beard, short hair, and glasses wearing a dark blazer and tie.
 bio: "Douglas Massey is Henry G. Bryant Professor of Sociology and Public
   Affairs Emeritus at Princeton University. A member of the National Academy of
   Sciences, the American Academy of Arts and Sciences, the American

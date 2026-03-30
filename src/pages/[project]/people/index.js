@@ -1,5 +1,3 @@
-import { useRouter } from "next/router";
-
 import { Layout } from "@/layouts/Layout";
 import { CardContainer } from "@/components/CardContainer";
 import { getPeopleData } from "@/lib/markdown";
@@ -11,22 +9,20 @@ export async function getStaticPaths() {
   };
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ params }) {
   const people = getPeopleData();
+  const project = params.project;
   return {
     props: {
       people: JSON.parse(JSON.stringify(people)),
+      project,
     },
   };
 }
 
-export default function PeoplePage({ people }) {
-  const router = useRouter();
-
+export default function PeoplePage({ people, project }) {
   const shownPeople = people.filter(
-    (item) =>
-      router.query.project &&
-      item.tags.includes(router.query.project.toUpperCase()),
+    (item) => project && item.tags.includes(project.toUpperCase()),
   );
 
   const leadership = shownPeople.filter(
@@ -41,7 +37,8 @@ export default function PeoplePage({ people }) {
     <Layout
       title="Staff"
       description="Our Leadership, Advisors, and Staff"
-      bgColor={router.query.project === "mmp" && "bg-neutral-50"}
+      bgColor={project === "mmp" && "bg-neutral-50"}
+      project={project}
     >
       <div className="flex flex-col space-y-28">
         <CardContainer
