@@ -47,7 +47,7 @@ type HeaderProps = {
 
 export const Header = ({ project }: HeaderProps) => {
   const pathname = usePathname();
-  const projectLower = project.toLowerCase();
+  const projectLower = project?.toLowerCase();
 
   return (
     <>
