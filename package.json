@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "format": "prettier . --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "pa11y": "pa11y-ci -s http://localhost:3000"
   },
   "dependencies": {
     "@radix-ui/react-form": "^0.1.8",
@@ -27,6 +28,7 @@
     "js-yaml": "^4.1.1",
     "next": "^16.1.6",
     "next-mdx-remote": "^6.0.0",
+    "pa11y-ci": "^4.1.0",
     "postcss": "^8.5.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
