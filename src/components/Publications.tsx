@@ -2,13 +2,12 @@
 
 import React, { useState } from "react";
 import Select, { MultiValue, type SingleValue } from "react-select";
-import * as Form from "@radix-ui/react-form";
 import { MagnifyingGlassIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import type { Classification, Tag } from "../lib/markdown";
 import { PublicationData } from "../lib/markdown";
 import PubPlaceholder from "./svg/PubPlaceholder";
-import { Input } from "./Input";
+import { Input } from "./input/Input";
 
 interface PubProps {
   publications: PublicationData[];
@@ -120,7 +119,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
           })}
         </div>
       </section>
-      <Form.Root className="lg:flex-row flex flex-col justify-center gap-4 my-24">
+      <div className="lg:flex-row flex flex-col justify-center gap-4 my-24">
         <div>
           <Input
             label="Search for a publication"
@@ -205,7 +204,7 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
             />
           </label>
         </div>
-      </Form.Root>
+      </div>
 
       {pubsByYear && (
         <section className="flex flex-col gap-6">
