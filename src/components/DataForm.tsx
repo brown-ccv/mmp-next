@@ -35,7 +35,12 @@ export const DataForm = () => {
         name="name"
         control={control}
         render={() => (
-          <FormInput label="Name" placeholder="" {...register("name")} required />
+          <FormInput
+            label="Name"
+            placeholder=""
+            {...register("name")}
+            required
+          />
         )}
       />
       <Controller
