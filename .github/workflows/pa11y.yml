@@ -1,6 +1,6 @@
 name: Run pa11y
 
-on: pull_request
+on: push
 
 jobs:
   build:
