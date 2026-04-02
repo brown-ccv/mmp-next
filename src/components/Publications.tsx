@@ -208,6 +208,15 @@ const PublicationSection: React.FC<PubProps> = ({ publications, project }) => {
 
       {pubsByYear && (
         <section className="flex flex-col gap-6">
+          <div
+            className="mt-4 text-sm text-gray-500"
+            role="status"
+            aria-live="polite"
+            aria-label={`Showing ${shownPubs.length} matching publications out of ${publications.length} total publications`}
+          >
+            <span className="sr-only">Search results: </span>
+            Showing {shownPubs.length} of {publications.length} publication(s)
+          </div>
           {classificationOptions.map((option) => {
             if (
               classificationFilter &&
