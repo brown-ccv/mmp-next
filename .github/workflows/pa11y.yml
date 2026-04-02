@@ -24,12 +24,6 @@ jobs:
             libxss-dev \
             libasound2-dev
 
-      - name: 🔑 Set up Google Cloud Credentials
-        id: "auth"
-        uses: "google-github-actions/auth@v2"
-        with:
-          credentials_json: ${{ secrets.GCP_SA_KEY }}
-
       - name: 🏗️ Build
         run: npm run build
 
