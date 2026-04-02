@@ -1,7 +1,10 @@
 import path from "path";
 import fs from "fs";
-import { MetadataRoute } from "next";
+import { GetServerSideProps, MetadataRoute } from "next";
 
+type PageProps = {
+  routes: string[];
+};
 // Required for static export
 export const dynamic = "force-static";
 
@@ -11,7 +14,7 @@ const baseDir = "src/pages";
 const CACHE_DURATION = 60 * 60 * 24; // 24 hours in seconds
 const LAST_MODIFIED = new Date().toUTCString();
 
-function generateSiteMap(fullPath, routes) {
+function generateSiteMap(fullPath: string, routes: string[]) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
      <!--We manually set the two URLs we know already-->
@@ -31,7 +34,10 @@ function generateSiteMap(fullPath, routes) {
  `;
 }
 
-export async function getServerSideProps({ req, res }) {
+export const getServerSideProps: GetServerSideProps<PageProps> = async ({
+  req,
+  res,
+}) => {
   const fullPath = path.join(process.cwd(), baseDir);
   let routes: string[] = ["/"]; // Always include home page
 
@@ -75,7 +81,7 @@ export async function getServerSideProps({ req, res }) {
   res.write(sitemap);
   res.end();
   return { props: { routes } };
-}
+};
 
 export default function SiteMap() {
   // return getRoutes()
