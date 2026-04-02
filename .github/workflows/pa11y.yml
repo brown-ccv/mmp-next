@@ -91,4 +91,3 @@ jobs:
             ${{ steps.pa11y_output.outputs.content }}
             </code></pre>
             </details>
-            
