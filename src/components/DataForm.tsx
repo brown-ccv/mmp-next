@@ -4,8 +4,8 @@ import { Controller, type SubmitHandler, useForm } from "react-hook-form";
 import * as Form from "@radix-ui/react-form";
 import React from "react";
 import { addActivityData } from "../firebase";
-import { Input } from "./Input";
-import { Textarea } from "./Textarea";
+import { FormInput } from "./input/FormInput";
+import { Textarea } from "./input/Textarea";
 import Button from "./Button";
 
 export interface Inputs {
@@ -35,14 +35,19 @@ export const DataForm = () => {
         name="name"
         control={control}
         render={() => (
-          <Input label="Name" placeholder="" {...register("name")} required />
+          <FormInput
+            label="Name"
+            placeholder=""
+            {...register("name")}
+            required
+          />
         )}
       />
       <Controller
         name="institution"
         control={control}
         render={() => (
-          <Input
+          <FormInput
             label="Institution"
             placeholder=""
             {...register("institution")}
@@ -54,7 +59,7 @@ export const DataForm = () => {
         name="email"
         control={control}
         render={() => (
-          <Input
+          <FormInput
             label="Email"
             placeholder=""
             match="typeMismatch"
