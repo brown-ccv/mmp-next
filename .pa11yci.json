@@ -9,5 +9,22 @@
         "--disable-web-security"
       ]
     }
-  }
+  },
+  "urls": [
+    "http://localhost:3000",
+    "http://localhost:3000/mmp",
+    "http://localhost:3000/mmp/news",
+    "http://localhost:3000/mmp/people",
+    "http://localhost:3000/mmp/publications",
+    "http://localhost:3000/mmp/study-design",
+    "http://localhost:3000/mmp/data",
+    "http://localhost:3000/mmp/documentation",
+    "http://localhost:3000/lamp",
+    "http://localhost:3000/lamp/news",
+    "http://localhost:3000/lamp/people",
+    "http://localhost:3000/lamp/publications",
+    "http://localhost:3000/lamp/study-design",
+    "http://localhost:3000/lamp/data",
+    "http://localhost:3000/lamp/documentation"
+  ]
 }
