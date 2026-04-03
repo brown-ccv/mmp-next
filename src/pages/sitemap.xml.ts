@@ -55,9 +55,10 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
           const subDirPath = path.join(dirPath, entry.name);
 
           // Only add route if it has a page.tsx file
-          const pageFilePath = path.join(subDirPath);
+          const pageFilePath = path.join(subDirPath, "index.js");
           if (fs.existsSync(pageFilePath)) {
             routes.push(routePath.replace("[project]", "mmp"));
+            routes.push(routePath.replace("[project]", "lamp"));
           }
 
           // Recursively scan subdirectories
