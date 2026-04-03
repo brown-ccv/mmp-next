@@ -17,10 +17,6 @@ const LAST_MODIFIED = new Date().toUTCString();
 function generateSiteMap(fullPath: string, routes: string[]) {
   return `<?xml version="1.0" encoding="UTF-8"?>
    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-     <!--We manually set the two URLs we know already-->
-     <url>
-       <loc>http://localhost:3000/</loc>
-     </url>
      ${routes
        .map((route) => {
          return `
@@ -60,8 +56,6 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
             if (routePath.includes("[project]")) {
               routes.push(routePath.replace("[project]", "mmp"));
               routes.push(routePath.replace("[project]", "lamp"));
-            } else {
-              routes.push(routePath);
             }
           }
 
@@ -82,7 +76,6 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
   res.setHeader("Content-Type", "text/xml");
   res.setHeader("Cache-Control", `public, max-age=${CACHE_DURATION}`); // Cache for 24 hours
   res.setHeader("Last-Modified", LAST_MODIFIED);
-  res.write(`<?xml version="1.0" encoding="UTF-8"?>`);
   res.write(sitemap);
   res.end();
   return { props: { routes } };
