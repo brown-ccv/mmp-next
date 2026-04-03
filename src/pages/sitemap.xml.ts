@@ -25,7 +25,7 @@ function generateSiteMap(fullPath: string, routes: string[]) {
        .map((route) => {
          return `
        <url>
-           <loc>${`${fullPath}${route}`}</loc>
+           <loc>${`${baseUrl}${route}`}</loc>
        </url>
      `;
        })
