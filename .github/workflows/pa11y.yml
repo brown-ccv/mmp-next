@@ -54,7 +54,7 @@ jobs:
         if: ${{ failure() }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.CCV_WEBSITE_STATUS_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MMP_GITHUB_TOKEN }}
           header: "pa11y report"
           message: |
             <p><small>Note: This comment gets updated with every commit</small></p>
@@ -72,7 +72,7 @@ jobs:
         if: ${{ success() }}
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.CCV_WEBSITE_STATUS_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MMP_GITHUB_TOKEN }}
           header: "pa11y report"
           message: |
             <p><small>Note: This comment gets updated with every commit</small></p>
