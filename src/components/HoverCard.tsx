@@ -22,7 +22,7 @@ const HoverCardItem: React.FC<HoverCardItemProps> = ({
   return (
     <HoverCard.Root openDelay={2}>
       <HoverCard.Trigger asChild>
-        <a className="cursor-pointer" rel="noreferrer noopener">
+        <a className="cursor-pointer" rel="noreferrer noopener" id={title}>
           {trigger}
         </a>
       </HoverCard.Trigger>
