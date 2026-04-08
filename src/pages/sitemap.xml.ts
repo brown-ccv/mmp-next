@@ -60,12 +60,12 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
         );
 
         if (hasIndexFile) {
-          if (routePath.includes("[project]")) {
-            routes.push(routePath.replace("[project]", "mmp"));
-            routes.push(routePath.replace("[project]", "lamp"));
-          } else {
+          // if (routePath.includes("[project]")) {
+          //   routes.push(routePath.replace("[project]", "mmp"));
+          //   routes.push(routePath.replace("[project]", "lamp"));
+          // } else {
             routes.push(routePath);
-          }
+          // }
         }
 
         // Recursively scan subdirectories
