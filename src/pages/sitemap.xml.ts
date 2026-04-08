@@ -71,7 +71,6 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
 
   // Start scanning from the base directory
   scanDirectory(fullPath);
-  console.log(routes);
   const sitemap = generateSiteMap(fullPath, routes);
   res.setHeader("Content-Type", "text/xml");
   res.setHeader("Cache-Control", `public, max-age=${CACHE_DURATION}`); // Cache for 24 hours
