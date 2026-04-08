@@ -60,16 +60,10 @@ export default function DocPage({ allFiles, project }) {
     (file) => file.codebookType === "State Level Supplementary",
   );
   const national = codebooks.filter(
-    (file) =>
-      file.codebookType === "National Level Supplementary" &&
-      file.tags.includes(project),
+    (file) => file.codebookType === "National Level Supplementary",
   );
-  const appendix = files.filter(
-    (file) => file.cat === "Appendices" && file.tags.includes(project),
-  );
-  const questionnaire = files.filter(
-    (file) => file.cat === "Questionnaire" && file.tags.includes(project),
-  );
+  const appendix = files.filter((file) => file.cat === "Appendices");
+  const questionnaire = files.filter((file) => file.cat === "Questionnaire");
 
   return (
     <Layout
