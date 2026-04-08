@@ -49,7 +49,8 @@ export default function DocPage({ allFiles, project }) {
     file: file.file?.replace("/public", ""),
   }));
   const codebooks = files.filter(
-    (file) => file.cat === "Codebook" && file.tags.includes(project),
+    (file) =>
+      file.cat === "Codebook" && file.tags.includes(project.toUpperCase()),
   );
   const core = codebooks.filter((file) => file.codebookType === "MMP Core");
   const community = codebooks.filter(
