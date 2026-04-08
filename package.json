@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "format": "prettier . --write",
     "prepare": "husky",
-    "pa11y": "pa11y-ci --sitemap http://localhost:3000/sitemap.xml --reporter json"
+    "pa11y": "pa11y-ci --sitemap http://localhost:3000/sitemap.xml"
   },
   "dependencies": {
     "@radix-ui/react-form": "^0.1.8",

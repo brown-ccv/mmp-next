@@ -48,9 +48,11 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
         if (entry.name.startsWith("_") || EXCLUDED_DIRS.includes(entry.name)) {
           return;
         }
+        
         const routePath = currentRoute
-          ? `${currentRoute}/${entry.name}`
-          : `/${entry.name}`;
+        ? `${currentRoute}/${entry.name}`
+        : `/${entry.name}`;
+        console.log(routePath)
 
         const subDirPath = path.join(dirPath, entry.name);
         // Recursively scan subdirectories
@@ -60,14 +62,8 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
         );
 
         if (hasIndexFile) {
-          // if (routePath.includes("[project]")) {
-          //   routes.push(routePath.replace("[project]", "mmp"));
-          //   routes.push(routePath.replace("[project]", "lamp"));
-          // } else {
-            routes.push(routePath);
-          // }
+          routes.push(routePath);
         }
-
         // Recursively scan subdirectories
         scanDirectory(subDirPath, routePath);
       });
