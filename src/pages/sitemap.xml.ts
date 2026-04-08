@@ -48,11 +48,11 @@ export const getServerSideProps: GetServerSideProps<PageProps> = async ({
         if (entry.name.startsWith("_") || EXCLUDED_DIRS.includes(entry.name)) {
           return;
         }
-        
+
         const routePath = currentRoute
-        ? `${currentRoute}/${entry.name}`
-        : `/${entry.name}`;
-        console.log(routePath)
+          ? `${currentRoute}/${entry.name}`
+          : `/${entry.name}`;
+        console.log(routePath);
 
         const subDirPath = path.join(dirPath, entry.name);
         // Recursively scan subdirectories
