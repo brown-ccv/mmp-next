@@ -5,6 +5,42 @@ tags:
 ---
 ## Study Design
 
+### Common Database Files
+
+##### **PERS**
+
+A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys). 
+
+##### **MIG** 
+
+A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migratory experience in general, while others specifically target the most recent trip.
+
+##### **HOUSE**
+
+A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
+
+##### **LIFE** 
+
+An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned from the previous three data files.
+
+##### **SPOUSE**
+
+An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of the household head, for each year since birth until the year of the survey.
+
+##### **COMMUN**
+
+This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
+
+### How to cite LAMP and its data
+
+##### LAMP
+
+You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD) [*or* the MacArthur Foundation *for the Colombia and Ecuador datasets*].”
+
+Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
+
+Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
+
 ## COLOMBIA
 
 \[Map of Colombia]
@@ -51,45 +87,15 @@ Community 9999 - 12 households in the U.S. and 64 households in Spain. These hou
 
 #### **COL14 - Databases**
 
-##### **PERS**
+**MIG** 
 
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States. In addition, basic health variables were compiled for the household head and spouse only.
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States or in any destination country. Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migratory experience in general, while others specifically target the most recent trip.
-
-> Variations over MIG file in Colombia:
+Variations over **MIG** file in Colombia:
 
 The Colombian surveys produced the **MIGOTHER** file, which provides data on the migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have international migratory experience and his/her spouse, or one of his/her children, did. For this other migrant, health variables were compiled as well.
 
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned from the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of the household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
+For the **PERS**, basic health variables were compiled for the household head and spouse only.
 
 // Table
-
-#### How to cite LAMP and its data
-
-##### LAMP
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the MacArthur Foundation.”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
 
 ##### More on LAMP-COL14 Databases
 
@@ -97,7 +103,7 @@ For the surveys in Colombia done in Risaralda, Quindio and Caldas, the LAMP esta
 
 In addition to acknowledging the LAMP, we request users who work with the LAMP-COL14 database give credit to all institutions who have supported fieldwork throughout these years. The following is an example of proper acknowledgement involving only the Colombian datasets:
 
-“The LAMP-COL14 database compiles data gathered by the Red de Universidades Públicas del Eje Cafetero - Alma Mater (link to site), Fundación Esperanza (link to site), Pontificia Universidad Javeriana, and Fundación Universidad del Norte in association with the Latin American Migration Project (LAMP: link). The MacArthur Foundation, Fundación Esperanza, and Alma Mater provided financial support throughout this process.”
+“The LAMP-COL14 database compiles data gathered by the Red de Universidades Públicas del Eje Cafetero - Alma Mater, Fundación Esperanza, Pontificia Universidad Javeriana, and Fundación Universidad del Norte in association with the Latin American Migration Project. The MacArthur Foundation, Fundación Esperanza, and Alma Mater provided financial support throughout this process.”
 
 ## COSTA RICA
 
@@ -107,7 +113,7 @@ In addition to acknowledging the LAMP, we request users who work with the LAMP-C
 
 The data in LAMP-Costa Rica Database (LAMP-CR7) were gathered during April-May of 2000 (community 1), July-August 2002 (communities 2, 3, 4), and November-December 2002 (communities 5, 6, and 7). For confidentiality reasons, we preserve community names.
 
-The surveys in Costa Rica were made possible through an association between the LAMP and the Central American Population Center of the University of Costa Rica (click here to find out more). 
+The surveys in Costa Rica were made possible through an association between the LAMP and the Central American Population Center of the University of Costa Rica. 
 
 #### Surveyed Communities
 
@@ -127,45 +133,11 @@ Community 7 - 197 households in Costa Rica
 
 #### **CR7 - Databases**
 
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current econonmic indicators, and characteristics of the first and last migration trips made to the United States and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States.
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migraroey experience in general, while others specifically target the most recent trip.
-
-> Variations over MIG file in Costa Rica:
+Variations over MIG file in Costa Rica:
 
 The Costa Rica surveys produced the MIGOTHER file, which provides data on the migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have U.S. migratory experience and his/her spouse, or one of his/her children, did. 
 
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
-
 // Table
-
-#### How to cite LAMP and its data
-
-##### LAMP
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
 
 ##### More on LAMP-CR7 Databases
 
@@ -175,11 +147,11 @@ In addition to acknowledging the LAMP, we request users who work with the LAMP-C
 
 The following is an example of proper acknowledgement involving only the Costa Rican datasets:
 
-“The LAMP-CR7 database compiles data gathered by the Central American Population Center of the University of Costa Rica (CCP: <http://ccp.ucr.ac.cr>) in association with the Latin American Migration Project (LAMP: link). The Mellon Foundation and the National Institute of Child Health and Human Development (NICHD) provided financial support.”
+“The LAMP-CR7 database compiles data gathered by the Central American Population Center of the University of Costa Rica (CCP: <http://ccp.ucr.ac.cr>) in association with the Latin American Migration Project (LAMP). The Mellon Foundation and the National Institute of Child Health and Human Development (NICHD) provided financial support.”
 
 The following is an example of proper acknowledgement involving surveys in multiple countries:
 
-“This study uses data collected by the Latin American Migration Project (LAMP: link) in the Dominican Republic, Nicaragua and Costa Rica. The surveys in Nicaragua and Costa Rica were conducted in association with the Central American Population Center of the University of Costa Rica (CCP: <http://ccp.ucr.ac.cr>) with support from the Mellon Foundation. The LAMP is funded by the National Institute of Child Health and Human Development (NICHD).”
+“This study uses data collected by the Latin American Migration Project (LAMP) in the Dominican Republic, Nicaragua and Costa Rica. The surveys in Nicaragua and Costa Rica were conducted in association with the Central American Population Center of the University of Costa Rica (CCP: <http://ccp.ucr.ac.cr>) with support from the Mellon Foundation. The LAMP is funded by the National Institute of Child Health and Human Development (NICHD).”
 
 ## DOMINICAN REPUBLIC
 
@@ -209,41 +181,7 @@ Community 7 - 151 households in Dominican Republic and 15 in the United States
 
 #### **DR7 - Databases**
 
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migratory experience in general, while others specifically target the most recent trip.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
-
 // Table
-
-#### How to cite LAMP and its data
-
-##### LAMP
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
 
 ##### More on LAMP-DR7 Databases
 
@@ -271,43 +209,11 @@ Community 4 - 203 households in Ecuador
 
 #### **ECU4 - Databases**
 
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States. In addition, basic health variables were compiled for the household head and spouse only.
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migraroey experience in general, while others specifically target the most recent trip.
-
-> Variations over MIG file in Ecuador:
+Variations over **MIG** file in Ecuador:
 
 The Ecuadorian surveys produced the **MIGOTHER** file, which provides data on the migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have U.S. migratory experience and his/her spouse, or one of his/her children, did. For this other migrant, health variables were compiled as well.
 
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
-
-#### How to cite LAMP and its data
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the MacArthur Foundation.”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
+For the **PERS**, basic health variables were compiled for the household head and spouse only.
 
 ##### **More on LAMP-ECU4 Databases**
 
@@ -317,7 +223,7 @@ In addition to acknowledging the LAMP, we request that users who work with the L
 
 The following is an example of proper acknowledgement involving only the Ecuadorian datasets:
 
-“The LAMP-ECU4 database compiles data gathered by the Universidad de Cuenca - Programa de Población y Desarollo Local Sustenable (PYDLOS) in association with the Latin American Migration Project (LAMP: link). The MacArthur Foundation provided financial support.”
+“The LAMP-ECU4 database compiles data gathered by the Universidad de Cuenca - Programa de Población y Desarollo Local Sustenable (PYDLOS) in association with the Latin American Migration Project (LAMP). The MacArthur Foundation provided financial support.”
 
 ## EL SALVADOR
 
@@ -337,31 +243,7 @@ Community 3 - 77 households in El Salvador
 
 Community 4 - 95 households in El Salvador
 
-#### **ECU4 - Databases**
-
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migratory experience in general, while others specifically target the most recent trip.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
+#### **ELS4 - Databases**
 
 // Table
 
@@ -375,9 +257,9 @@ Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
 
 Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
 
-##### **LAMP-ELS4 Databases**
+##### **More on LAMP-ELS4 Databases**
 
-We ask you to cite the El Salvador database as “LAMP-ELS4”. For your reference, the number 4 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not the change this reference and cite your original data source as specified above.
+We ask you to cite the El Salvador database as “LAMP-ELS4”. For your reference, the number 4 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
 
 ## GUATEMALA
 
@@ -389,7 +271,7 @@ The data in LAMP-Guatemala Database (LAMP-GUA3) were gathered during 2004. For c
 
 The surveys in Guatemala (LAMP-GUA3) were made possible through an association between the LAMP and the University of San Carlos in Guatemala (click here to find out more).
 
-In addition, in 2000, Professor David Lindstrom began fielding a survey on migration and the diffusion of contraceptive knowledge and acceptance in the western highlands of Guatemala, in the department of Quiche. Click here to fin dout more about these communities and make sure to visit our “Citing Us” section.
+In addition, in 2000, Professor David Lindstrom began fielding a survey on migration and the diffusion of contraceptive knowledge and acceptance in the western highlands of Guatemala, in the department of Quiche. Click here to find out more about these communities and make sure to visit our “Citing Us” section.
 
 #### **Surveyed Communities**
 
@@ -403,33 +285,9 @@ Communities interviewed in Quiche
 
 #### **GUA3 - Databases**
 
-##### **PERS**
+Variations over **MIG** file in Guatemala:
 
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migraroey experience in general, while others specifically target the most recent trip.
-
-> Variations over MIG file in Guatemala:
-
-The Guatemala surveys produced the MIGMX file, which provides data on the migratory experience of the household head to Mexico.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
+The Guatemala surveys produced the **MIGMX** file, which provides data on the migratory experience of the household head to Mexico.
 
 // Table
 
@@ -447,17 +305,7 @@ CuadN_U - Provides information only of the household head and spouse.
 
 CuadV_V4U - Provides border crossing information, and general information on the migrant’s networks, finances, and benefits used in the U.S. during his/her last trip to the U.S.
 
-#### **How to cite LAMP and its data**
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
-
-##### **LAMP-GUA3 Databases**
+##### **More on LAMP-GUA3 Databases**
 
 These surveys were made possible through and association of LAMP and the Universidad de San Carlos in Guatemala. We ask you to cite the Guatemala database as “LAMP-GUA3”. For your reference, the number 3 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not the change this reference and cite your original data source as specified above.
 
@@ -485,45 +333,11 @@ Community 3 - 100 households in Haiti 
 
 #### **GUA3 - Databases**
 
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migraroey experience in general, while others specifically target the most recent trip.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
-
 // Table
-
-#### **How to cite LAMP and its data**
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
 
 ##### **LAMP-HA3 Databases**
 
-These surveys were made possible through and association of LAMP and the University Quisqueya of Port-au-Prince. We ask you to cite the Haiti database as “LAMP-HA3”. For your reference, the number 3 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not the change this reference and cite your original data source as specified above.
+These surveys were made possible through an association of LAMP and the University Quisqueya of Port-au-Prince. We ask you to cite the Haiti database as “LAMP-HA3”. For your reference, the number 3 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not the change this reference and cite your original data source as specified above.
 
 ## NICARAGUA
 
@@ -557,53 +371,19 @@ Community 9 - 200 households in Nicaragua, 4 households in the United States, 22
 
 #### **NIC9 - Databases**
 
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG** 
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migraroey experience in general, while others specifically target the most recent trip.
-
-Variations over MIG file in Nicaragua:
+Variations over **MIG** file in Nicaragua:
 
 The Nicaraguan surveys collected data on migration experience to both the United States and Costa Rica. Starting in community 3, LAMP fieldworkers also began to collect, under certain restrictions specified below, the same information for the spouse or for a child of the household head. As a result, the Nicaraguan database contains the following migration files:
 
-1. The MIGCR file (all communities), with data on the household head’s migration experience to Costa Rica.
-2. The MIGOTHER file (starting in community 3), with data on the U.S. migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have any migratory experience (to either the U.S. or Costa Rica) and his/her spouse, or one of his/her children, had U.S. migratory experience.
-3. The MIGCROTHER file (starting in community 3), with data on the migration experience to Costa Rica of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have any migratory experience (to either the U.S. or Costa Rica) and his/her spouse, or one of his/her children, had migratory experience to Costa Rica.
+1. The **MIGCR** file (all communities), with data on the household head’s migration experience to Costa Rica.
+2. The **MIGOTHER** file (starting in community 3), with data on the U.S. migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have any migratory experience (to either the U.S. or Costa Rica) and his/her spouse, or one of his/her children, had U.S. migratory experience.
+3. The **MIGCROTHER** file (starting in community 3), with data on the migration experience to Costa Rica of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have any migratory experience (to either the U.S. or Costa Rica) and his/her spouse, or one of his/her children, had migratory experience to Costa Rica.
 
-LAMP fieldworkers were instructured not to collect migration-specific information for more than one individual per household. It follows that when both the “migother” and the “migcrother” files contain a record for a given household number, that record corresponds to the same person.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
+LAMP fieldworkers were instructed not to collect migration-specific information for more than one individual per household. It follows that when both the “migother” and the “migcrother” files contain a record for a given household number, that record corresponds to the same person.
 
 // Table
 
-#### **How to cite LAMP and its data**
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
-
-##### **LAMP-NIC9 Databases**
+##### **More on LAMP-NIC9 Databases**
 
 For the surveys in Costa Rica and Nicaragua, the LAMP established an association with the Central American Population Center (CCP) of the University of Costa Rica. The Mellon Foundation provided funding through CCP’s “Migration Ethnosurvey Nicaragua-Costa Rica-United States” Project. The LAMP provided technical support and funding for the complementary interviews in the United States.
 
@@ -645,16 +425,6 @@ Instead, we offer the Paraguay data as an access file in which each table corres
 
 // Table
 
-#### **How to cite LAMP and its data**
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
-
 ##### **More on LAMP-PA2 Databases**
 
 We request that users who work with the Paraguay database give credit to Drs. Cerrutti and Parrado’s project, and acknowledge its funding from the Mellon Foundation through the University of Pennsylvania. In addition we request that users mention the availability of the Paraguay data through the LAMP website.
@@ -693,37 +463,7 @@ The Peru data differ from the rest of the LAMP data in various respects. Most im
 
 Irrespective of these changes, LAMP-PERU5 maintains the same structure as the rest of the LAMP databases, consisting of the standard five files: PERS, MIG, HOUSE, LIFE and SPOUSE (see the Databases page). We do not provide, however, a COMMUN data file. Instead, we offer an excel data file with some selected community statistics and some census statistics corresponding to the departmento, provincia and distrito where each of the surveyed communities is located.
 
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG**
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migratory experience in general, while others specifically target the most recent trip.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned from the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of the household head, for each year since birth until the year of the survey.
-
 // Table
-
-#### **How to cite LAMP and its data**
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
 
 ##### **More on LAMP-PERU5 Databases**
 
@@ -749,45 +489,11 @@ Community 4 & 5 - 200 households in Puerto Rico and 16 in the United States
 
 #### **LAMP - PR5: Databases**
 
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG**
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migraroey experience in general, while others specifically target the most recent trip.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned rom the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-##### **COMMUN**
-
-This file provides some basic information on the surveyed communities, regarding basic utilities, health, school, sports and banking facilities, road infrastructure, etc. Each record corresponds to a community.
-
 // Table
-
-#### **How to cite LAMP and its data**
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
 
 ##### **More on LAMP-PR5 Databases**
 
-We ask you to city the Puerto Rico database as “LAMP-PR5”. For your reference, the number 5 stands for the number of communities included in each of the databases (this number will change in the future as we add data from additional communities in some of these countries.) They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
+We ask you to cite the Puerto Rico database as “LAMP-PR5”. For your reference, the number 5 stands for the number of communities included in each of the databases (this number will change in the future as we add data from additional communities in some of these countries.) They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
 
 ## URUGUAY
 
@@ -809,29 +515,7 @@ Peru - 124 interviews
 
 Venezuela - 371 interviews
 
-#### **LAMP - UY4: CORE DATASETS**
-
-##### **PERS**
-
-A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys).
-
-##### **MIG**
-
-A person-level file that provides data on all household heads with labor or residential experience in the United States (or in any destination country in the Peru surveys). Hence, each record corresponds to a migrant household head. It contains measures of economic and social activity in the destination country. Some refer to the migraroey experience in general, while others specifically target the most recent trip.
-
-##### **HOUSE**
-
-A household-level file containing information on household composition, economic and migratory activity of household members and other relatives, home/real estate ownership and amenities, vehicle ownership and financing, and business ownership, operation and financing. Each record corresponds to a household.
-
-##### **LIFE** 
-
-An event-history file where each record is a person-year. Life file details the labor and family histories of each head of household, for each year since birth until the year of the survey. These data are supplemented by various time-constant variables gleaned from the previous three data files.
-
-##### **SPOUSE**
-
-An event-history file where each record is a person-year. Spouse file details the labor history of each spouse of household head, for each year since birth until the year of the survey.
-
-#### **SUPPLEMENTARY DATASETS**
+#### **LAMP - UY4: SUPPLEMENTARY DATASETS**
 
 In addition, we are providing supplementary datasets. They can be downloaded directly from our Documentation page.
 
@@ -853,16 +537,6 @@ The databases below - COMMUN and RDS - supplementing out datasets resulting from
 
 // Table
 
-#### **How to cite LAMP and its data**
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
-
 ##### **More on LAMP-UY4 Databases**
 
-We ask you to city the Uruguay database as “LAMP-UY4”. For your reference, the number 4 stands for the number of communities included in each of the databases (this number will change in the future as we add data from additional communities in some of these countries.) They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
+We ask you to cite the Uruguay database as “LAMP-UY4”. For your reference, the number 4 stands for the number of communities included in each of the databases (this number will change in the future as we add data from additional communities in some of these countries.) They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
