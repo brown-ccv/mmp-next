@@ -3,11 +3,11 @@ title: Study Design
 tags:
   - LAMP
 ---
-## Study Design
+# Study Design
 
 ### Common Database Files
 
-##### **PERS**
+##### PERS
 
 A person-level file that provides general demographic information and a few migration measures for each member of a surveyed household, and for other children of the household head who are no longer members of the household. Data include age, sex, relationship to head of household, marital status, current economic indicators, and characteristics of the first and last migration trips made to the United States (or to any country in the case of the Peru surveys) and to other locations in the home country. Migration trips are defined as those that involve work, the active search of work, or otherwise a period of residence in the United States (or in any other country in the Peru surveys). 
 
@@ -33,7 +33,7 @@ This file provides some basic information on the surveyed communities, regarding
 
 ### How to cite LAMP and its data
 
-##### LAMP
+#### LAMP
 
 You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD) [*or* the MacArthur Foundation *for the Colombia and Ecuador datasets*].”
 
@@ -87,8 +87,6 @@ Community 9999 - 12 households in the U.S. and 64 households in Spain. These hou
 
 #### **COL14 - Databases**
 
-**MIG** 
-
 Variations over **MIG** file in Colombia:
 
 The Colombian surveys produced the **MIGOTHER** file, which provides data on the migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have international migratory experience and his/her spouse, or one of his/her children, did. For this other migrant, health variables were compiled as well.
@@ -97,7 +95,7 @@ For the **PERS**, basic health variables were compiled for the household head an
 
 // Table
 
-##### More on LAMP-COL14 Databases
+#### More on LAMP-COL14 Databases
 
 For the surveys in Colombia done in Risaralda, Quindio and Caldas, the LAMP established an association with the Red de Universidades Públicas del Eje Cafetero - Alma Mater and Fundación Esperanza. For the survey done in Cundinamarca, the LAMP established an association with the Pontificia Universidad Javeriana. Finally, for the surveys done in Atlántico and Valle del Cauca, the association was between LAMP and Fundación Universidad del Norte.
 
@@ -133,17 +131,17 @@ Community 7 - 197 households in Costa Rica
 
 #### **CR7 - Databases**
 
-Variations over MIG file in Costa Rica:
+Variations over **MIG** file in Costa Rica:
 
-The Costa Rica surveys produced the MIGOTHER file, which provides data on the migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have U.S. migratory experience and his/her spouse, or one of his/her children, did. 
+The Costa Rica surveys produced the **MIGOTHER** file, which provides data on the migratory experience of the spouse or a child of the household head. These data were only collected if these two conditions were met: the household head did not have U.S. migratory experience and his/her spouse, or one of his/her children, did. 
 
 // Table
 
-##### More on LAMP-CR7 Databases
+#### More on LAMP-CR7 Databases
 
 For the surveys in Costa Rica and Nicaragua, the LAMP established an association with the Central American Population Center (CCP) of the University of Costa Rica. The Mellon Foundation provided funding through CCP’s “Migration Ethnosurvey Nicaragua-Costa Rica-United States” Project. The LAMP provided technical support and funding for the complementary interviews in the United States.
 
-In addition to acknowledging the LAMP, we request users who work with the LAMP-CR7 database and/or LAMPNIC9 give credit to the CCP (including a reference to its website: <http://ccp.ucr.ac.cr>) and mention the support of the Mellon Foundation.
+In addition to acknowledging the LAMP, we request users who work with the LAMP-CR7 database and/or LAMP-NIC9 give credit to the CCP (including a reference to its website: <http://ccp.ucr.ac.cr>) and mention the support of the Mellon Foundation.
 
 The following is an example of proper acknowledgement involving only the Costa Rican datasets:
 
@@ -161,7 +159,7 @@ The following is an example of proper acknowledgement involving surveys in multi
 
 The data in LAMP-Dominican Republic Database (LAMP-DR7) were gathered during the Summer of 1999 (communities 1 through 5), in February 2000 (community 6), and in December 2000 (community 7). For confidentiality reasons, we preserve community names.
 
-We also offer data on Dominican migration to Spain. Click here to find out more.
+We also offer data on Dominican migration to Spain.
 
 #### Surveyed Communities
 
@@ -183,7 +181,7 @@ Community 7 - 151 households in Dominican Republic and 15 in the United States
 
 // Table
 
-##### More on LAMP-DR7 Databases
+#### More on LAMP-DR7 Databases
 
 We ask you to cite the Dominican Republic database as “LAMP-DR7”. For your reference, the number 7 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
 
@@ -215,7 +213,7 @@ The Ecuadorian surveys produced the **MIGOTHER** file, which provides data on th
 
 For the **PERS**, basic health variables were compiled for the household head and spouse only.
 
-##### **More on LAMP-ECU4 Databases**
+#### **More on LAMP-ECU4 Databases**
 
 For the surveys in Ecuador, the LAMP established an association with the Universidad de Cuenca - Programa de Población y Desarollo Local Sustenable (PYDLOS).
 
@@ -247,17 +245,7 @@ Community 4 - 95 households in El Salvador
 
 // Table
 
-#### How to cite LAMP and its data
-
-##### **LAMP**
-
-You may introduce LAMP using a quote such as the following: “The Latin American Migration Project (LAMP) is a collaborative research project based at Princeton University and the University of Guadalajara, supported by the National Institute of Child Health and Human Development (NICHD).”
-
-Please cite the LAMP website: <http://lamp.opr.princeton.edu/>
-
-Other references to the LAMP or its survey methodology can be taken from our website at your discretion. For example, this site offers a description of the communities surveyed in each country, and presents the questionnaire used in each survey. When citing our website, refer only to the address specified above and not to specific menus within it, as the website design may change over time. There is no need to use quotes when copying text from the LAMP website.
-
-##### **More on LAMP-ELS4 Databases**
+#### **More on LAMP-ELS4 Databases**
 
 We ask you to cite the El Salvador database as “LAMP-ELS4”. For your reference, the number 4 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
 
@@ -305,11 +293,11 @@ CuadN_U - Provides information only of the household head and spouse.
 
 CuadV_V4U - Provides border crossing information, and general information on the migrant’s networks, finances, and benefits used in the U.S. during his/her last trip to the U.S.
 
-##### **More on LAMP-GUA3 Databases**
+#### **More on LAMP-GUA3 Databases**
 
 These surveys were made possible through and association of LAMP and the Universidad de San Carlos in Guatemala. We ask you to cite the Guatemala database as “LAMP-GUA3”. For your reference, the number 3 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not the change this reference and cite your original data source as specified above.
 
-##### **Guatemala surveyed by David Lindstrom**
+#### **Guatemala surveyed by David Lindstrom**
 
 David Lindstrom’s research is supported by grants from RAND, the PSTC Mellon center grant, the Center for Latin American Studies Hewleet grant, and Brown University Salomon research. These surveys were made possible through and association of Brown University and the Universidad de San Carlos in Guatemala.
 
@@ -331,11 +319,11 @@ Community 2 - 100 households in Haiti 
 
 Community 3 - 100 households in Haiti 
 
-#### **GUA3 - Databases**
+#### **HA3 - Databases**
 
 // Table
 
-##### **LAMP-HA3 Databases**
+#### **More on LAMP-HA3 Databases**
 
 These surveys were made possible through an association of LAMP and the University Quisqueya of Port-au-Prince. We ask you to cite the Haiti database as “LAMP-HA3”. For your reference, the number 3 stands for the number of communities included in this dataset. (This number will change in the future as we add data from additional communities in some of these countries). They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not the change this reference and cite your original data source as specified above.
 
@@ -383,7 +371,7 @@ LAMP fieldworkers were instructed not to collect migration-specific information 
 
 // Table
 
-##### **More on LAMP-NIC9 Databases**
+#### **More on LAMP-NIC9 Databases**
 
 For the surveys in Costa Rica and Nicaragua, the LAMP established an association with the Central American Population Center (CCP) of the University of Costa Rica. The Mellon Foundation provided funding through CCP’s “Migration Ethnosurvey Nicaragua-Costa Rica-United States” Project. The LAMP provided technical support and funding for the complementary interviews in the United States.
 
@@ -395,7 +383,7 @@ The following is an example of proper acknowledgement involving only the Costa R
 
 The following is an example of proper acknowledgement involving surveys in multiple countries:
 
-“This study uses data collected by the Latin American Migration Project (LAMP: link) in the Dominican Republic, Nicaragua and Costa Rica. The surveys in Nicaragua and Costa Rica were conducted in association with the Central American Population Center of the University of Costa Rica (CCP: <http://ccp.ucr.ac.cr>) with support from the Mellon Foundation. The LAMP is funded by the National Institute of Child Health and Human Development (NICHD).”
+“This study uses data collected by the Latin American Migration Project (LAMP) in the Dominican Republic, Nicaragua and Costa Rica. The surveys in Nicaragua and Costa Rica were conducted in association with the Central American Population Center of the University of Costa Rica (CCP: <http://ccp.ucr.ac.cr>) with support from the Mellon Foundation. The LAMP is funded by the National Institute of Child Health and Human Development (NICHD).”
 
 ## PARAGUAY
 
@@ -425,7 +413,7 @@ Instead, we offer the Paraguay data as an access file in which each table corres
 
 // Table
 
-##### **More on LAMP-PA2 Databases**
+#### **More on LAMP-PA2 Databases**
 
 We request that users who work with the Paraguay database give credit to Drs. Cerrutti and Parrado’s project, and acknowledge its funding from the Mellon Foundation through the University of Pennsylvania. In addition we request that users mention the availability of the Paraguay data through the LAMP website.
 
@@ -465,7 +453,7 @@ Irrespective of these changes, LAMP-PERU5 maintains the same structure as the re
 
 // Table
 
-##### **More on LAMP-PERU5 Databases**
+#### **More on LAMP-PERU5 Databases**
 
 We ask you to cite the PERU database as “LAMP-PERU5”. For your reference, the number 5 stands for the number of communities included in each of the databases (this number will change in the future as we add data from additional communities in some of these countries.) They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
 
@@ -491,7 +479,7 @@ Community 4 & 5 - 200 households in Puerto Rico and 16 in the United States
 
 // Table
 
-##### **More on LAMP-PR5 Databases**
+#### **More on LAMP-PR5 Databases**
 
 We ask you to cite the Puerto Rico database as “LAMP-PR5”. For your reference, the number 5 stands for the number of communities included in each of the databases (this number will change in the future as we add data from additional communities in some of these countries.) They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
 
@@ -519,11 +507,11 @@ Venezuela - 371 interviews
 
 In addition, we are providing supplementary datasets. They can be downloaded directly from our Documentation page.
 
-##### **COMMUN**
+**COMMUN**
 
 This file provides some basic economic and demographic information about Uruguay.
 
-##### **RDS**
+**RDS**
 
 Respondent-driven sampling (RDS), combines “snowball sampling” with a mathematical model that weighs the sample to compensate for the fact that the sample was collected in a non-random way. We are providing a small dataset with the RDS numbers in order for each user to construct their own weights. You will also find a Do File with a sample programming for this.
 
@@ -537,6 +525,6 @@ The databases below - COMMUN and RDS - supplementing out datasets resulting from
 
 // Table
 
-##### **More on LAMP-UY4 Databases**
+#### **More on LAMP-UY4 Databases**
 
 We ask you to cite the Uruguay database as “LAMP-UY4”. For your reference, the number 4 stands for the number of communities included in each of the databases (this number will change in the future as we add data from additional communities in some of these countries.) They do not represent the number of communities included in a user’s own work. Thus, in case you decide to discard data from one or more entire communities, we still ask you not to change this reference and cite your original data source as specified above.
