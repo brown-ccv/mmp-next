@@ -1,7 +1,7 @@
-const simpleOauthModule = require("simple-oauth2");
+const { AuthorizationCode } = require("simple-oauth2");
 
 const create = () =>
-  simpleOauthModule.create({
+  new AuthorizationCode({
     client: {
       id: process.env.CLIENT_ID,
       secret: process.env.CLIENT_SECRET,

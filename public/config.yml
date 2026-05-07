@@ -2,7 +2,9 @@ backend:
   name: github
   repo: brown-ccv/mmp-next
   branch: cms
+  #TODO this should really automatically choose the base url depending on dev or not
   base_url: https://mmp-lamp.research.brown.edu/
+  # base_url: http://localhost:3000/
   auth_endpoint: api/auth
 media_folder: public/images
 collections:
@@ -66,7 +68,16 @@ collections:
         widget: text
       - name: image
         label: MMP Community Map
-        widget: image
+        widget: object
+        summary: "Image: {{fields.alt}}"
+        fields:
+          - label: Alt Text
+            name: alt
+            widget: string
+            hint: Describe why this image matters in context (1-2 sentences). End your description with a period. Do not use 'image of' unless the subject is a logo, illustration, or cartoon.
+          - label: Image
+            name: src
+            widget: image
       - name: tags
         label: Project Tags
         widget: list
@@ -96,9 +107,17 @@ collections:
         label: Title
         widget: string
       - name: avatar
+        label: avatar
+        widget: object
         required: false
-        label: Photo
-        widget: image
+        fields:
+          - label: Photo
+            name: photo
+            widget: image
+          - label: Alt Text
+            name: alt
+            widget: string
+            hint: Describe why this image matters in context (1-2 sentences). End your description with a period. Do not use 'image of' unless the subject is a logo, illustration, or cartoon.
       - name: bio
         label: Biography
         widget: text
@@ -263,7 +282,18 @@ collections:
         time_format: false
       - name: heroImage
         label: Featured Image
-        widget: image
+        widget: object
+        max: 1
+        min: 0
+        summary: "Image: {{fields.alt}}"
+        fields:
+          - label: Image
+            name: src
+            widget: image
+          - label: Alt Text
+            name: alt
+            widget: string
+            hint: Describe why this image matters in context (1-2 sentences). End your description with a period. Do not use 'image of' unless the subject is a logo, illustration, or cartoon.
       - name: title
         label: Title
         widget: text
