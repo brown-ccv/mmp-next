@@ -11,8 +11,6 @@ const handler = async (req, res) => {
   try {
     const accessToken = await client.getToken(options);
 
-    console.log("The resulting token: ", accessToken.token);
-
     res.status(200).send(
       renderBody("success", {
         token: accessToken.token.access_token,
