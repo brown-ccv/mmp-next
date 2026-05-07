@@ -31,7 +31,7 @@ class HomePage extends Component {
 
   render() {
     if (this.props.router.isReady) {
-      const project = this.props.router.query.project;
+      const project = this.props.router.query.project.toLowerCase();
       const { title, description, lede, bgColor, HomeContent, attributes } =
         this.projectConfigs[project];
       const { aim1, aim2, aim3 } = attributes;

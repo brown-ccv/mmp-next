@@ -2,7 +2,9 @@
 type: Advisors
 name: Filiz Garip
 title: Consultant
-avatar: /public/images/filiz-headshot.jpg
+avatar:
+  src: /public/images/filiz-headshot.jpg
+  alt: Woman  with shoulder-length, dark hair wearing a white button-up.
 bio: "Filiz Garip is Professor of Sociology and International Affairs at
   Princeton University. Her work lies at the intersection of migration, economic
   sociology, and inequality. Within this general area, she studies the

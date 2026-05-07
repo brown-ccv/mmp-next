@@ -2,7 +2,9 @@
 type: Leadership
 name: Jéssica Natalie Nájera Aguirre
 title: Co-Director
-avatar: /public/images/najera-jessica-cropped.png
+avatar:
+  src: /public/images/najera-jessica-cropped.png
+  alt: Woman with long brown hair wearing glasses and red scarf.
 bio: Jéssica Natalie Nájera Aguirre is Professor-Researcher at the Center for
   Demographic, Urban and Environmental Studies (CEDUA), El Colegio de México.
   Her degrees are in economics, demography and population studies. She is a

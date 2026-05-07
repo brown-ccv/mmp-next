@@ -2,7 +2,9 @@
 type: Advisors
 name: Jorge Durand Arp-Nisen
 title: Co-Founder
-avatar: /public/images/jorge-durand.png
+avatar:
+  src: /public/images/jorge-durand.png
+  alt: Man with short hair, beard and glasses.
 bio: Jorge Guillermo Durand Arp-Nisen (born 1949 in Lima, Peru) is a research
   professor of anthropology at the University of Guadalajara and the Center for
   Economic Research and Teaching (CIDE). He is co-director with Douglas S.
