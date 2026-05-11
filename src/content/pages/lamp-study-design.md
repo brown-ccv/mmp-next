@@ -5,6 +5,8 @@ tags:
 ---
 # Study Design
 
+## Common Attributes
+
 ### Common Database Files
 
 ##### PERS
