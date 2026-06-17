@@ -34,7 +34,7 @@ const MiniMapSvg = () => {
             <div className="flex flex-row items-center gap-3.5">
               <div className="flex flex-row items-center gap-2">
                 <h4 className="font-semibold">Email: </h4>
-                <a href={"mailto:mmp-lamp@colmex.mx"}>mmp-lamp@colmex.mx</a>
+                <a href="mailto:mmp-lamp@colmex.mx">mmp-lamp@colmex.mx</a>
               </div>
             </div>
           </>
@@ -64,7 +64,7 @@ const MiniMapSvg = () => {
             <div className="flex flex-row items-center gap-3.5">
               <div className="flex flex-row items-center gap-2">
                 <h4 className="font-semibold">Email: </h4>
-                <a href={"mailto:mmp_lamp@brown.edu"}>mmp_lamp@brown.edu</a>
+                <a href="mailto:mmp_lamp@brown.edu">mmp_lamp@brown.edu</a>
               </div>
             </div>
           </>
