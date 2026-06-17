@@ -13,10 +13,12 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const news = await getNewsArticle(params.slug);
   const project = params.project;
+  const slug = params.slug;
   return {
     props: {
       news,
       project,
+      slug,
     },
   };
 }
