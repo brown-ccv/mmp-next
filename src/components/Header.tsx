@@ -3,7 +3,6 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { LINKS } from "@/consts";
 import { HeaderLink } from "./HeaderLink";
 import { usePathname } from "next/navigation";
-import { Head } from "next/document";
 
 type Props = {
   project: string;
