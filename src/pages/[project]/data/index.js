@@ -17,11 +17,13 @@ class DataPage extends Component {
       bgColor: "bg-neutral-50",
       DataContent: MmpDataContent,
       attributes: mmpAttributes,
+      route: "https://repository.library.brown.edu/studio/item/bdr:p54c6u36/",
     },
     lamp: {
       bgColor: "",
       DataContent: LampDataContent,
       attributes: lampAttributes,
+      route: "https://repository.library.brown.edu/studio/item/bdr:bnam7fqs/",
     },
   };
 
@@ -29,7 +31,8 @@ class DataPage extends Component {
     if (this.props.router.isReady) {
       const project = this.props.router.query.project;
 
-      const { attributes, bgColor, DataContent } = this.projectConfigs[project];
+      const { attributes, bgColor, DataContent, route } =
+        this.projectConfigs[project];
       const { title } = attributes;
       return (
         <Layout
@@ -63,7 +66,7 @@ class DataPage extends Component {
               </ul>
             </div>
           </section>
-          <DataForm />
+          <DataForm dataPath={route} />
         </Layout>
       );
     }
