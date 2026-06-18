@@ -33,13 +33,9 @@ const HoverCardItem: React.FC<HoverCardItemProps> = ({
               <Image className="w-14 h-14 rounded-full" src={image} alt={alt} />
             )}
             <div className="flex flex-col gap-3.5">
-              <p className="font-semibold">{title}</p>
+              <div className="font-semibold">{title}</div>
               <div>{content}</div>
-              {footer && (
-                <div className="flex gap-3.5">
-                  <p>{footer}</p>
-                </div>
-              )}
+              {footer && <div className="flex gap-3.5">{footer}</div>}
             </div>
           </div>
           <HoverCard.Arrow className="fill-white" />
