@@ -1,5 +1,6 @@
 import { Layout } from "@/layouts/Layout";
 import { getNews } from "@/lib/markdown";
+import Image from "next/image";
 
 export async function getStaticPaths() {
   return {
@@ -49,11 +50,15 @@ export default function NewsPage({ news, project }) {
                 alt=""
               >
                 {post.heroImage && (
-                  <img
-                    className="object-cover h-full w-full"
-                    src={post.heroImage.src}
-                    alt={post.heroImage.alt}
-                  />
+                  <div className="relative h-full w-full">
+                    <Image
+                      className="object-cover"
+                      src={post.heroImage.src}
+                      alt={post.heroImage.alt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+                    />
+                  </div>
                 )}
               </div>
               <div className="grow space-y-1">
