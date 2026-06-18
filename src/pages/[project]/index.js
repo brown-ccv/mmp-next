@@ -76,7 +76,7 @@ class HomePage extends Component {
             <section className="space-y-12 readable">
               <h3 className="title font-semibold">Where are we located?</h3>
               <p>
-                The MMP has offices, in Mexico, at the Centro de Estudios
+                The {title} has offices, in Mexico, at the Centro de Estudios
                 Demográficos, Urbanos y Ambientales (CEDUA) of El Colegio de
                 México in Mexico City, and in the United States, at the
                 Population Studies and Training Center (PSTC) of Brown
