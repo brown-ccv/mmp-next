@@ -1,8 +1,7 @@
-"use client";
-
 import { Controller, type SubmitHandler, useForm } from "react-hook-form";
 import * as Form from "@radix-ui/react-form";
 import React from "react";
+import { useRouter } from "next/router";
 import { addActivityData } from "../firebase";
 import { FormInput } from "./input/FormInput";
 import { Textarea } from "./input/Textarea";
@@ -15,30 +14,53 @@ export interface Inputs {
   description: string;
 }
 
+/**
+ * Form that records user information to Firebase and opens the data
+ * repository URL in a new tab upon successful submission.
+ */
 export const DataForm = () => {
-  const { handleSubmit, control, register } = useForm<Inputs>();
-  const formRef = React.useRef<HTMLFormElement>(null);
+  const {
+    handleSubmit,
+    control,
+    register,
+    formState: { errors, isSubmitting },
+  } = useForm<Inputs>();
+
+  const router = useRouter();
+
+  /**
+   * Submits form data to Firebase, then navigates to the repository URL
+   * in a new tab by appending the form fields as query parameters.
+   */
   const onSubmit: SubmitHandler<Inputs> = async (data: any) => {
-    await addActivityData(data);
-    if (formRef.current) formRef.current.submit();
+    try {
+      await addActivityData(data);
+      // Open the repository URL in a new tab
+      const params = new URLSearchParams(data).toString();
+      window.open(
+        "https://repository.library.brown.edu/studio/item/bdr:p54c6u36/",
+        "_blank",
+      );
+    } catch (error) {
+      console.error("Failed to submit form:", error);
+    }
   };
+
   return (
     <Form.Root
-      ref={formRef}
       className="outline outline-neutral-100 outline-1 p-6 space-y-4 rounded shadow-md"
       onSubmit={handleSubmit(onSubmit)}
-      action="https://repository.library.brown.edu/studio/item/bdr:p54c6u36/"
-      target="_blank"
-      method="GET"
     >
       <Controller
         name="name"
         control={control}
-        render={() => (
+        rules={{ required: "Name is required" }}
+        render={({ field }) => (
           <FormInput
             label="Name"
             placeholder=""
-            {...register("name")}
+            errorMessage={errors.name?.message}
+            {...field}
             required
           />
         )}
@@ -46,11 +68,13 @@ export const DataForm = () => {
       <Controller
         name="institution"
         control={control}
-        render={() => (
+        rules={{ required: "Institution is required" }}
+        render={({ field }) => (
           <FormInput
             label="Institution"
             placeholder=""
-            {...register("institution")}
+            errorMessage={errors.institution?.message}
+            {...field}
             required
           />
         )}
@@ -58,13 +82,21 @@ export const DataForm = () => {
       <Controller
         name="email"
         control={control}
-        render={() => (
+        rules={{
+          required: "Email is required",
+          pattern: {
+            // Matches standard email format: local@domain.tld
+            value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+            message: "Please provide a valid email",
+          },
+        }}
+        render={({ field }) => (
           <FormInput
             label="Email"
             placeholder=""
             match="typeMismatch"
-            errorMessage="Please provide a valid email"
-            {...register("email")}
+            errorMessage={errors.email?.message}
+            {...field}
             required
           />
         )}
@@ -72,20 +104,22 @@ export const DataForm = () => {
       <Controller
         name="description"
         control={control}
-        render={() => (
+        rules={{ required: "Description is required" }}
+        render={({ field }) => (
           <Textarea
             label="Description"
             placeholder=""
             sublabel="How will the data be used?"
-            {...register("description")}
+            errorMessage={errors.description?.message}
+            {...field}
             required
           />
         )}
       />
 
       <Form.Submit asChild>
-        <Button>
-          <span>Submit</span>
+        <Button disabled={isSubmitting}>
+          <span>{isSubmitting ? "Submitting..." : "Submit"}</span>
         </Button>
       </Form.Submit>
     </Form.Root>
