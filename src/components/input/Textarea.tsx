@@ -15,6 +15,10 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
     const [characterCount, setCharacterCount] = useState(0);
     const maxLength = 300;
 
+    /**
+     * Tracks the character count for the counter display while
+     * preserving the onChange handler passed in via props (e.g. from RHF).
+     */
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
       setCharacterCount(e.target.value.length);
       onChange?.(e);

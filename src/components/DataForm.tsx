@@ -1,6 +1,5 @@
 import { Controller, type SubmitHandler, useForm } from "react-hook-form";
 import * as Form from "@radix-ui/react-form";
-import React from "react";
 import { useRouter } from "next/router";
 import { addActivityData } from "../firebase";
 import { FormInput } from "./input/FormInput";
@@ -14,11 +13,16 @@ export interface Inputs {
   description: string;
 }
 
+interface DataFormProps {
+  /** The external repository URL to open in a new tab after submission */
+  dataPath: string;
+}
+
 /**
  * Form that records user information to Firebase and opens the data
  * repository URL in a new tab upon successful submission.
  */
-export const DataForm = () => {
+export const DataForm = ({ dataPath }: DataFormProps) => {
   const {
     handleSubmit,
     control,
@@ -29,18 +33,16 @@ export const DataForm = () => {
   const router = useRouter();
 
   /**
-   * Submits form data to Firebase, then navigates to the repository URL
+   * Submits form data to Firebase, then navigates to the BDR URL
    * in a new tab by appending the form fields as query parameters.
    */
   const onSubmit: SubmitHandler<Inputs> = async (data: any) => {
     try {
       await addActivityData(data);
-      // Open the repository URL in a new tab
+      // Open the repository URL in a new tab with form data as query params,
+      // mirroring the original native form GET submission behavior
       const params = new URLSearchParams(data).toString();
-      window.open(
-        "https://repository.library.brown.edu/studio/item/bdr:p54c6u36/",
-        "_blank",
-      );
+      window.open(`${dataPath}?${params}`, "_blank");
     } catch (error) {
       console.error("Failed to submit form:", error);
     }
