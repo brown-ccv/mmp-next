@@ -13,17 +13,10 @@ export const News: React.FC<News> = ({
   project,
   description,
   heroImage,
-  altText,
-  pubDate,
-  updatedDate,
   bgColor,
   children,
 }) => {
-  const publishedDate = new Date(pubDate);
-  const updatedOnDate = updatedDate ? new Date(updatedDate) : undefined;
-  if (heroImage) {
-    heroImage.src = heroImage.src.replace("/public", "");
-  }
+  const imgPath = heroImage ? heroImage.src.replace("/public", "") : "";
   return (
     <Layout
       title={title}
@@ -36,7 +29,7 @@ export const News: React.FC<News> = ({
           <div>
             <Image
               className="w-full"
-              src={heroImage.src}
+              src={imgPath}
               alt={heroImage.alt}
               width={200}
               height={200}

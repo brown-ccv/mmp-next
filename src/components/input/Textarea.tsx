@@ -5,13 +5,20 @@ interface TextareaProps extends React.TextareaHTMLAttributes<HTMLTextAreaElement
   label: string;
   sublabel?: string;
   name: string;
+  /** Error message surfaced from React Hook Form validation */
+  errorMessage?: string;
 }
 
 // eslint-disable-next-line react/display-name
 export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
-  ({ name, label, sublabel, ...delegated }, ref) => {
+  ({ name, label, sublabel, errorMessage, onChange, ...delegated }, ref) => {
     const [characterCount, setCharacterCount] = useState(0);
     const maxLength = 300;
+
+    const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+      setCharacterCount(e.target.value.length);
+      onChange?.(e);
+    };
 
     return (
       <Form.Field name={name} className="relative flex flex-col gap-2">
@@ -31,12 +38,17 @@ export const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
             className="w-full py-6 text-sm font-medium text-gray-400 border-b-2 outline-none"
             {...delegated}
             ref={ref}
-            onChange={(e) => setCharacterCount(e.target.value.length)}
+            onChange={handleChange}
           />
         </Form.Control>
         <Form.Message className="text-primary-300 px-2" match="valueMissing">
           Please enter your {label}
         </Form.Message>
+        {/* Render RHF validation error if present, separate from Radix UI's
+            built-in valueMissing message */}
+        {errorMessage && (
+          <p className="text-primary-300 px-2">{errorMessage}</p>
+        )}
       </Form.Field>
     );
   },
