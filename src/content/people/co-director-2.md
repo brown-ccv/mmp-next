@@ -5,6 +5,7 @@ title: Co-Director
 avatar:
   src: /public/images/silvia-giorguli-cropped.jpg
   alt: Woman with shoulder-length brown hair wearing patterned blouse and earrings.
+  photo: /public/images/silvia-giorguli-cropped.jpg
 bio: Silvia Giorguli Saucedo is professor-researcher at the Center for
   Demographic, Urban and Environmental Studies (CEDUA). She was the Director of
   CEDUA from 2009–2015, President of the Mexican Society of Demography from
@@ -23,4 +24,5 @@ startDate: "2024"
 endDate: "2024"
 tags:
   - MMP
+  - LAMP
 ---
