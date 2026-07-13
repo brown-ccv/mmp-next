@@ -5,6 +5,7 @@ title: Co-Founder
 avatar:
   src: /public/images/doug-massey.png
   alt: Man with grey beard, short hair, and glasses wearing a dark blazer and tie.
+  photo: /public/images/doug-massey.png
 bio: "Douglas Massey is Henry G. Bryant Professor of Sociology and Public
   Affairs Emeritus at Princeton University. A member of the National Academy of
   Sciences, the American Academy of Arts and Sciences, the American
@@ -22,7 +23,8 @@ org: Princeton University
 startDate: "2024"
 endDate: "2024"
 institution: Princeton University
-link: https://sociology.princeton.edu/people/doug-massey
 tags:
   - MMP
+  - LAMP
+link: https://sociology.princeton.edu/people/doug-massey
 ---
