@@ -7,6 +7,7 @@ avatar:
   alt: Photo of MMP Logo.
 bio: Georgetown University
 org: Georgetown University
+email: kmd285@georgetown.edu
 startDate: "2024"
 endDate: "2026"
 tags:
