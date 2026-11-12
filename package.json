@@ -63,5 +63,11 @@
   "overrides": {
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0"
+  },
+  "allowScripts": {
+    "@firebase/util@1.15.3": true,
+    "fsevents@2.3.3": true,
+    "protobufjs@7.6.6": true,
+    "unrs-resolver@1.11.1": true
   }
 }
