@@ -2,6 +2,9 @@
 type: Supporting Staff
 name: María Adela Angoa Pérez
 title: Data Coordinator
+avatar:
+  alt: Image of MMP logo
+  photo: /public/images/mmp-icon.png
 bio: "María Adela Angoa Pérez is a PhD candidate in Population Studies at El
   Colegio de México. She is currently an associate researcher at El Colegio de
   México, and since August 2012 she has been associate editor of the magazine
@@ -11,8 +14,9 @@ bio: "María Adela Angoa Pérez is a PhD candidate in Population Studies at El
   adaptation and integration processes of diasporas in Mexico and the United
   States. "
 org: El Colegio de México
+email: mpangoa@colmex.mx
 startDate: "2024"
-endDate: "2024"
+endDate: "2026"
 tags:
   - MMP
 ---
