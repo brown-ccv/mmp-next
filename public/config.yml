@@ -1,3 +1,8 @@
+# TODO: Decap supports `publish_mode: editorial_workflow`, which makes Decap itself
+# open a PR per entry and gives editors draft/in-review/ready states plus a preview
+# before publishing. That would replace most of .github/workflows/auto-merge.yml with
+# configuration. Not adopted: it changes the editor-facing workflow and this project
+# has no funding for the retraining/support that implies. See README.
 backend:
   name: github
   repo: brown-ccv/mmp-next

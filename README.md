@@ -25,6 +25,65 @@ This tool allows content editors to make commits to the site repository without 
 they are making a push to the specified branch (in this project's case, cms). A Github workflow checks for changes over a specified
 period of time and pushes the cms branch to main after a period of inactivity, which triggers a App Hosting rollout.
 
+### CMS publishing workflow
+
+The workflow below is fragile but has not been replaced because the project is
+unfunded. This section records the constraints so they don't have to be rediscovered.
+`TODO:` comments in `.github/workflows/auto-merge.yml` and `public/config.yml` point
+here.
+
+**How it works.** `.github/workflows/auto-merge.yml` runs every 5 minutes. If `cms` has
+had no commits for 20 minutes, it merges `main` into `cms`, merges `cms` into `main`,
+and pushes `main`. That push triggers an App Hosting rollout.
+
+**Do not shorten the 20-minute window or switch to an `on: push` trigger.** App Hosting
+has a bug where several pushes to `main` in quick succession corrupt the backend
+container; fixing it has required deleting and recreating the whole App Hosting setup.
+Editors batch-edit, often 3-10 pushes within a few minutes, so this is a routine risk,
+not an edge case. The delay is the only thing currently spacing rollouts apart.
+
+`main` has no branch protection because this workflow pushes to it directly.
+
+**Known issues:**
+
+1. No CI exists in this repo. Nothing builds or lints content before it reaches `main`,
+   so bad frontmatter or a missing image breaks the live site.
+2. On a merge conflict the workflow aborts and logs. Nobody is notified and every later
+   run fails the same way, so editor changes silently stop reaching the site.
+3. No concurrency group, so a slow run and the next cron tick can race on pushing
+   `main`.
+4. Scheduled runs get delayed or dropped by GitHub, and are disabled entirely after 60
+   days of repo inactivity. This workflow has needed manual re-enabling.
+5. Anything committed to `cms` is auto-merged, not just content.
+6. ~8,600 runs/month, almost all no-ops, each cloning full history.
+
+**If time becomes available**, trigger on push to `cms` with two concurrency groups:
+a `debounce` job (`cancel-in-progress: true`) that sleeps, so a burst of edits collapses
+to one run, and a `sync` job needing it (`cancel-in-progress: false`) that is never
+interrupted mid-merge. Add an hourly cron as a fallback for editors who work
+continuously. Have `sync` open a PR instead of pushing, run `npm ci && npm run lint &&
+npm run build` on it, and auto-merge only if checks pass and the diff touches only
+`src/content/**` and `public/images/**`. Squash-merge so one session is one rollout.
+`main` can then require the CI check and a PR with 0 approvals; this needs a GitHub App
+token (`actions/create-github-app-token`) with a ruleset bypass, because `GITHUB_TOKEN`
+pushes do not trigger the PR's CI.
+
+For rollout spacing, either end `sync` with a cooldown `sleep` inside its concurrency
+group, or fix the root cause: disable automatic rollouts (console only, **Settings >
+Deployment**) and create them explicitly with `firebase apphosting:rollouts:create
+BACKEND_ID --git-commit <sha>`, polling each to completion. The second needs a service
+account with App Hosting permissions, and should be tested on a throwaway backend
+first - Firebase had an incident in April 2025 where disabling automatic rollouts made
+the API refuse to create them. See [Manage rollouts and
+releases](https://firebase.google.com/docs/app-hosting/rollouts) and [Configure and
+manage App Hosting backends](https://firebase.google.com/docs/app-hosting/configure).
+
+Decap's `publish_mode: editorial_workflow` is another option: Decap opens a PR per
+entry with draft/review states, replacing most of the custom workflow. It changes what
+editors see, so it carries a retraining cost.
+
+### Configuration
+
 All configuration options for Decap CMS are specified in a ```config.yml``` file, in the public folder. In order to connect
 to Github for authentication without using Netlify's proprietary API, we must specify an authentication endpoint within the
 config's backend section:
