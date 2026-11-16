@@ -20,18 +20,15 @@ const Card: React.FC<CardProps> = ({
   institution,
   bio,
 }) => {
-  let imageURL = "";
-  if (image) {
-    imageURL = image.src.replace("/public", "");
-  }
+  const imageURL = image?.src ? image.src.replace("/public", "") : "";
   return (
     <div className="md:flex-row md:gap-8 flex flex-col gap-4">
-      {image && (
+      {imageURL && (
         <div className="flex-none">
           <Image
             className="md:w-64 md:h-64 object-cover w-40 h-40 rounded-full"
             src={imageURL}
-            alt={image.alt}
+            alt={image?.alt ?? ""}
             width={400}
             height={400}
           />

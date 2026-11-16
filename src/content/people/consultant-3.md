@@ -3,7 +3,7 @@ type: Advisors
 name: Katharine Donato
 title: Consultant
 avatar:
-  photo: /public/images/mmp-icon.png
+  src: /public/images/mmp-icon.png
   alt: Photo of MMP Logo.
 bio: Georgetown University
 org: Georgetown University
