@@ -5,6 +5,7 @@ title: Consultant
 avatar:
   photo: /public/images/mmp-icon.png
   alt: Photo of MMP Logo.
+  src: /public/images/mmp-icon.png
 bio: Georgetown University
 org: Georgetown University
 email: kmd285@georgetown.edu
