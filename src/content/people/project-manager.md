@@ -5,6 +5,7 @@ title: Project Manager
 avatar:
   alt: Man with green sweater and medium long hair.
   photo: /public/images/euler_deleon_headshot.jpg
+  src: /public/images/euler_deleon_headshot.jpg
 bio: Euler De Leon earned his bachelor’s degree in neuroscience and a pre-health
   professions certificate from The University of Texas at Austin. He’s an MPA
   grad with a concentration in health law. He hopes to work on critical issues
