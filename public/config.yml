@@ -112,7 +112,7 @@ collections:
         required: false
         fields:
           - label: Photo
-            name: photo
+            name: src
             widget: image
           - label: Alt Text
             name: alt
