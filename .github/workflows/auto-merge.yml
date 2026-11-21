@@ -1,8 +1,20 @@
 name: Auto Merge CMS Branch
 
+# TODO: This workflow pushes directly to main, which is why main currently has no
+# branch protection rules. See "CMS publishing workflow" in README.md for the full
+# list of known issues and the proposed replacement design. Nothing below is safe to
+# change in isolation -- the pieces (polling, inactivity window, direct push) are
+# load-bearing for the App Hosting rollout behavior described in the README.
+
 on:
   schedule:
     # Run every 5 minutes to check for inactivity
+    # TODO: Polling is wasteful (~8,600 no-op runs/month, each a full-history clone)
+    # and unreliable -- GitHub delays or drops scheduled runs under load, and disables
+    # them entirely after 60 days of repo inactivity (plausible for this site over a
+    # summer break). `on: push: branches: [cms]` would be immediate and free, but see
+    # the TODO on the inactivity check below before switching: the delay is doing real
+    # work here, not just saving runner minutes.
     - cron: "*/5 * * * *"
 
   # Allow manual triggering
@@ -13,6 +25,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # TODO: No concurrency group. A slow run and the next cron tick (5 min later) can
+      # overlap and race on pushing main. A `concurrency` block with
+      # cancel-in-progress: false would serialize them.
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -28,6 +43,13 @@ jobs:
 
             time_diff=$(( ($current_time - $last_commit_time) / 60 ))
 
+            # TODO: This 20-minute inactivity window is load-bearing for more than just
+            # batching commits. Firebase App Hosting has a bug where multiple pushes to
+            # main in quick succession corrupt the backend container -- recovering has
+            # previously required deleting and recreating the entire App Hosting setup.
+            # The delay is what keeps rollouts spaced apart. Do NOT reduce it or switch
+            # to a push trigger without first adding explicit rollout serialization
+            # (see README).
             if [ $time_diff -gt 20 ]; then
               echo "CMS branch has been inactive for $time_diff minutes"
 
@@ -41,10 +63,19 @@ jobs:
 
                 git checkout main
                 git merge cms --no-edit
+                # TODO: Direct push to main. No lint or build runs against this content
+                # first, so a malformed frontmatter block, a bad `tags` value, or a page
+                # referencing a deleted image goes straight to production and breaks the
+                # build. There is currently no CI in this repo at all. A PR + required
+                # build check would let main be protected and catch this earlier.
                 git push origin main
 
                 echo "Successfully merged cms into main"
               else
+                # TODO: Silent failure. On conflict this aborts and logs, so a stuck sync
+                # is invisible -- every subsequent run that day fails the same way with
+                # nobody notified, and editor changes silently stop reaching the site.
+                # Should open an issue or otherwise alert a maintainer.
                 echo "Merge conflicts detected in cms branch, skipping..."
                 git merge --abort
               fi
